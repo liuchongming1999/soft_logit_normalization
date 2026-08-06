@@ -22,6 +22,8 @@ from .losses import (
     SoftLogitNormalization,
     SLNLoss,
     LogitNormalizationLoss,
+    MSoftmaxLoss,
+    LSoftmaxLoss,
 )
 
 __all__ = [
@@ -29,5 +31,7 @@ __all__ = [
     "SoftLogitNormalization",
     "SLNLoss",
     "LogitNormalizationLoss",
+    "MSoftmaxLoss",
+    "LSoftmaxLoss",
 ]
 __version__ = "1.0.0"

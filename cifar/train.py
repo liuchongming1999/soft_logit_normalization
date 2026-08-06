@@ -35,7 +35,7 @@ import torchvision.transforms as transforms
 
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from sln import sln_logits  # noqa: E402
+from sln import sln_logits, MSoftmaxLoss, LSoftmaxLoss  # noqa: E402
 from models import resnet_cifar as ResNet  # noqa: E402
 
 CIFAR_STATS = {
@@ -53,12 +53,11 @@ def setup_seed(seed):
 
 
 @torch.no_grad()
-def evaluate(model, loader, device):
-    model.eval()
+def evaluate(forward_fn, loader, device):
     correct = total = 0
     for x, y in loader:
         x, y = x.to(device), y.to(device)
-        logits = model(x)
+        logits = forward_fn(x)
         correct += (logits.argmax(1) == y).sum().item()
         total += y.numel()
     return correct / total
@@ -70,9 +69,12 @@ def main():
     p.add_argument("--data-root", default="./data")
     p.add_argument("--arch", default="resnet20",
                    choices=["resnet20", "resnet32", "resnet56", "resnet110"])
-    p.add_argument("--loss", default="sln", choices=["ce", "ln", "sln"])
+    p.add_argument("--loss", default="sln",
+                   choices=["ce", "ln", "sln", "msoftmax", "lsoftmax"])
     p.add_argument("--gamma", type=float, default=0.7)
     p.add_argument("--tau", type=float, default=0.2)
+    p.add_argument("--m-margin", type=float, default=0.35, help="M-Softmax margin")
+    p.add_argument("--l-margin", type=int, default=4, help="L-Softmax angular margin")
     p.add_argument("--lr", type=float, default=0.1)
     p.add_argument("--wd", type=float, default=1e-4)
     p.add_argument("--momentum", type=float, default=0.9)
@@ -114,15 +116,42 @@ def main():
     test_loader = torch.utils.data.DataLoader(
         test_set, batch_size=1024, shuffle=False, num_workers=2, pin_memory=True)
 
-    gamma = {"ce": 0.0, "ln": 1.0, "sln": args.gamma}[args.loss]
+    gamma = {"ce": 0.0, "ln": 1.0, "sln": args.gamma}.get(args.loss, 0.0)
     tau = 1.0 if args.loss == "ce" else args.tau
 
     model = getattr(ResNet, args.arch)(use_sln=False)
     if num_classes != 10:
         model.linear = nn.Linear(256, num_classes)
-    model = model.to(device)
 
-    optimizer = torch.optim.SGD(model.parameters(), lr=args.lr,
+    # L-Softmax replaces the classifier head (operates on features).
+    lsoftmax_head = None
+    if args.loss == "lsoftmax":
+        model.linear = nn.Identity()
+        lsoftmax_head = LSoftmaxLoss(256, num_classes, margin=args.l_margin)
+
+    model = model.to(device)
+    if lsoftmax_head is not None:
+        lsoftmax_head = lsoftmax_head.to(device)
+
+    def criterion(feats_or_logits, target):
+        if args.loss == "lsoftmax":
+            return lsoftmax_head(feats_or_logits, target)
+        if args.loss == "msoftmax":
+            return m_criterion(feats_or_logits, target)
+        return F.cross_entropy(sln_logits(feats_or_logits, gamma, tau), target)
+
+    m_criterion = MSoftmaxLoss(args.m_margin) if args.loss == "msoftmax" else None
+
+    @torch.no_grad()
+    def eval_logits(x):
+        if args.loss == "lsoftmax":
+            return lsoftmax_head.eval_logits(model.feature(x))
+        return model(x)
+
+    params = list(model.parameters())
+    if lsoftmax_head is not None:
+        params += list(lsoftmax_head.parameters())
+    optimizer = torch.optim.SGD(params, lr=args.lr,
                                 momentum=args.momentum, weight_decay=args.wd)
     use_amp = not args.no_amp and device.type == "cuda"
 
@@ -137,18 +166,24 @@ def main():
         for x, y in train_loader:
             x, y = x.to(device), y.to(device)
             with torch.autocast("cuda", dtype=torch.bfloat16, enabled=use_amp):
-                logits = model(x)
-                loss = F.cross_entropy(sln_logits(logits, gamma, tau), y)
+                if args.loss == "lsoftmax":
+                    loss = criterion(model.feature(x), y)
+                else:
+                    loss = criterion(model(x), y)
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-        test_acc = evaluate(model, test_loader, device)
+        model.eval()
+        test_acc = evaluate(eval_logits, test_loader, device)
         best = max(best, test_acc)
         history.append({"epoch": epoch + 1, "test_acc": test_acc,
                         "lr": optimizer.param_groups[0]["lr"]})
         print(f"epoch {epoch+1}/{args.epochs} test_acc {test_acc:.4f}", flush=True)
 
-    torch.save(model.state_dict(), os.path.join(run_dir, "model_final.pth"))
+    state = {"model": model.state_dict()}
+    if lsoftmax_head is not None:
+        state["lsoftmax_head"] = lsoftmax_head.state_dict()
+    torch.save(state, os.path.join(run_dir, "model_final.pth"))
     with open(os.path.join(run_dir, "history.json"), "w") as f:
         json.dump(history, f, indent=2)
     summary = {"best_test_acc": best, "final_test_acc": history[-1]["test_acc"],

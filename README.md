@@ -69,6 +69,17 @@ loss = torch.nn.functional.cross_entropy(sln_logits(logits, gamma=0.7, tau=0.2),
 
 `LogitNormalizationLoss(tau=0.04)` is provided as the $\gamma=1$ endpoint.
 
+The same [`sln/losses.py`](sln/losses.py) also ships the margin-based
+baselines compared in the paper, so the full Table 1 can be reproduced:
+
+```python
+from sln import MSoftmaxLoss, LSoftmaxLoss
+
+m_criterion = MSoftmaxLoss(margin=0.35)          # M-Softmax (logit-level, like CE)
+head = LSoftmaxLoss(in_features=256, out_features=10, margin=4)  # L-Softmax
+loss = head(backbone.feature(images), targets)   # replaces the final linear layer
+```
+
 > **Choosing $\tau$.** The paper uses $\tau = O(k^{-\gamma/2})$ for $k$
 > classes so that the transformed logits start in a well-conditioned range:
 > $\tau=0.2$ for CIFAR-10 ($k=10$), $\tau=0.08$ for CIFAR-100 ($k=100$) and
@@ -100,12 +111,18 @@ Each sub-directory has its own README with exact commands.
 |---|---|---|---|
 | ResNet-20 | CE | 91.81±0.15 | 67.26±0.18 |
 | | LN | 92.05±0.10 | 67.33±0.16 |
+| | L-Softmax | 92.11±0.15 | 67.80±0.16 |
+| | M-Softmax | 92.21±0.14 | 67.78±0.15 |
 | | **SLN** | **92.58±0.08** | **69.75±0.25** |
 | ResNet-56 | CE | 93.07±0.17 | 70.19±0.22 |
 | | LN | 93.16±0.21 | 70.32±0.19 |
+| | L-Softmax | 93.50±0.14 | 70.82±0.15 |
+| | M-Softmax | 93.47±0.14 | 70.71±0.36 |
 | | **SLN** | **93.78±0.18** | **72.76±0.23** |
 | ResNet-110 | CE | 93.64±0.16 | 70.84±0.31 |
 | | LN | 93.67±0.20 | 71.03±0.20 |
+| | L-Softmax | 93.71±0.14 | 71.66±0.15 |
+| | M-Softmax | 93.80±0.16 | 71.47±0.52 |
 | | **SLN** | **94.10±0.09** | **73.64±0.29** |
 
 A ResNet-20 trained with SLN matches a ResNet-56 (~3× parameters) trained with
