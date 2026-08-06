@@ -1,0 +1,10 @@
+torch>=2.0
+torchvision>=0.15
+numpy
+matplotlib
+imageio
+timm>=0.9
+transformers>=4.40
+datasets>=2.18
+evaluate
+scikit-learn

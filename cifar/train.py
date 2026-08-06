@@ -1,0 +1,162 @@
+"""CIFAR-10 / CIFAR-100 training with CE / LN / SLN losses.
+
+Protocol follows He et al. (2016) and the paper's Appendix B: 160 epochs,
+batch size 128, SGD with momentum 0.9, learning rate divided by 10 at epochs
+80 and 120, standard crop/flip augmentation.
+
+Examples
+--------
+# SLN on CIFAR-10 (paper setting: gamma=0.7, tau=0.2, lr=0.01, wd=5e-3)
+python train.py --dataset cifar10 --arch resnet20 --loss sln \
+    --gamma 0.7 --tau 0.2 --lr 0.01 --wd 5e-3 --seed 0
+
+# CE on CIFAR-10 (lr=0.1, wd=1e-4)
+python train.py --dataset cifar10 --arch resnet20 --loss ce --lr 0.1 --wd 1e-4
+
+# LN on CIFAR-100 (tau by the k^(-gamma/2) rule, ~= 0.063)
+python train.py --dataset cifar100 --arch resnet20 --loss ln --tau 0.063 \
+    --lr 0.1 --wd 1e-4
+
+# SLN on CIFAR-100 (tau=0.08)
+python train.py --dataset cifar100 --arch resnet20 --loss sln \
+    --gamma 0.7 --tau 0.08 --lr 0.01 --wd 5e-3
+"""
+import argparse
+import json
+import os
+import time
+
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torchvision
+import torchvision.transforms as transforms
+
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from sln import sln_logits  # noqa: E402
+from models import resnet_cifar as ResNet  # noqa: E402
+
+CIFAR_STATS = {
+    "cifar10": ((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010), 10),
+    "cifar100": ((0.5071, 0.4867, 0.4408), (0.2675, 0.2565, 0.2761), 100),
+}
+
+
+def setup_seed(seed):
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    np.random.seed(seed)
+    import random
+    random.seed(seed)
+
+
+@torch.no_grad()
+def evaluate(model, loader, device):
+    model.eval()
+    correct = total = 0
+    for x, y in loader:
+        x, y = x.to(device), y.to(device)
+        logits = model(x)
+        correct += (logits.argmax(1) == y).sum().item()
+        total += y.numel()
+    return correct / total
+
+
+def main():
+    p = argparse.ArgumentParser(description="CIFAR-10/100 with CE/LN/SLN")
+    p.add_argument("--dataset", default="cifar10", choices=["cifar10", "cifar100"])
+    p.add_argument("--data-root", default="./data")
+    p.add_argument("--arch", default="resnet20",
+                   choices=["resnet20", "resnet32", "resnet56", "resnet110"])
+    p.add_argument("--loss", default="sln", choices=["ce", "ln", "sln"])
+    p.add_argument("--gamma", type=float, default=0.7)
+    p.add_argument("--tau", type=float, default=0.2)
+    p.add_argument("--lr", type=float, default=0.1)
+    p.add_argument("--wd", type=float, default=1e-4)
+    p.add_argument("--momentum", type=float, default=0.9)
+    p.add_argument("--epochs", type=int, default=160)
+    p.add_argument("--batch-size", type=int, default=128)
+    p.add_argument("--workers", type=int, default=4)
+    p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--out-dir", default="runs")
+    p.add_argument("--no-amp", action="store_true")
+    args = p.parse_args()
+
+    run_dir = os.path.join(
+        args.out_dir,
+        f"{args.dataset}_{args.arch}_{args.loss}_seed{args.seed}")
+    os.makedirs(run_dir, exist_ok=True)
+    with open(os.path.join(run_dir, "config.json"), "w") as f:
+        json.dump(vars(args), f, indent=2)
+
+    setup_seed(args.seed)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    torch.backends.cudnn.benchmark = True
+
+    mean, std, num_classes = CIFAR_STATS[args.dataset]
+    train_tf = transforms.Compose([
+        transforms.RandomCrop(32, padding=4),
+        transforms.RandomHorizontalFlip(),
+        transforms.ToTensor(),
+        transforms.Normalize(mean, std)])
+    test_tf = transforms.Compose([
+        transforms.ToTensor(), transforms.Normalize(mean, std)])
+    ds_cls = (torchvision.datasets.CIFAR10 if args.dataset == "cifar10"
+              else torchvision.datasets.CIFAR100)
+    train_set = ds_cls(args.data_root, train=True, transform=train_tf, download=True)
+    test_set = ds_cls(args.data_root, train=False, transform=test_tf, download=True)
+    train_loader = torch.utils.data.DataLoader(
+        train_set, batch_size=args.batch_size, shuffle=True,
+        num_workers=args.workers, pin_memory=True, drop_last=True,
+        persistent_workers=args.workers > 0)
+    test_loader = torch.utils.data.DataLoader(
+        test_set, batch_size=1024, shuffle=False, num_workers=2, pin_memory=True)
+
+    gamma = {"ce": 0.0, "ln": 1.0, "sln": args.gamma}[args.loss]
+    tau = 1.0 if args.loss == "ce" else args.tau
+
+    model = getattr(ResNet, args.arch)(use_sln=False)
+    if num_classes != 10:
+        model.linear = nn.Linear(256, num_classes)
+    model = model.to(device)
+
+    optimizer = torch.optim.SGD(model.parameters(), lr=args.lr,
+                                momentum=args.momentum, weight_decay=args.wd)
+    use_amp = not args.no_amp and device.type == "cuda"
+
+    history = []
+    best = 0.0
+    t0 = time.time()
+    for epoch in range(args.epochs):
+        if epoch in (80, 120):
+            for g in optimizer.param_groups:
+                g["lr"] *= 0.1
+        model.train()
+        for x, y in train_loader:
+            x, y = x.to(device), y.to(device)
+            with torch.autocast("cuda", dtype=torch.bfloat16, enabled=use_amp):
+                logits = model(x)
+                loss = F.cross_entropy(sln_logits(logits, gamma, tau), y)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+        test_acc = evaluate(model, test_loader, device)
+        best = max(best, test_acc)
+        history.append({"epoch": epoch + 1, "test_acc": test_acc,
+                        "lr": optimizer.param_groups[0]["lr"]})
+        print(f"epoch {epoch+1}/{args.epochs} test_acc {test_acc:.4f}", flush=True)
+
+    torch.save(model.state_dict(), os.path.join(run_dir, "model_final.pth"))
+    with open(os.path.join(run_dir, "history.json"), "w") as f:
+        json.dump(history, f, indent=2)
+    summary = {"best_test_acc": best, "final_test_acc": history[-1]["test_acc"],
+               "wall_time_sec": time.time() - t0}
+    with open(os.path.join(run_dir, "summary.json"), "w") as f:
+        json.dump(summary, f, indent=2)
+    print(f"[done] {run_dir} best {best:.4f} final {history[-1]['test_acc']:.4f}")
+
+
+if __name__ == "__main__":
+    main()

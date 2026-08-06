@@ -1,0 +1,33 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# data & checkpoints (not tracked)
+cifar/data/
+imagenet/data/
+data/
+runs/
+outputs/
+*.pth
+*.pth.tar
+*.ckpt
+
+# training outputs
+*.log
+wandb/
+*.npz
+logits_*.pt
+history.json
+summary.json
+config.json
+
+# notebooks
+.ipynb_checkpoints/
+
+# os / editor
+.DS_Store
+*.swp

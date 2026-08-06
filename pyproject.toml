@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soft-logit-normalization"
+version = "1.0.0"
+description = "Soft Logit Normalization (SLN) loss: a geometric perspective on loss function design"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Chongming Liu"}]
+requires-python = ">=3.8"
+dependencies = ["torch>=2.0"]
+
+[project.urls]
+Homepage = "https://github.com/liuchongming1999/soft_logit_normalization"
+
+[tool.setuptools.packages.find]
+include = ["sln*"]
