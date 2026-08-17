@@ -154,12 +154,11 @@ ten-run values above; the other rows use five seeds. Reproduce with the
 `--sam`, `--mixup` and `--label-smoothing` flags of [`cifar/train.py`](cifar/).
 
 <p align="center">
-  <img src="assets/gamma_test_accuracy.png" width="45%">
-  <img src="assets/cifar10_tsne.png" width="45%">
+  <img src="assets/gamma_test_accuracy.png" width="60%">
 </p>
 
-*Left: effect of the exponent $\gamma$ on CIFAR-10. Right: t-SNE of the
-penultimate features (SLN gives the most compact classes).*
+*Effect of the exponent $\gamma$ on CIFAR-10 (ResNet-20) best-test accuracy;
+the sweep peaks at the theory-guided default $\gamma=0.7$.*
 
 ### ImageNet-1K (ResNet, single run)
 
@@ -205,8 +204,14 @@ CE/LN. Reproduce with [`glue/`](glue/).
 | LN | 0.656±0.029 | 0.500±0.009 |
 | **SLN** | **0.386±0.010** | **0.399±0.006** |
 
-SLN produces the tightest within-class clouds relative to class-mean
-separation, consistent with the t-SNE visualization above.
+<p align="center">
+  <img src="assets/intra_inter_dynamics.png" width="45%">
+  <img src="assets/nc1_dynamics.png" width="45%">
+</p>
+
+*Evolution of the representation metrics over training (mean ± std over ten
+seeds). SLN produces the tightest within-class clouds relative to class-mean
+separation throughout training.*
 
 ---
 
