@@ -7,11 +7,12 @@ training script (Ross Wightman) with a small addition: the flags
 `--sln --gamma <g> --temperature <t>` apply the SLN transform to the logits
 before the loss. Everything else is unchanged timm.
 
-## Recipe (paper, Appendix B)
+## Recipe (paper appendix)
 
 AdamW, base lr 3e-3, weight decay 0.06, batch 1024, 300 epochs, cosine
 schedule, 5 warmup epochs, RandAugment `rand-m9-mstd0.5`, random erasing 0.25,
-stochastic depth 0.1, mixed precision.
+stochastic depth 0.1, mixed precision, no model EMA. Loss settings:
+$(\gamma,\tau)=(0,1)$ for CE, $(1,0.04)$ for LN, $(0.7,0.2)$ for SLN.
 
 ## Run
 
@@ -32,13 +33,16 @@ A ready-made launcher is in [`pretrain.sh`](pretrain.sh). ViT models (e.g.
 `vit_tiny_patch16_224`, `vit_small_patch16_224`, `vit_base_patch16_224`) use
 the same recipe and flags.
 
-## Expected results (top-1 %)
+## Expected results (single run, validation set)
 
-| Model | #Param | CE | LN | SLN |
+| Model | #Param | Loss | Top-1 | Top-5 |
 |---|---|---|---|---|
-| ResNet-50 | 26M | 76.8 | 78.1 | **79.2** |
-| ResNet-101 | 45M | 78.6 | 79.4 | **80.5** |
-| ResNet-152 | 60M | 78.9 | 79.9 | **81.0** |
-
-> Note: the recipe table in the paper lists EMA, but the released runs were
-> trained without it; the commands above match the released runs.
+| ResNet-50 | 26M | CE | 76.8 | 93.0 |
+| | | LN | 78.1 | 93.8 |
+| | | SLN | **79.2** | **94.6** |
+| ResNet-101 | 45M | CE | 78.6 | 93.9 |
+| | | LN | 79.4 | 93.0 |
+| | | SLN | **80.5** | **95.3** |
+| ResNet-152 | 60M | CE | 78.9 | 94.1 |
+| | | LN | 79.9 | 93.2 |
+| | | SLN | **81.0** | **95.5** |

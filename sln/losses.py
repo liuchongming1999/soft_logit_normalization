@@ -86,7 +86,7 @@ class LogitNormalizationLoss(SLNLoss):
 
 
 # --------------------------------------------------------------------------
-# Margin-based baselines compared in the paper (Table 1)
+# Margin-based baselines compared in the paper
 # --------------------------------------------------------------------------
 
 

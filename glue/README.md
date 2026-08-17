@@ -29,7 +29,7 @@ Tasks: `cola, sst2, mrpc, qqp, mnli, qnli, rte, stsb, wnli`. Any
 The paper reports the best over learning rates {2e-5, 3e-5, 4e-5, 5e-5}, 3
 epochs, selected on the dev set.
 
-## Expected results (evaluation sets)
+## Expected results (best development set)
 
 | Model | Loss | Avg (8 tasks) |
 |---|---|---|

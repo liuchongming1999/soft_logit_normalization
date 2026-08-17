@@ -1,6 +1,6 @@
 """CIFAR-10 / CIFAR-100 training with CE / LN / SLN losses.
 
-Protocol follows He et al. (2016) and the paper's Appendix B: 160 epochs,
+Protocol follows He et al. (2016) and the paper's Appendix: 160 epochs,
 batch size 128, SGD with momentum 0.9, learning rate divided by 10 at epochs
 80 and 120, standard crop/flip augmentation.
 
@@ -20,6 +20,13 @@ python train.py --dataset cifar100 --arch resnet20 --loss ln --tau 0.063 \
 # SLN on CIFAR-100 (tau=0.08)
 python train.py --dataset cifar100 --arch resnet20 --loss sln \
     --gamma 0.7 --tau 0.08 --lr 0.01 --wd 5e-3
+
+# Combinations with generalization methods (paper comparison table):
+python train.py --dataset cifar100 --arch resnet20 --loss ce --sam   # SAM + CE
+python train.py --dataset cifar100 --arch resnet20 --loss sln --gamma 0.7 \
+    --tau 0.08 --lr 0.01 --wd 5e-3 --sam                             # SAM + SLN
+python train.py --dataset cifar100 --arch resnet20 --loss ce --mixup 1.0
+python train.py --dataset cifar100 --arch resnet20 --loss ce --label-smoothing 0.1
 """
 import argparse
 import json
@@ -63,6 +70,58 @@ def evaluate(forward_fn, loader, device):
     return correct / total
 
 
+def mixup(x, y, alpha):
+    """Standard input mixup (Zhang et al. 2018). Returns mixed input and
+    both target tensors with the mixing coefficient."""
+    lam = float(np.random.beta(alpha, alpha))
+    idx = torch.randperm(x.size(0), device=x.device)
+    return lam * x + (1.0 - lam) * x[idx], y, y[idx], lam
+
+
+class SAM(torch.optim.Optimizer):
+    """Sharpness-Aware Minimization (Foret et al. 2021).
+
+    Thin wrapper that turns any ``torch.optim`` optimizer into SAM: each step
+    performs an adversarial ascent (``ascent_step``) followed by the base
+    optimizer update at the perturbed point (``descent_step``).
+    """
+
+    def __init__(self, params, base_optimizer, rho=0.05, **kwargs):
+        assert rho >= 0.0, "SAM perturbation radius rho must be non-negative"
+        defaults = dict(rho=rho, **kwargs)
+        super().__init__(params, defaults)
+        self.base_optimizer = base_optimizer(self.param_groups, **kwargs)
+        self.param_groups = self.base_optimizer.param_groups
+
+    @torch.no_grad()
+    def ascent_step(self):
+        grad_norm = self._grad_norm()
+        for group in self.param_groups:
+            scale = group["rho"] / (grad_norm + 1e-12)
+            for p in group["params"]:
+                if p.grad is None:
+                    continue
+                e_w = p.grad * scale
+                p.add_(e_w)
+                self.state[p]["e_w"] = e_w
+
+    @torch.no_grad()
+    def descent_step(self):
+        for group in self.param_groups:
+            for p in group["params"]:
+                if p.grad is None:
+                    continue
+                p.sub_(self.state[p]["e_w"])
+        self.base_optimizer.step()
+
+    def _grad_norm(self):
+        shared_device = self.param_groups[0]["params"][0].device
+        return torch.norm(torch.stack([
+            p.grad.norm(p=2).to(shared_device)
+            for group in self.param_groups for p in group["params"]
+            if p.grad is not None]), p=2)
+
+
 def main():
     p = argparse.ArgumentParser(description="CIFAR-10/100 with CE/LN/SLN")
     p.add_argument("--dataset", default="cifar10", choices=["cifar10", "cifar100"])
@@ -84,11 +143,26 @@ def main():
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--out-dir", default="runs")
     p.add_argument("--no-amp", action="store_true")
+    # generalization-method combinations (paper comparison table)
+    p.add_argument("--label-smoothing", type=float, default=0.0,
+                   help="label smoothing for CE/LN/SLN (e.g. 0.1)")
+    p.add_argument("--mixup", type=float, default=0.0,
+                   help="mixup alpha; 0 disables (e.g. 1.0)")
+    p.add_argument("--sam", action="store_true",
+                   help="use the SAM optimizer (Foret et al. 2021)")
+    p.add_argument("--sam-rho", type=float, default=0.05)
     args = p.parse_args()
 
+    tags = [args.loss]
+    if args.sam:
+        tags.append("sam")
+    if args.mixup > 0:
+        tags.append(f"mixup{args.mixup}")
+    if args.label_smoothing > 0:
+        tags.append(f"ls{args.label_smoothing}")
     run_dir = os.path.join(
         args.out_dir,
-        f"{args.dataset}_{args.arch}_{args.loss}_seed{args.seed}")
+        f"{args.dataset}_{args.arch}_{'_'.join(tags)}_seed{args.seed}")
     os.makedirs(run_dir, exist_ok=True)
     with open(os.path.join(run_dir, "config.json"), "w") as f:
         json.dump(vars(args), f, indent=2)
@@ -138,7 +212,8 @@ def main():
             return lsoftmax_head(feats_or_logits, target)
         if args.loss == "msoftmax":
             return m_criterion(feats_or_logits, target)
-        return F.cross_entropy(sln_logits(feats_or_logits, gamma, tau), target)
+        return F.cross_entropy(sln_logits(feats_or_logits, gamma, tau), target,
+                               label_smoothing=args.label_smoothing)
 
     m_criterion = MSoftmaxLoss(args.m_margin) if args.loss == "msoftmax" else None
 
@@ -151,9 +226,18 @@ def main():
     params = list(model.parameters())
     if lsoftmax_head is not None:
         params += list(lsoftmax_head.parameters())
-    optimizer = torch.optim.SGD(params, lr=args.lr,
-                                momentum=args.momentum, weight_decay=args.wd)
+    if args.sam:
+        optimizer = SAM(params, torch.optim.SGD, rho=args.sam_rho, lr=args.lr,
+                        momentum=args.momentum, weight_decay=args.wd)
+    else:
+        optimizer = torch.optim.SGD(params, lr=args.lr,
+                                    momentum=args.momentum, weight_decay=args.wd)
     use_amp = not args.no_amp and device.type == "cuda"
+
+    def forward_loss(x, y_a, y_b, lam):
+        with torch.autocast("cuda", dtype=torch.bfloat16, enabled=use_amp):
+            out = model.feature(x) if args.loss == "lsoftmax" else model(x)
+            return lam * criterion(out, y_a) + (1.0 - lam) * criterion(out, y_b)
 
     history = []
     best = 0.0
@@ -165,14 +249,23 @@ def main():
         model.train()
         for x, y in train_loader:
             x, y = x.to(device), y.to(device)
-            with torch.autocast("cuda", dtype=torch.bfloat16, enabled=use_amp):
-                if args.loss == "lsoftmax":
-                    loss = criterion(model.feature(x), y)
-                else:
-                    loss = criterion(model(x), y)
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+            y_a, y_b, lam = y, y, 1.0
+            if args.mixup > 0:
+                x, y_a, y_b, lam = mixup(x, y, args.mixup)
+            if args.sam:
+                loss = forward_loss(x, y_a, y_b, lam)
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.ascent_step()
+                loss = forward_loss(x, y_a, y_b, lam)
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.descent_step()
+            else:
+                loss = forward_loss(x, y_a, y_b, lam)
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
         model.eval()
         test_acc = evaluate(eval_logits, test_loader, device)
         best = max(best, test_acc)
