@@ -86,8 +86,7 @@ loss = head(backbone.feature(images), targets)   # replaces the final linear lay
 > classes so that the transformed logits start in a well-conditioned range:
 > $\tau=0.2$ for CIFAR-10 ($k=10$), $\tau\approx0.08$ for CIFAR-100 ($k=100$),
 > and $\tau=0.2$ for ImageNet-1K and GLUE; on ImageNet the LN endpoint
-> ($\gamma=1$) uses $\tau=0.04$. We use $\gamma=0.7$ throughout, selected on
-> CIFAR-10 and transferred unchanged.
+> ($\gamma=1$) uses $\tau=0.04$. We use $\gamma=0.7$ throughout.
 
 ---
 
@@ -152,13 +151,6 @@ Standalone SLN exceeds every evaluated alternative that does not use SLN
 does not help under the evaluated search. The CE/LN/SLN rows reuse the
 ten-run values above; the other rows use five seeds. Reproduce with the
 `--sam`, `--mixup` and `--label-smoothing` flags of [`cifar/train.py`](cifar/).
-
-<p align="center">
-  <img src="assets/gamma_test_accuracy.png" width="60%">
-</p>
-
-*Effect of the exponent $\gamma$ on CIFAR-10 (ResNet-20) best-test accuracy;
-the sweep peaks at the theory-guided default $\gamma=0.7$.*
 
 ### ImageNet-1K (ResNet, single run)
 
