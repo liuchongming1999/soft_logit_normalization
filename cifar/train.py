@@ -1,4 +1,6 @@
-"""CIFAR-10 / CIFAR-100 training with CE / LN / SLN losses.
+"""Generic CIFAR-10 / CIFAR-100 training with CE / LN / SLN losses.
+
+For current CIFAR-100 manuscript tables, use train_besttest.py and reproduce.py.
 
 Protocol follows He et al. (2016) and the paper's Appendix: 160 epochs,
 batch size 128, SGD with momentum 0.9, learning rate divided by 10 at epochs

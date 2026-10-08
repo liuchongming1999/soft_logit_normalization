@@ -71,13 +71,14 @@ loss = torch.nn.functional.cross_entropy(sln_logits(logits, gamma=0.7, tau=0.2),
 
 `LogitNormalizationLoss(tau=0.04)` is provided as the $\gamma=1$ endpoint.
 
-The same [`sln/losses.py`](sln/losses.py) also ships the margin-based
-baselines compared in the paper, so those comparison rows can be reproduced:
+The package also provides M-Softmax, the original unnormalized L-Softmax
+head, and class-level NormFace/ArcFace/CosFace/Circle implementations. The
+audited CIFAR comparison uses [`cifar/train_besttest.py`](cifar/train_besttest.py):
 
 ```python
 from sln import MSoftmaxLoss, LSoftmaxLoss
 
-m_criterion = MSoftmaxLoss(margin=0.35)          # M-Softmax (logit-level, like CE)
+m_criterion = MSoftmaxLoss(margin=1.0)          # M-Softmax (logit-level, like CE)
 head = LSoftmaxLoss(in_features=256, out_features=10, margin=4)  # L-Softmax
 loss = head(backbone.feature(images), targets)   # replaces the final linear layer
 ```
@@ -86,7 +87,8 @@ loss = head(backbone.feature(images), targets)   # replaces the final linear lay
 > classes so that the transformed logits start in a well-conditioned range:
 > $\tau=0.2$ for CIFAR-10 ($k=10$), $\tau\approx0.08$ for CIFAR-100 ($k=100$),
 > and $\tau=0.2$ for ImageNet-1K and GLUE; on ImageNet the LN endpoint
-> ($\gamma=1$) uses $\tau=0.04$. We use $\gamma=0.7$ throughout.
+> ($\gamma=1$) uses $\tau=0.04$. $\gamma=0.7$ is a practical default informed by the local contraction balance and
+empirical performance; the accuracy-maximizing exponent can depend on the task and recipe.
 
 ---
 
@@ -95,7 +97,8 @@ loss = head(backbone.feature(images), targets)   # replaces the final linear lay
 ```
 sln/            # the core SLN loss (importable, dependency-free except torch)
 toy_example/    # 2D trainable-feature toy experiment + figures/gifs
-cifar/          # CIFAR-10 / CIFAR-100 training (CE / LN / SLN, ResNet-20..110)
+cifar/          # CIFAR training, audited best-test grids, baselines and results
+theory/         # independent multiclass local-dynamics verification
 imagenet/       # ImageNet-1K training (timm-based, ResNet / ViT)
 glue/           # GLUE fine-tuning (BERT / DeBERTa, CE / LN / SLN)
 assets/         # figures used in this README
@@ -105,52 +108,76 @@ Each sub-directory has its own README with exact commands.
 
 ---
 
+## Multiclass dynamics
+
+The multiclass extension resolves radial, class-tangent and common-logit
+directions under balanced, locally concentrated populations with
+regular-simplex class means and direct logit gradient flow. Independent
+float64 checks of the Hessian blocks, variance trajectories and local
+covariance dynamics are provided in [`theory/`](theory/).
+
+```bash
+python theory/verify_multiclass.py
+```
+
 ## Results
 
-### CIFAR-10 / CIFAR-100 (ResNet, best-test accuracy, mean ± std over 10 runs)
+### CIFAR-10 / CIFAR-100
 
-| Model | #Param | Loss | CIFAR-10 | CIFAR-100 |
+Best-test accuracy (%). CIFAR-10 retains the manuscript's ten-run results.
+CIFAR-100 uses five seeds at one configuration selected by their mean
+best-test accuracy from nine configurations per method and backbone depth.
+The reported uncertainty is the sample standard deviation.
+
+| Model | Params (C10/C100) | Loss | CIFAR-10 | CIFAR-100 |
 |---|---|---|---|---|
-| ResNet-20 | 0.27M | CE | 91.81±0.15 | 67.26±0.18 |
-| | | LN | 92.05±0.10 | 67.33±0.16 |
-| | | **SLN** | **92.58±0.08** | **69.75±0.25** |
-| ResNet-32 | 0.46M | CE | 92.40±0.24 | 68.62±0.33 |
-| | | LN | 92.45±0.22 | 68.92±0.42 |
-| | | **SLN** | **93.19±0.17** | **71.41±0.21** |
-| ResNet-56 | 0.86M | CE | 93.07±0.17 | 70.19±0.22 |
-| | | LN | 93.16±0.21 | 70.32±0.19 |
-| | | **SLN** | **93.78±0.18** | **72.76±0.23** |
-| ResNet-110 | 1.73M | CE | 93.64±0.16 | 70.84±0.31 |
-| | | LN | 93.67±0.20 | 71.03±0.20 |
-| | | **SLN** | **94.10±0.09** | **73.64±0.29** |
+| ResNet-20 | 0.27/0.30M | CE | 91.81±0.15 | 69.14±0.22 |
+|  |  | LN | 92.05±0.10 | 69.26±0.21 |
+|  |  | SLN | **92.58±0.08** | **69.55±0.48** |
+| ResNet-32 | 0.47/0.49M | CE | 92.40±0.24 | 70.95±0.34 |
+|  |  | LN | 92.45±0.22 | 70.85±0.21 |
+|  |  | SLN | **93.19±0.17** | **71.40±0.25** |
+| ResNet-56 | 0.86/0.88M | CE | 93.07±0.17 | 72.96±0.45 |
+|  |  | LN | 93.16±0.21 | 72.73±0.25 |
+|  |  | SLN | **93.78±0.18** | **73.10±0.46** |
+| ResNet-110 | 1.73/1.76M | CE | 93.64±0.16 | 73.90±0.30 |
+|  |  | LN | 93.67±0.20 | 73.82±0.22 |
+|  |  | SLN | **94.10±0.09** | **73.90±0.27** |
 
-The advantage is particularly pronounced on CIFAR-100, where SLN exceeds the
-stronger of CE and LN by 2.42–2.61 pp across all four depths. A ResNet-20
-trained with SLN matches a ResNet-56 (~3× parameters) trained with CE/LN;
-likewise ResNet-32+SLN approaches or exceeds ResNet-110+CE/LN. Reproduce with
-[`cifar/train.py`](cifar/).
+In this search, SLN's CIFAR-100 mean exceeds the stronger endpoint by 0.29,
+0.46 and 0.14 percentage points for ResNet-20, -32 and -56, respectively.
+ResNet-110 with SLN and CE both round to 73.90%. Reproduce these CIFAR-100
+comparisons with [`cifar/reproduce.py`](cifar/reproduce.py); detailed grids
+and seed-wise results are in [`cifar/results/`](cifar/results/).
 
-### Comparison with generalization methods (CIFAR-100, ResNet-20)
+### Comparison with broader methods (CIFAR-100, ResNet-20)
 
-| Method | Best-test accuracy |
+All rows use the same full-training best-test protocol, nine configurations
+and five seeds per configuration. Each method uses its selected shared
+configuration; the optimizer grid and margin/regularization settings are
+listed in [`cifar/README.md`](cifar/README.md).
+
+| Method | Best-test accuracy (%) |
 |---|---|
-| CE | 67.26±0.18 |
-| LN | 67.33±0.16 |
-| Label smoothing + CE | 67.89±0.21 |
-| Mixup + CE | 68.61±0.27 |
-| SAM + CE | 69.04±0.27 |
-| SLN | 69.75±0.25 |
-| Label smoothing + SLN | 68.31±0.34 |
-| Mixup + SLN | 69.93±0.17 |
-| **SAM + SLN** | **70.12±0.18** |
-| M-Softmax | 67.37±0.35 |
-| L-Softmax | 67.75±0.23 |
+| CE | 69.14±0.22 |
+| LN | 69.26±0.21 |
+| SLN | 69.55±0.48 |
+| NormFace | 69.06±0.12 |
+| ArcFace | 68.56±0.17 |
+| CosFace | 68.89±0.30 |
+| Circle Loss | 66.94±0.14 |
+| M-Softmax | 69.64±0.40 |
+| L-Softmax | 50.15±0.65 |
+| Label smoothing + CE | 69.19±0.46 |
+| Label smoothing + SLN | 69.60±0.41 |
+| Mixup + CE | 69.69±0.30 |
+| Mixup + SLN | 70.44±0.09 |
+| SAM + CE | 70.30±0.14 |
+| SAM + SLN | **70.53±0.16** |
 
-Standalone SLN exceeds every evaluated alternative that does not use SLN
-(including SAM+CE); Mixup and SAM further improve SLN, while label smoothing
-does not help under the evaluated search. The CE/LN/SLN rows reuse the
-ten-run values above; the other rows use five seeds. Reproduce with the
-`--sam`, `--mixup` and `--label-smoothing` flags of [`cifar/train.py`](cifar/).
+SAM + SLN reaches 70.53±0.16% and Mixup + SLN reaches 70.44±0.09% in these
+configurations. The fixed-optimizer normalized-head comparison is also
+included in [`cifar/results/`](cifar/results/).
 
 ### ImageNet-1K (ResNet, single run)
 

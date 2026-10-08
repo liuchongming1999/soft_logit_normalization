@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "The package and audited trainer use the same CE/LN/SLN map in fp32 and bf16",
+    "L-Softmax m=1 equals unnormalized bias-free softmax",
+    "m=2/3/4 full-norm angular formula and finite-difference gradient",
+    "L-Softmax exact angular endpoints and zero-feature gradients are finite in fp32/fp64",
+    "SAM restores the unperturbed weights before the SGD update",
+    "Reusable L-Softmax loss, gradients and margin-free inference match the audited trainer",
+    "NormFace, ArcFace, CosFace and class-level Circle match their stated logits and have finite gradients"
+  ],
+  "parameters_cifar100": {
+    "20": 297524,
+    "32": 491956,
+    "56": 880820,
+    "110": 1755764
+  },
+  "lsoftmax_author_schedule": "1000/(1+0.00002*iteration)^45"
+}

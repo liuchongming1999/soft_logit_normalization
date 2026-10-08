@@ -2,8 +2,8 @@
 
 Reference implementation accompanying the paper:
 
-    "Soft Logit Normalization: Decoupling the Radial and Tangential
-     Geometry of Logit Gradients" (NeurIPS 2026 submission).
+    "Soft Logit Normalization: A Geometry-Guided Loss for Class Separation
+     and Variance Contraction".
 
 The SLN loss rescales the logits before the softmax to
 
@@ -26,6 +26,8 @@ from .losses import (
     LSoftmaxLoss,
 )
 
+from .cosine import CosineHead, training_logits
+
 __all__ = [
     "sln_logits",
     "SoftLogitNormalization",
@@ -33,5 +35,7 @@ __all__ = [
     "LogitNormalizationLoss",
     "MSoftmaxLoss",
     "LSoftmaxLoss",
+    "CosineHead",
+    "training_logits",
 ]
-__version__ = "1.0.0"
+__version__ = "1.1.0"

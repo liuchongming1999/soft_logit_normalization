@@ -1,0 +1,23 @@
+{
+  "source_snapshot": "audited CIFAR-100 experiment campaign completed 2026-10-07",
+  "source_sha256": {
+    "train.py": "838d538036eac4c04fdfbfe8c46cff3640407d59e08f7ae99c7c3303869079c9",
+    "cosine_methods.py": "cc1682a53c5816129f89e6e6d5438ce6b06a87ea9539437e4661d982f3051da5",
+    "resnet_cifar.py": "70b659680fcd8962d7888986489d22ddd4284ca5957429090a001da54c240ef2"
+  },
+  "changes_for_public_use": [
+    "local data path",
+    "optional data download",
+    "package imports",
+    "portable grid scheduler",
+    "public result export without server paths"
+  ],
+  "backbone_byte_identical": true,
+  "source_result_sha256": "acb70577a687c717199f73bca372b2090bdca82deee18138f83ae1338ce65a07",
+  "main_manuscript_tables": [
+    2,
+    6,
+    7
+  ],
+  "gamma_sweep_in_main_manuscript": false
+}

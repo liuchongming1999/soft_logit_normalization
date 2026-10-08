@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "soft-logit-normalization"
-version = "1.0.0"
+version = "1.1.0"
 description = "Soft Logit Normalization (SLN): a geometry-guided loss for class separation and variance contraction"
 readme = "README.md"
 license = {text = "MIT"}
