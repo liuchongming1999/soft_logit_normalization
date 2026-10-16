@@ -1,7 +1,7 @@
 # Soft Logit Normalization (SLN)
 
-Official code for the paper **"Soft Logit Normalization: A Geometry-Guided
-Loss for Class Separation and Variance Contraction"** (Chongming Liu,
+Official code for the paper **"Learning Dynamics under Soft Logit Normalization: Class Separation
+and Covariance Contraction"** (Chongming Liu,
 Songting Li, Douglas Zhou).
 
 SLN is a minimal, drop-in loss modification. It rescales the logits before the
@@ -53,7 +53,7 @@ standalone (just copy [`sln/losses.py`](sln/losses.py)).
 import torch
 from sln import SLNLoss
 
-criterion = SLNLoss(gamma=0.7, tau=0.2)   # tau = O(k^(-gamma/2)), k = #classes
+criterion = SLNLoss(gamma=0.7, tau=0.2)   # practical starting defaults
 
 for images, targets in train_loader:
     logits = model(images)                # raw logits
@@ -83,12 +83,18 @@ head = LSoftmaxLoss(in_features=256, out_features=10, margin=4)  # L-Softmax
 loss = head(backbone.feature(images), targets)   # replaces the final linear layer
 ```
 
-> **Choosing $\tau$.** The paper uses $\tau = O(k^{-\gamma/2})$ for $k$
-> classes so that the transformed logits start in a well-conditioned range:
-> $\tau=0.2$ for CIFAR-10 ($k=10$), $\tau\approx0.08$ for CIFAR-100 ($k=100$),
-> and $\tau=0.2$ for ImageNet-1K and GLUE; on ImageNet the LN endpoint
-> ($\gamma=1$) uses $\tau=0.04$. $\gamma=0.7$ is a practical default informed by the local contraction balance and
-empirical performance; the accuracy-maximizing exponent can depend on the task and recipe.
+**Choosing the exponent and temperature.** The practical starting pair is
+$\gamma=0.7$, $\tau=0.2$. The local contraction balance and empirical sweeps
+motivate this default; accuracy-maximizing settings depend on the task and recipe.
+For class-count changes under comparable data distributions, backbone and
+initialization scales, and optimization/training recipes, approximately iid
+initial logit coordinates with comparable second moments give
+$\tau\propto k^{-\gamma/2}$ as an initialization-scale reference. Its constant
+depends on the setting. The CIFAR experiments use $\tau=0.2$ for CIFAR-10 and
+$\tau=0.08$ for CIFAR-100. ImageNet-1K and BERT use the practical SLN starting
+pair $(0.7,0.2)$ under their own recipes; ImageNet LN uses $\tau=0.04$.
+The original CIFAR-10 temperature measurements are archived in
+[`cifar/results/cifar10_temperature_ablation.json`](cifar/results/cifar10_temperature_ablation.json).
 
 ---
 
@@ -98,7 +104,7 @@ empirical performance; the accuracy-maximizing exponent can depend on the task a
 sln/            # the core SLN loss (importable, dependency-free except torch)
 toy_example/    # 2D trainable-feature toy experiment + figures/gifs
 cifar/          # CIFAR training, audited best-test grids, baselines and results
-theory/         # independent multiclass local-dynamics verification
+theory/         # multiclass formulas, population-flow validation and binary orbits
 imagenet/       # ImageNet-1K training (timm-based, ResNet / ViT)
 glue/           # GLUE fine-tuning (BERT / DeBERTa, CE / LN / SLN)
 assets/         # figures used in this README
@@ -120,6 +126,20 @@ covariance dynamics are provided in [`theory/`](theory/).
 python theory/verify_multiclass.py
 ```
 
+The manuscript also directly compares predicted mean separation, covariance
+blocks and CDNV with independently integrated logit particle flows. Archived
+240-case population-flow data and 432-case binary-orbit checks, with numerical
+sources and figure-generation commands, are in
+[`theory/population_flow/`](theory/population_flow/) and
+[`theory/binary_orbits/`](theory/binary_orbits/).
+
+```bash
+python theory/verify_archives.py --recompute-selected
+python theory/population_flow/plot_figures.py
+python theory/binary_orbits/plot_orbits.py
+```
+
+
 ## Results
 
 ### CIFAR-10 / CIFAR-100
@@ -140,7 +160,7 @@ The reported uncertainty is the sample standard deviation.
 | ResNet-56 | 0.86/0.88M | CE | 93.07±0.17 | 72.96±0.45 |
 |  |  | LN | 93.16±0.21 | 72.73±0.25 |
 |  |  | SLN | **93.78±0.18** | **73.10±0.46** |
-| ResNet-110 | 1.73/1.76M | CE | 93.64±0.16 | 73.90±0.30 |
+| ResNet-110 | 1.73/1.76M | CE | 93.64±0.16 | **73.90±0.30** |
 |  |  | LN | 93.67±0.20 | 73.82±0.22 |
 |  |  | SLN | **94.10±0.09** | **73.90±0.27** |
 
@@ -193,9 +213,10 @@ included in [`cifar/results/`](cifar/results/).
 | | | LN | 79.9 | 93.2 |
 | | | **SLN** | **81.0** | **95.5** |
 
-SLN attains the highest top-1 and top-5 accuracy at every evaluated depth;
-ResNet-50+SLN (79.2%) already surpasses the much larger ResNet-152+CE
-(78.9%). Reproduce with [`imagenet/`](imagenet/).
+In these single-run validation comparisons, SLN records the highest top-1 and
+top-5 accuracies at each reported depth. ResNet-50+SLN reaches 79.2% top-1,
+compared with 78.9% for ResNet-152+CE in these runs. The training entry point is
+provided in [`imagenet/`](imagenet/).
 
 <p align="center">
   <img src="assets/imagenet_result.png" width="90%">
@@ -212,8 +233,9 @@ ResNet-50+SLN (79.2%) already surpasses the much larger ResNet-152+CE
 | | LN | 86.5/86.1 | 88.8 | 92.6 | 93.2 | 62.7 | 90.2 | 73.9 | 84.2 |
 | | **SLN** | 86.8/86.6 | 88.9 | 92.7 | 94.0 | 64.7 | 91.5 | 74.7 | **85.0** |
 
-BERT-BASE+SLN reaches the average of BERT-LARGE (~3× parameters) trained with
-CE/LN. Reproduce with [`glue/`](glue/).
+Under the stated learning-rate search, BERT-BASE+SLN has an average selected
+development score of 83.8, approaching BERT-LARGE+CE at 84.0, using 110M rather
+than 340M parameters. The fine-tuning entry point is in [`glue/`](glue/).
 
 ### Representation geometry (CIFAR-10, ResNet-20, epoch 160, 10 seeds)
 
@@ -229,8 +251,13 @@ CE/LN. Reproduce with [`glue/`](glue/).
 </p>
 
 *Evolution of the representation metrics over training (mean ± std over ten
-seeds). SLN produces the tightest within-class clouds relative to class-mean
-separation throughout training.*
+seeds). These are supplementary empirical measurements under method-specific
+settings: CE/LN use learning rate 0.1 and weight decay 1e-4; SLN uses learning
+rate 0.01 and weight decay 5e-3. LN/SLN use tau=0.2, and SLN uses gamma=0.7.
+The probe is a fixed stratified subset of 2,000 CIFAR-10 training images. At
+epoch 160, SLN has the lowest reported NC1 and intra/inter ratio under these
+configurations. Direct tests of the conditional population-logit predictions
+are provided by the separate controlled particle-flow experiments above.*
 
 ---
 
@@ -240,8 +267,8 @@ If you find this code useful, please cite:
 
 ```bibtex
 @article{liu2026soft,
-  title  = {Soft Logit Normalization: A Geometry-Guided Loss for Class
-            Separation and Variance Contraction},
+  title  = {Learning Dynamics under Soft Logit Normalization: Class
+            Separation and Covariance Contraction},
   author = {Liu, Chongming and Li, Songting and Zhou, Douglas},
   year   = {2026}
 }

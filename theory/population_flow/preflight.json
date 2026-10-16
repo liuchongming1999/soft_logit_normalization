@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "gradient_fd_max": 9.184337318446367e-11,
+  "hessian_fd_max": 2.4444002377776997e-11,
+  "center_formula_max": 3.7470027081099033e-16,
+  "moment_fd_max": 8.431224468585796e-13,
+  "exact_symmetry_max": 1.3322676295501878e-15,
+  "closed_vs_ode_max_log_error": 4.141931242429564e-11,
+  "dtype": "float64",
+  "seed": 20261016
+}

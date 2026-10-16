@@ -14,3 +14,8 @@ The complete configuration indices match `../protocol.py`. Regenerate the
 training outputs using `../reproduce.py`, then aggregate with `../summarize.py`.
 The fixed-optimizer panel uses configuration index 2 for CE/LN/SLN and
 index 3 for the four normalized-head objectives.
+
+`cifar10_temperature_ablation.json` records the original CIFAR-10 temperature
+ablation restored to Appendix C.3. It uses method-specific optimizer settings,
+SLN gamma=0.7, and the original reported means/standard deviations. Its retained
+caption does not specify a separate run count; no count is inferred.

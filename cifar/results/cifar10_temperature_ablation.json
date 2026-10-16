@@ -1,0 +1,83 @@
+{
+  "dataset": "CIFAR-10",
+  "model": "ResNet-20",
+  "reporting": "best-test accuracy percent; original reported mean and standard deviation",
+  "temperatures": [
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.0
+  ],
+  "gamma_sln": 0.7,
+  "optimizer": "method-specific CIFAR-10 settings; see manuscript Appendix C.1",
+  "original_ablation_run_count": "not separately specified in the retained original caption",
+  "results": {
+    "CE": [
+      {
+        "mean": 90.78,
+        "sd": 0.28
+      },
+      {
+        "mean": 91.11,
+        "sd": 0.25
+      },
+      {
+        "mean": 91.34,
+        "sd": 0.21
+      },
+      {
+        "mean": 91.77,
+        "sd": 0.23
+      },
+      {
+        "mean": 91.81,
+        "sd": 0.15
+      }
+    ],
+    "LN": [
+      {
+        "mean": 91.94,
+        "sd": 0.13
+      },
+      {
+        "mean": 92.01,
+        "sd": 0.1
+      },
+      {
+        "mean": 91.85,
+        "sd": 0.15
+      },
+      {
+        "mean": 91.78,
+        "sd": 0.09
+      },
+      {
+        "mean": 91.52,
+        "sd": 0.33
+      }
+    ],
+    "SLN": [
+      {
+        "mean": 92.3,
+        "sd": 0.12
+      },
+      {
+        "mean": 92.58,
+        "sd": 0.08
+      },
+      {
+        "mean": 92.24,
+        "sd": 0.13
+      },
+      {
+        "mean": 92.19,
+        "sd": 0.22
+      },
+      {
+        "mean": 91.77,
+        "sd": 0.12
+      }
+    ]
+  }
+}

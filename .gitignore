@@ -31,3 +31,12 @@ config.json
 # os / editor
 .DS_Store
 *.swp
+
+# Frozen numerical archives for the manuscript's theory validation
+!theory/population_flow/results/*.npz
+!theory/population_flow/summary.json
+!theory/binary_orbits/trajectories.npz
+!theory/binary_orbits/summary.json
+theory/population_flow/figures/
+theory/binary_orbits/figures/
+theory/population_flow/figure_provenance.json

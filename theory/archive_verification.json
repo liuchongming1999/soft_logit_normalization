@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "population_cases": 240,
+  "binary_orbit_cases": 432,
+  "symmetric_moment_groups": 48,
+  "regenerated_population_cases": [
+    "005_baseline_k2_g0_tau1_r0.01_s0_dt0.05",
+    "065_baseline_k3_g0.7_tau1_r0.01_s0_dt0.05",
+    "115_baseline_k10_g1_tau1_r0.01_s0_dt0.05"
+  ],
+  "binary_invariant_max_relative_drift": 2.446089997221179e-10,
+  "new_neural_network_training": false
+}

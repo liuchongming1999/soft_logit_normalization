@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cases": 48,
+  "gradient_autograd_max": 4.440892098500626e-16,
+  "hessian_autograd_max": 8.326672684688674e-16,
+  "device": "CPU",
+  "dtype": "float64",
+  "host": "5090",
+  "source_sha256": "7d02b2c4d60320c93e2bf4dd6ae1c0826fd80eb84cd8b62b6fa55bd2dc9ab208"
+}

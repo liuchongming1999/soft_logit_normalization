@@ -1,0 +1,8 @@
+{
+  "symmetric_population_groups": 48,
+  "states_per_group": 151,
+  "points_per_group": 6,
+  "max_relative_second_moment_transport_error": 1.4679777393666882e-09,
+  "max_absolute_common_coordinate_mean": 1.1102230246251565e-16,
+  "reused_existing_trajectories": true
+}
