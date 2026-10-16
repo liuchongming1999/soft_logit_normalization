@@ -1,6 +1,6 @@
 # Soft Logit Normalization (SLN)
 
-Official code for the paper **"Learning Dynamics under Soft Logit Normalization: Class Separation
+Official code for the paper **"Learning Dynamics under a Normalized Classification Loss: Class Separation
 and Covariance Contraction"** (Chongming Liu,
 Songting Li, Douglas Zhou).
 
@@ -267,7 +267,7 @@ If you find this code useful, please cite:
 
 ```bibtex
 @article{liu2026soft,
-  title  = {Learning Dynamics under Soft Logit Normalization: Class
+  title  = {Learning Dynamics under a Normalized Classification Loss: Class
             Separation and Covariance Contraction},
   author = {Liu, Chongming and Li, Songting and Zhou, Douglas},
   year   = {2026}
