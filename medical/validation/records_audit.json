@@ -1,0 +1,10 @@
+{
+  "table4_entries": 150,
+  "unique_table4_predictions": 125,
+  "table4_settings": 30,
+  "diagnostic_runs": 20,
+  "paired_comparisons": 24,
+  "original_metrics_match": true,
+  "selection_rule": "locked validation AUC",
+  "test_used_for_selection": false
+}

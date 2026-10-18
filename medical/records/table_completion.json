@@ -1,0 +1,4163 @@
+{
+  "fixed_cbce": [
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s0",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 0,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s1",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 1,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s2",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 2,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s3",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 3,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s4",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 4,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s0",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 0,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s1",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 1,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s2",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 2,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s3",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 3,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s4",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 4,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pathmnist_cbce_p0p999_s0",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 0,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pathmnist_cbce_p0p999_s1",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 1,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pathmnist_cbce_p0p999_s2",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 2,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pathmnist_cbce_p0p999_s3",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 3,
+      "role": "fixed_cbce"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pathmnist_cbce_p0p999_s4",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 4,
+      "role": "fixed_cbce"
+    }
+  ],
+  "selected_focal": [
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "pathmnist_focal_s0",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 0,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "pathmnist_focal_s1",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 1,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "pathmnist_focal_s2",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 2,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "pathmnist_focal_s3",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 3,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "pathmnist_focal_s4",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 4,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_bloodmnist_focal_q3_s0",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 0,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_bloodmnist_focal_q3_s1",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 1,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_bloodmnist_focal_q3_s2",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 2,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_bloodmnist_focal_q3_s3",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 3,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_bloodmnist_focal_q3_s4",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 4,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_focal_q1_s0",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 0,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_focal_q1_s1",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 1,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_focal_q1_s2",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 2,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_focal_q1_s3",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 3,
+      "role": "selected_focal"
+    },
+    {
+      "result_path": "original_archive/result.json",
+      "run_id": "confirm_pneumoniamnist_focal_q1_s4",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 4,
+      "role": "selected_focal"
+    }
+  ],
+  "selection": {
+    "selection": "seed0 validation AUC; lower exponent on exact ties",
+    "locked_at": 1792240569.6945884,
+    "candidates": [
+      {
+        "dataset": "pathmnist",
+        "q": 2.0,
+        "val_auc": 0.9998407024149368,
+        "val_acc": 0.9884046381447421,
+        "result_path": "original_archive/result.json",
+        "reused": true
+      },
+      {
+        "dataset": "bloodmnist",
+        "q": 2.0,
+        "val_auc": 0.9985262795467279,
+        "val_acc": 0.9649532710280374,
+        "result_path": "original_archive/result.json",
+        "reused": true
+      },
+      {
+        "dataset": "pneumoniamnist",
+        "q": 2.0,
+        "val_auc": 0.9962296486718081,
+        "val_acc": 0.9694656488549618,
+        "result_path": "original_archive/result.json",
+        "reused": true
+      },
+      {
+        "dataset": "pathmnist",
+        "q": 1.0,
+        "val_auc": 0.99982549026487,
+        "val_acc": 0.9873050779688125,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      },
+      {
+        "dataset": "pathmnist",
+        "q": 3.0,
+        "val_auc": 0.9998087852759076,
+        "val_acc": 0.9868052778888444,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      },
+      {
+        "dataset": "bloodmnist",
+        "q": 1.0,
+        "val_auc": 0.9986443832638234,
+        "val_acc": 0.9626168224299065,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      },
+      {
+        "dataset": "bloodmnist",
+        "q": 3.0,
+        "val_auc": 0.9986785899471677,
+        "val_acc": 0.9626168224299065,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      },
+      {
+        "dataset": "pneumoniamnist",
+        "q": 1.0,
+        "val_auc": 0.9964962391697609,
+        "val_acc": 0.9751908396946565,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      },
+      {
+        "dataset": "pneumoniamnist",
+        "q": 3.0,
+        "val_auc": 0.9962106064933829,
+        "val_acc": 0.9255725190839694,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      }
+    ],
+    "selected": [
+      {
+        "dataset": "pathmnist",
+        "q": 2.0,
+        "val_auc": 0.9998407024149368,
+        "val_acc": 0.9884046381447421,
+        "result_path": "original_archive/result.json",
+        "reused": true
+      },
+      {
+        "dataset": "bloodmnist",
+        "q": 3.0,
+        "val_auc": 0.9986785899471677,
+        "val_acc": 0.9626168224299065,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      },
+      {
+        "dataset": "pneumoniamnist",
+        "q": 1.0,
+        "val_auc": 0.9964962391697609,
+        "val_acc": 0.9751908396946565,
+        "result_path": "original_archive/result.json",
+        "reused": false
+      }
+    ]
+  },
+  "results": {
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/fixed_bloodmnist_cbce_p0p999_s0/result.json": {
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s0",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 0,
+      "epochs": 100,
+      "best_epoch": 45,
+      "metrics": {
+        "train": {
+          "auc": 0.9999998343552804,
+          "acc": 0.9994146667781587
+        },
+        "val": {
+          "auc": 0.9983436319561872,
+          "acc": 0.9661214953271028
+        },
+        "test": {
+          "auc": 0.9965958997788081,
+          "acc": 0.9535223618824905
+        }
+      },
+      "initial_state_sha256": "ebfb9e74d64985f775ee0ffeacce728ca9e0417f7dac9b410c70129c22ee3e6b",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 25.478196620941162,
+      "epoch_seconds_median": 0.7635030327364802,
+      "last10_epoch_seconds_median": 0.7639431012794375,
+      "completed_at": 1792239999.99963,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9983436319561872,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "fixed_bloodmnist_cbce_p0p999_s0",
+        "dataset": "bloodmnist",
+        "method": "cbce",
+        "seed": 0,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "ebfb9e74d64985f775ee0ffeacce728ca9e0417f7dac9b410c70129c22ee3e6b",
+        "order_seed": 1000003,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.2436130396103835,
+          0.8040652449698932,
+          1.0771284595183963,
+          0.8215888787108709,
+          1.246397994797976,
+          1.132823995408466,
+          0.7901511316531689,
+          0.884231255330845
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/fixed_bloodmnist_cbce_p0p999_s1/result.json": {
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s1",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 1,
+      "epochs": 100,
+      "best_epoch": 94,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9984726473383745,
+          "acc": 0.9632009345794392
+        },
+        "test": {
+          "auc": 0.9977232384458781,
+          "acc": 0.95703010815551
+        }
+      },
+      "initial_state_sha256": "233ebd07729476fc3ea3b82327247057ef7518d3af70f50f63525bb50d11a3d3",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 105.38079690933228,
+      "epoch_seconds_median": 0.7699284721165895,
+      "last10_epoch_seconds_median": 0.7578175365924835,
+      "completed_at": 1792240080.003229,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9984726473383745,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "fixed_bloodmnist_cbce_p0p999_s1",
+        "dataset": "bloodmnist",
+        "method": "cbce",
+        "seed": 1,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "233ebd07729476fc3ea3b82327247057ef7518d3af70f50f63525bb50d11a3d3",
+        "order_seed": 1000004,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.2436130396103835,
+          0.8040652449698932,
+          1.0771284595183963,
+          0.8215888787108709,
+          1.246397994797976,
+          1.132823995408466,
+          0.7901511316531689,
+          0.884231255330845
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "7",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/fixed_bloodmnist_cbce_p0p999_s2/result.json": {
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s2",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 2,
+      "epochs": 100,
+      "best_epoch": 91,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9986609797671991,
+          "acc": 0.9626168224299065
+        },
+        "test": {
+          "auc": 0.9975583081205366,
+          "acc": 0.954983922829582
+        }
+      },
+      "initial_state_sha256": "7c98303f7520d67e919eb53f051c77450d13794b5fd35d0cb63430b2fde87566",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 104.28299689292908,
+      "epoch_seconds_median": 0.7736219242215157,
+      "last10_epoch_seconds_median": 0.7754019917920232,
+      "completed_at": 1792240107.031412,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9986609797671991,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "fixed_bloodmnist_cbce_p0p999_s2",
+        "dataset": "bloodmnist",
+        "method": "cbce",
+        "seed": 2,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "7c98303f7520d67e919eb53f051c77450d13794b5fd35d0cb63430b2fde87566",
+        "order_seed": 1000005,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.2436130396103835,
+          0.8040652449698932,
+          1.0771284595183963,
+          0.8215888787108709,
+          1.246397994797976,
+          1.132823995408466,
+          0.7901511316531689,
+          0.884231255330845
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/fixed_bloodmnist_cbce_p0p999_s3/result.json": {
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s3",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 3,
+      "epochs": 100,
+      "best_epoch": 87,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9985531120966451,
+          "acc": 0.9608644859813084
+        },
+        "test": {
+          "auc": 0.9975768208790519,
+          "acc": 0.9576147325343467
+        }
+      },
+      "initial_state_sha256": "7e09d1be82c107406a550e1f774750d15a7ae15cd84c6fc719bfe4ea3c9cfae2",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 102.02689027786255,
+      "epoch_seconds_median": 0.75667436234653,
+      "last10_epoch_seconds_median": 0.7532339189201593,
+      "completed_at": 1792240131.135244,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9985531120966451,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "fixed_bloodmnist_cbce_p0p999_s3",
+        "dataset": "bloodmnist",
+        "method": "cbce",
+        "seed": 3,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "7e09d1be82c107406a550e1f774750d15a7ae15cd84c6fc719bfe4ea3c9cfae2",
+        "order_seed": 1000006,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.2436130396103835,
+          0.8040652449698932,
+          1.0771284595183963,
+          0.8215888787108709,
+          1.246397994797976,
+          1.132823995408466,
+          0.7901511316531689,
+          0.884231255330845
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "5",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/fixed_bloodmnist_cbce_p0p999_s4/result.json": {
+      "run_id": "fixed_bloodmnist_cbce_p0p999_s4",
+      "dataset": "bloodmnist",
+      "method": "cbce",
+      "seed": 4,
+      "epochs": 100,
+      "best_epoch": 84,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9984625203827278,
+          "acc": 0.9626168224299065
+        },
+        "test": {
+          "auc": 0.9975428289920178,
+          "acc": 0.9573224203449284
+        }
+      },
+      "initial_state_sha256": "ea884fab57caa7895b9e524548f8a31ecb02c5467623a93f32ada09f0c24a5a3",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 101.82243251800537,
+      "epoch_seconds_median": 0.7529360633343458,
+      "last10_epoch_seconds_median": 0.7532804161310196,
+      "completed_at": 1792240132.209843,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9984625203827278,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "fixed_bloodmnist_cbce_p0p999_s4",
+        "dataset": "bloodmnist",
+        "method": "cbce",
+        "seed": 4,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "ea884fab57caa7895b9e524548f8a31ecb02c5467623a93f32ada09f0c24a5a3",
+        "order_seed": 1000007,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.2436130396103835,
+          0.8040652449698932,
+          1.0771284595183963,
+          0.8215888787108709,
+          1.246397994797976,
+          1.132823995408466,
+          0.7901511316531689,
+          0.884231255330845
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "4",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pneumoniamnist_cbce_p0p999_s0/result.json": {
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s0",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 0,
+      "epochs": 100,
+      "best_epoch": 6,
+      "metrics": {
+        "train": {
+          "auc": 0.9991840566412274,
+          "acc": 0.9868309260832625
+        },
+        "val": {
+          "auc": 0.9965914500618871,
+          "acc": 0.9751908396946565
+        },
+        "test": {
+          "auc": 0.956744466359851,
+          "acc": 0.8573717948717948
+        }
+      },
+      "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 22.746204376220703,
+      "epoch_seconds_median": 0.2947963001206517,
+      "last10_epoch_seconds_median": 0.2949052592739463,
+      "completed_at": 1792204368.7590196,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9965914500618871,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_cbce_p0p999_s0",
+        "dataset": "pneumoniamnist",
+        "method": "cbce",
+        "seed": 0,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+        "order_seed": 1000003,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.159309491726181,
+          0.840690508273819
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pneumoniamnist_cbce_p0p999_s1/result.json": {
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s1",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 1,
+      "epochs": 100,
+      "best_epoch": 35,
+      "metrics": {
+        "train": {
+          "auc": 0.9999964636953536,
+          "acc": 0.9921410365335599
+        },
+        "val": {
+          "auc": 0.995772636389603,
+          "acc": 0.9522900763358778
+        },
+        "test": {
+          "auc": 0.9576923076923076,
+          "acc": 0.905448717948718
+        }
+      },
+      "initial_state_sha256": "75e3534c92dba2c1954b3409d2da863893443adfa3c1933ae56ed4f4caee3bf5",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 54.76344299316406,
+      "epoch_seconds_median": 0.2952687982469797,
+      "last10_epoch_seconds_median": 0.2953902119770646,
+      "completed_at": 1792204427.9630551,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.995772636389603,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_cbce_p0p999_s1",
+        "dataset": "pneumoniamnist",
+        "method": "cbce",
+        "seed": 1,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "75e3534c92dba2c1954b3409d2da863893443adfa3c1933ae56ed4f4caee3bf5",
+        "order_seed": 1000004,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.159309491726181,
+          0.840690508273819
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "4",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pneumoniamnist_cbce_p0p999_s2/result.json": {
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s2",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 2,
+      "epochs": 100,
+      "best_epoch": 14,
+      "metrics": {
+        "train": {
+          "auc": 0.9999875050569156,
+          "acc": 0.9980883602378929
+        },
+        "val": {
+          "auc": 0.997391221555746,
+          "acc": 0.9656488549618321
+        },
+        "test": {
+          "auc": 0.9437869822485208,
+          "acc": 0.8269230769230769
+        }
+      },
+      "initial_state_sha256": "47419cabb8f18ed8ae6b529ebfd1fdb7d0dfb53dc9d84abdfd3004dd07c26c72",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 55.84071969985962,
+      "epoch_seconds_median": 0.30317622143775225,
+      "last10_epoch_seconds_median": 0.3032569931820035,
+      "completed_at": 1792204429.1406417,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.997391221555746,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_cbce_p0p999_s2",
+        "dataset": "pneumoniamnist",
+        "method": "cbce",
+        "seed": 2,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "47419cabb8f18ed8ae6b529ebfd1fdb7d0dfb53dc9d84abdfd3004dd07c26c72",
+        "order_seed": 1000005,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.159309491726181,
+          0.840690508273819
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pneumoniamnist_cbce_p0p999_s3/result.json": {
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s3",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 3,
+      "epochs": 100,
+      "best_epoch": 22,
+      "metrics": {
+        "train": {
+          "auc": 0.999999764246357,
+          "acc": 0.9997875955819882
+        },
+        "val": {
+          "auc": 0.995772636389603,
+          "acc": 0.9675572519083969
+        },
+        "test": {
+          "auc": 0.9222715318869165,
+          "acc": 0.842948717948718
+        }
+      },
+      "initial_state_sha256": "d8c045966c89c381cff5741ecbd865b3e7db57b0459f3e541d7060d43b335784",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 54.73604989051819,
+      "epoch_seconds_median": 0.2953539276495576,
+      "last10_epoch_seconds_median": 0.2953972388058901,
+      "completed_at": 1792204488.1094296,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.995772636389603,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_cbce_p0p999_s3",
+        "dataset": "pneumoniamnist",
+        "method": "cbce",
+        "seed": 3,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "d8c045966c89c381cff5741ecbd865b3e7db57b0459f3e541d7060d43b335784",
+        "order_seed": 1000006,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.159309491726181,
+          0.840690508273819
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "4",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pneumoniamnist_cbce_p0p999_s4/result.json": {
+      "run_id": "confirm_pneumoniamnist_cbce_p0p999_s4",
+      "dataset": "pneumoniamnist",
+      "method": "cbce",
+      "seed": 4,
+      "epochs": 100,
+      "best_epoch": 48,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9965533657050366,
+          "acc": 0.9675572519083969
+        },
+        "test": {
+          "auc": 0.9420885382423844,
+          "acc": 0.875
+        }
+      },
+      "initial_state_sha256": "27cb187ceef5cbcba8f3678b53267cc6924610ff8fbc34e4f61c27a89f8ac282",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 55.95003652572632,
+      "epoch_seconds_median": 0.3025943087413907,
+      "last10_epoch_seconds_median": 0.30258938018232584,
+      "completed_at": 1792204489.4922872,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9965533657050366,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_cbce_p0p999_s4",
+        "dataset": "pneumoniamnist",
+        "method": "cbce",
+        "seed": 4,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "27cb187ceef5cbcba8f3678b53267cc6924610ff8fbc34e4f61c27a89f8ac282",
+        "order_seed": 1000007,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          1.159309491726181,
+          0.840690508273819
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pathmnist_cbce_p0p999_s0/result.json": {
+      "run_id": "confirm_pathmnist_cbce_p0p999_s0",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 0,
+      "epochs": 100,
+      "best_epoch": 83,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9999888883950397
+        },
+        "val": {
+          "auc": 0.9998792131361688,
+          "acc": 0.9891043582566973
+        },
+        "test": {
+          "auc": 0.978514984121213,
+          "acc": 0.9048746518105849
+        }
+      },
+      "initial_state_sha256": "b3268d9c141b05ae41bc7365aff986b0811da4510ee652c88c26f49f943c759d",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 28.316479921340942,
+      "epoch_seconds_median": 5.578102835454047,
+      "last10_epoch_seconds_median": 5.576843951828778,
+      "completed_at": 1792206193.3598666,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9998792131361688,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pathmnist_cbce_p0p999_s0",
+        "dataset": "pathmnist",
+        "method": "cbce",
+        "seed": 0,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "b3268d9c141b05ae41bc7365aff986b0811da4510ee652c88c26f49f943c759d",
+        "order_seed": 1000003,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          0.999972137817957,
+          0.9999607814693314,
+          0.99991846339904,
+          0.9999171970314247,
+          1.0002191508911136,
+          0.9998920454216705,
+          1.000261543150967,
+          0.9999692063181975,
+          0.9998894745002992
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          9366,
+          9509,
+          10360,
+          10401,
+          8006,
+          12182,
+          7886,
+          9401,
+          12885
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "4",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pathmnist_cbce_p0p999_s1/result.json": {
+      "run_id": "confirm_pathmnist_cbce_p0p999_s1",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 1,
+      "epochs": 100,
+      "best_epoch": 79,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9999888883950397
+        },
+        "val": {
+          "auc": 0.9998526107006731,
+          "acc": 0.9881047580967613
+        },
+        "test": {
+          "auc": 0.987913044522219,
+          "acc": 0.9030640668523677
+        }
+      },
+      "initial_state_sha256": "3c2c6781bab713c0cef974910502548ada354f3976670a10d459605e5a30ad0b",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 607.6686418056488,
+      "epoch_seconds_median": 5.736776332370937,
+      "last10_epoch_seconds_median": 5.738297841511667,
+      "completed_at": 1792206784.7803001,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9998526107006731,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pathmnist_cbce_p0p999_s1",
+        "dataset": "pathmnist",
+        "method": "cbce",
+        "seed": 1,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "3c2c6781bab713c0cef974910502548ada354f3976670a10d459605e5a30ad0b",
+        "order_seed": 1000004,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          0.999972137817957,
+          0.9999607814693314,
+          0.99991846339904,
+          0.9999171970314247,
+          1.0002191508911136,
+          0.9998920454216705,
+          1.000261543150967,
+          0.9999692063181975,
+          0.9998894745002992
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          9366,
+          9509,
+          10360,
+          10401,
+          8006,
+          12182,
+          7886,
+          9401,
+          12885
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pathmnist_cbce_p0p999_s2/result.json": {
+      "run_id": "confirm_pathmnist_cbce_p0p999_s2",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 2,
+      "epochs": 100,
+      "best_epoch": 78,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9999888883950397
+        },
+        "val": {
+          "auc": 0.9998502540379819,
+          "acc": 0.9898040783686526
+        },
+        "test": {
+          "auc": 0.9902657640102327,
+          "acc": 0.9029247910863509
+        }
+      },
+      "initial_state_sha256": "f2e806e15f3b40367824405a42c541fd97efddac76eb3ed4b3ea55da4564f5f3",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 590.4539773464203,
+      "epoch_seconds_median": 5.59435507748276,
+      "last10_epoch_seconds_median": 5.590511117130518,
+      "completed_at": 1792206788.7324815,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9998502540379819,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pathmnist_cbce_p0p999_s2",
+        "dataset": "pathmnist",
+        "method": "cbce",
+        "seed": 2,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "f2e806e15f3b40367824405a42c541fd97efddac76eb3ed4b3ea55da4564f5f3",
+        "order_seed": 1000005,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          0.999972137817957,
+          0.9999607814693314,
+          0.99991846339904,
+          0.9999171970314247,
+          1.0002191508911136,
+          0.9998920454216705,
+          1.000261543150967,
+          0.9999692063181975,
+          0.9998894745002992
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          9366,
+          9509,
+          10360,
+          10401,
+          8006,
+          12182,
+          7886,
+          9401,
+          12885
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "4",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pathmnist_cbce_p0p999_s3/result.json": {
+      "run_id": "confirm_pathmnist_cbce_p0p999_s3",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 3,
+      "epochs": 100,
+      "best_epoch": 59,
+      "metrics": {
+        "train": {
+          "auc": 0.9999999991443494,
+          "acc": 0.9999555535801591
+        },
+        "val": {
+          "auc": 0.9998319155544492,
+          "acc": 0.9880047980807677
+        },
+        "test": {
+          "auc": 0.9858211961859848,
+          "acc": 0.8846796657381616
+        }
+      },
+      "initial_state_sha256": "1a7519aa004ab6e718e8e7825561555e60540bb6ce197b0b460e142acb89daf5",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 596.6528780460358,
+      "epoch_seconds_median": 5.72283552121371,
+      "last10_epoch_seconds_median": 5.724775759503245,
+      "completed_at": 1792207384.7539432,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9998319155544492,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pathmnist_cbce_p0p999_s3",
+        "dataset": "pathmnist",
+        "method": "cbce",
+        "seed": 3,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "1a7519aa004ab6e718e8e7825561555e60540bb6ce197b0b460e142acb89daf5",
+        "order_seed": 1000006,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          0.999972137817957,
+          0.9999607814693314,
+          0.99991846339904,
+          0.9999171970314247,
+          1.0002191508911136,
+          0.9998920454216705,
+          1.000261543150967,
+          0.9999692063181975,
+          0.9998894745002992
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          9366,
+          9509,
+          10360,
+          10401,
+          8006,
+          12182,
+          7886,
+          9401,
+          12885
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_losses_20261017/runs/confirm_pathmnist_cbce_p0p999_s4/result.json": {
+      "run_id": "confirm_pathmnist_cbce_p0p999_s4",
+      "dataset": "pathmnist",
+      "method": "cbce",
+      "seed": 4,
+      "epochs": 100,
+      "best_epoch": 60,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9999777767900796
+        },
+        "val": {
+          "auc": 0.999858554827214,
+          "acc": 0.9878048780487805
+        },
+        "test": {
+          "auc": 0.9786175491248028,
+          "acc": 0.8928969359331477
+        }
+      },
+      "initial_state_sha256": "132c4181c5187bf4035621152a92908fe33dedeb95242af3d4e0ec5ea5382629",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 583.471250295639,
+      "epoch_seconds_median": 5.590520558878779,
+      "last10_epoch_seconds_median": 5.590727531351149,
+      "completed_at": 1792207377.6779168,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.999858554827214,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pathmnist_cbce_p0p999_s4",
+        "dataset": "pathmnist",
+        "method": "cbce",
+        "seed": 4,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "132c4181c5187bf4035621152a92908fe33dedeb95242af3d4e0ec5ea5382629",
+        "order_seed": 1000007,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": null,
+        "label_smoothing": 0.0,
+        "class_weight": [
+          0.999972137817957,
+          0.9999607814693314,
+          0.99991846339904,
+          0.9999171970314247,
+          1.0002191508911136,
+          0.9998920454216705,
+          1.000261543150967,
+          0.9999692063181975,
+          0.9998894745002992
+        ],
+        "class_balanced_beta": 0.999,
+        "train_class_counts": [
+          9366,
+          9509,
+          10360,
+          10401,
+          8006,
+          12182,
+          7886,
+          9401,
+          12885
+        ],
+        "class_balanced_reduction": "arithmetic mean of per-example weighted CE; class weights normalized to mean 1",
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "4",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_20261016/runs/pathmnist_focal_s0/result.json": {
+      "run_id": "pathmnist_focal_s0",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 0,
+      "epochs": 100,
+      "best_epoch": 98,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9999888883950397
+        },
+        "val": {
+          "auc": 0.9998407024149368,
+          "acc": 0.9884046381447421
+        },
+        "test": {
+          "auc": 0.9876928771012194,
+          "acc": 0.9069637883008357
+        }
+      },
+      "initial_state_sha256": "b3268d9c141b05ae41bc7365aff986b0811da4510ee652c88c26f49f943c759d",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 591.7918391227722,
+      "epoch_seconds_median": 5.664511861279607,
+      "last10_epoch_seconds_median": 5.665190467610955,
+      "completed_at": 1792160752.5501802,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "test_used_for_selection": false,
+      "config": {
+        "run_id": "pathmnist_focal_s0",
+        "dataset": "pathmnist",
+        "method": "focal",
+        "seed": 0,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "b3268d9c141b05ae41bc7365aff986b0811da4510ee652c88c26f49f943c759d",
+        "order_seed": 1000003,
+        "gamma": 0,
+        "tau": 1.0,
+        "focal_exponent": 2.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_20261016/runs/pathmnist_focal_s1/result.json": {
+      "run_id": "pathmnist_focal_s1",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 1,
+      "epochs": 100,
+      "best_epoch": 83,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9999888883950397
+        },
+        "val": {
+          "auc": 0.9998644239183664,
+          "acc": 0.9883046781287484
+        },
+        "test": {
+          "auc": 0.9854409987451133,
+          "acc": 0.887883008356546
+        }
+      },
+      "initial_state_sha256": "3c2c6781bab713c0cef974910502548ada354f3976670a10d459605e5a30ad0b",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 588.2194521427155,
+      "epoch_seconds_median": 5.634548985399306,
+      "last10_epoch_seconds_median": 5.636718498542905,
+      "completed_at": 1792161410.3731396,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "test_used_for_selection": false,
+      "config": {
+        "run_id": "pathmnist_focal_s1",
+        "dataset": "pathmnist",
+        "method": "focal",
+        "seed": 1,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "3c2c6781bab713c0cef974910502548ada354f3976670a10d459605e5a30ad0b",
+        "order_seed": 1000004,
+        "gamma": 0,
+        "tau": 1.0,
+        "focal_exponent": 2.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_20261016/runs/pathmnist_focal_s2/result.json": {
+      "run_id": "pathmnist_focal_s2",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 2,
+      "epochs": 100,
+      "best_epoch": 60,
+      "metrics": {
+        "train": {
+          "auc": 0.9999999890571633,
+          "acc": 0.9999666651851193
+        },
+        "val": {
+          "auc": 0.999791922955734,
+          "acc": 0.9858056777289085
+        },
+        "test": {
+          "auc": 0.9902731948546963,
+          "acc": 0.8993036211699165
+        }
+      },
+      "initial_state_sha256": "f2e806e15f3b40367824405a42c541fd97efddac76eb3ed4b3ea55da4564f5f3",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 590.2575051784515,
+      "epoch_seconds_median": 5.645327504724264,
+      "last10_epoch_seconds_median": 5.644987321458757,
+      "completed_at": 1792162064.0800087,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "test_used_for_selection": false,
+      "config": {
+        "run_id": "pathmnist_focal_s2",
+        "dataset": "pathmnist",
+        "method": "focal",
+        "seed": 2,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "f2e806e15f3b40367824405a42c541fd97efddac76eb3ed4b3ea55da4564f5f3",
+        "order_seed": 1000005,
+        "gamma": 0,
+        "tau": 1.0,
+        "focal_exponent": 2.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_20261016/runs/pathmnist_focal_s3/result.json": {
+      "run_id": "pathmnist_focal_s3",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 3,
+      "epochs": 100,
+      "best_epoch": 59,
+      "metrics": {
+        "train": {
+          "auc": 0.9999999893611091,
+          "acc": 0.9999444419751989
+        },
+        "val": {
+          "auc": 0.999838111903147,
+          "acc": 0.9887045181927229
+        },
+        "test": {
+          "auc": 0.9879950775432024,
+          "acc": 0.884958217270195
+        }
+      },
+      "initial_state_sha256": "1a7519aa004ab6e718e8e7825561555e60540bb6ce197b0b460e142acb89daf5",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 601.5976786613464,
+      "epoch_seconds_median": 5.763167588040233,
+      "last10_epoch_seconds_median": 5.764228582382202,
+      "completed_at": 1792162706.8492875,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "test_used_for_selection": false,
+      "config": {
+        "run_id": "pathmnist_focal_s3",
+        "dataset": "pathmnist",
+        "method": "focal",
+        "seed": 3,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "1a7519aa004ab6e718e8e7825561555e60540bb6ce197b0b460e142acb89daf5",
+        "order_seed": 1000006,
+        "gamma": 0,
+        "tau": 1.0,
+        "focal_exponent": 2.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_20261016/runs/pathmnist_focal_s4/result.json": {
+      "run_id": "pathmnist_focal_s4",
+      "dataset": "pathmnist",
+      "method": "focal",
+      "seed": 4,
+      "epochs": 100,
+      "best_epoch": 88,
+      "metrics": {
+        "train": {
+          "auc": 0.9999999996568099,
+          "acc": 0.9999777767900796
+        },
+        "val": {
+          "auc": 0.9998379912575559,
+          "acc": 0.9879048380647741
+        },
+        "test": {
+          "auc": 0.9811242035388652,
+          "acc": 0.9055710306406686
+        }
+      },
+      "initial_state_sha256": "132c4181c5187bf4035621152a92908fe33dedeb95242af3d4e0ec5ea5382629",
+      "parameter_count": 11173449,
+      "total_wall_seconds": 601.533002614975,
+      "epoch_seconds_median": 5.751838036812842,
+      "last10_epoch_seconds_median": 5.750292702578008,
+      "completed_at": 1792163318.4342422,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "test_used_for_selection": false,
+      "config": {
+        "run_id": "pathmnist_focal_s4",
+        "dataset": "pathmnist",
+        "method": "focal",
+        "seed": 4,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 9,
+        "n_channels": 3,
+        "parameter_count": 11173449,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pathmnist",
+          "url": "https://zenodo.org/records/10519652/files/pathmnist.npz?download=1",
+          "md5": "a8b06965200029087d5bd730944a56c1",
+          "bytes": 205615438,
+          "n_samples": {
+            "train": 89996,
+            "val": 10004,
+            "test": 7180
+          },
+          "shapes": {
+            "train": [
+              89996,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              10004,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              7180,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159896.5735488
+        },
+        "initial_state_sha256": "132c4181c5187bf4035621152a92908fe33dedeb95242af3d4e0ec5ea5382629",
+        "order_seed": 1000007,
+        "gamma": 0,
+        "tau": 1.0,
+        "focal_exponent": 2.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "6",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_bloodmnist_focal_q3_s0/result.json": {
+      "run_id": "confirm_bloodmnist_focal_q3_s0",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 0,
+      "epochs": 100,
+      "best_epoch": 78,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9986785899471677,
+          "acc": 0.9626168224299065
+        },
+        "test": {
+          "auc": 0.9974375184058359,
+          "acc": 0.9593686056708565
+        }
+      },
+      "initial_state_sha256": "ebfb9e74d64985f775ee0ffeacce728ca9e0417f7dac9b410c70129c22ee3e6b",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 22.93196129798889,
+      "epoch_seconds_median": 0.7764448495581746,
+      "last10_epoch_seconds_median": 0.7754621040076017,
+      "completed_at": 1792240300.7576025,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9986785899471677,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_bloodmnist_focal_q3_s0",
+        "dataset": "bloodmnist",
+        "method": "focal",
+        "seed": 0,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "ebfb9e74d64985f775ee0ffeacce728ca9e0417f7dac9b410c70129c22ee3e6b",
+        "order_seed": 1000003,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 3.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_bloodmnist_focal_q3_s1/result.json": {
+      "run_id": "confirm_bloodmnist_focal_q3_s1",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 1,
+      "epochs": 100,
+      "best_epoch": 100,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.998494172805775,
+          "acc": 0.9632009345794392
+        },
+        "test": {
+          "auc": 0.9976279671637411,
+          "acc": 0.9584916691026015
+        }
+      },
+      "initial_state_sha256": "233ebd07729476fc3ea3b82327247057ef7518d3af70f50f63525bb50d11a3d3",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 101.18808054924011,
+      "epoch_seconds_median": 0.7551156673580408,
+      "last10_epoch_seconds_median": 0.7557458020746708,
+      "completed_at": 1792240403.755333,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.998494172805775,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_bloodmnist_focal_q3_s1",
+        "dataset": "bloodmnist",
+        "method": "focal",
+        "seed": 1,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "233ebd07729476fc3ea3b82327247057ef7518d3af70f50f63525bb50d11a3d3",
+        "order_seed": 1000004,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 3.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "2",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_bloodmnist_focal_q3_s2/result.json": {
+      "run_id": "confirm_bloodmnist_focal_q3_s2",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 2,
+      "epochs": 100,
+      "best_epoch": 39,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9985122191845784,
+          "acc": 0.967873831775701
+        },
+        "test": {
+          "auc": 0.9973653766927032,
+          "acc": 0.9593686056708565
+        }
+      },
+      "initial_state_sha256": "7c98303f7520d67e919eb53f051c77450d13794b5fd35d0cb63430b2fde87566",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 101.86497664451599,
+      "epoch_seconds_median": 0.7590543925762177,
+      "last10_epoch_seconds_median": 0.7611690787598491,
+      "completed_at": 1792240405.4067938,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9985122191845784,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_bloodmnist_focal_q3_s2",
+        "dataset": "bloodmnist",
+        "method": "focal",
+        "seed": 2,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "7c98303f7520d67e919eb53f051c77450d13794b5fd35d0cb63430b2fde87566",
+        "order_seed": 1000005,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 3.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_bloodmnist_focal_q3_s3/result.json": {
+      "run_id": "confirm_bloodmnist_focal_q3_s3",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 3,
+      "epochs": 100,
+      "best_epoch": 35,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9998327619366167
+        },
+        "val": {
+          "auc": 0.9983117604587404,
+          "acc": 0.959696261682243
+        },
+        "test": {
+          "auc": 0.9969400424483185,
+          "acc": 0.9529377375036538
+        }
+      },
+      "initial_state_sha256": "7e09d1be82c107406a550e1f774750d15a7ae15cd84c6fc719bfe4ea3c9cfae2",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 102.36756372451782,
+      "epoch_seconds_median": 0.76612529437989,
+      "last10_epoch_seconds_median": 0.766011867672205,
+      "completed_at": 1792240509.1909227,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9983117604587404,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_bloodmnist_focal_q3_s3",
+        "dataset": "bloodmnist",
+        "method": "focal",
+        "seed": 3,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "7e09d1be82c107406a550e1f774750d15a7ae15cd84c6fc719bfe4ea3c9cfae2",
+        "order_seed": 1000006,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 3.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "2",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_bloodmnist_focal_q3_s4/result.json": {
+      "run_id": "confirm_bloodmnist_focal_q3_s4",
+      "dataset": "bloodmnist",
+      "method": "focal",
+      "seed": 4,
+      "epochs": 100,
+      "best_epoch": 25,
+      "metrics": {
+        "train": {
+          "auc": 0.9999998749832973,
+          "acc": 0.9992474287147755
+        },
+        "val": {
+          "auc": 0.9983074781877077,
+          "acc": 0.959696261682243
+        },
+        "test": {
+          "auc": 0.9974813485731348,
+          "acc": 0.9596609178602747
+        }
+      },
+      "initial_state_sha256": "ea884fab57caa7895b9e524548f8a31ecb02c5467623a93f32ada09f0c24a5a3",
+      "parameter_count": 11172936,
+      "total_wall_seconds": 101.43416476249695,
+      "epoch_seconds_median": 0.7582726608961821,
+      "last10_epoch_seconds_median": 0.7606264548376203,
+      "completed_at": 1792240509.6469548,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9983074781877077,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_bloodmnist_focal_q3_s4",
+        "dataset": "bloodmnist",
+        "method": "focal",
+        "seed": 4,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 8,
+        "n_channels": 3,
+        "parameter_count": 11172936,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "bloodmnist",
+          "url": "https://zenodo.org/records/10519652/files/bloodmnist.npz?download=1",
+          "md5": "7053d0359d879ad8a5505303e11de1dc",
+          "bytes": 35461855,
+          "n_samples": {
+            "train": 11959,
+            "val": 1712,
+            "test": 3421
+          },
+          "shapes": {
+            "train": [
+              11959,
+              28,
+              28,
+              3
+            ],
+            "val": [
+              1712,
+              28,
+              28,
+              3
+            ],
+            "test": [
+              3421,
+              28,
+              28,
+              3
+            ]
+          },
+          "verified_at": 1792159726.4761012
+        },
+        "initial_state_sha256": "ea884fab57caa7895b9e524548f8a31ecb02c5467623a93f32ada09f0c24a5a3",
+        "order_seed": 1000007,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 3.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          852,
+          2181,
+          1085,
+          2026,
+          849,
+          993,
+          2330,
+          1643
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_pneumoniamnist_focal_q1_s0/result.json": {
+      "run_id": "confirm_pneumoniamnist_focal_q1_s0",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 0,
+      "epochs": 100,
+      "best_epoch": 37,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.996496239169761,
+          "acc": 0.9751908396946565
+        },
+        "test": {
+          "auc": 0.9401435459127767,
+          "acc": 0.8637820512820513
+        }
+      },
+      "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 23.02034592628479,
+      "epoch_seconds_median": 0.3002911200746894,
+      "last10_epoch_seconds_median": 0.295728649944067,
+      "completed_at": 1792240183.7606733,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9964962391697609,
+      "validation_recompute_delta": 1.1102230246251565e-16,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_focal_q1_s0",
+        "dataset": "pneumoniamnist",
+        "method": "focal",
+        "seed": 0,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+        "order_seed": 1000003,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 1.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "2",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_pneumoniamnist_focal_q1_s1/result.json": {
+      "run_id": "confirm_pneumoniamnist_focal_q1_s1",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 1,
+      "epochs": 100,
+      "best_epoch": 48,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9959059316385794,
+          "acc": 0.9713740458015268
+        },
+        "test": {
+          "auc": 0.9269669077361384,
+          "acc": 0.8605769230769231
+        }
+      },
+      "initial_state_sha256": "75e3534c92dba2c1954b3409d2da863893443adfa3c1933ae56ed4f4caee3bf5",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 56.03736877441406,
+      "epoch_seconds_median": 0.2968683373183012,
+      "last10_epoch_seconds_median": 0.2970825647935271,
+      "completed_at": 1792240216.755828,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9959059316385794,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_focal_q1_s1",
+        "dataset": "pneumoniamnist",
+        "method": "focal",
+        "seed": 1,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "75e3534c92dba2c1954b3409d2da863893443adfa3c1933ae56ed4f4caee3bf5",
+        "order_seed": 1000004,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 1.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_pneumoniamnist_focal_q1_s2/result.json": {
+      "run_id": "confirm_pneumoniamnist_focal_q1_s2",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 2,
+      "epochs": 100,
+      "best_epoch": 32,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 0.9985131690739167
+        },
+        "val": {
+          "auc": 0.9959821003522803,
+          "acc": 0.9713740458015268
+        },
+        "test": {
+          "auc": 0.9573142669296516,
+          "acc": 0.8910256410256411
+        }
+      },
+      "initial_state_sha256": "47419cabb8f18ed8ae6b529ebfd1fdb7d0dfb53dc9d84abdfd3004dd07c26c72",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 55.31344246864319,
+      "epoch_seconds_median": 0.3009780738502741,
+      "last10_epoch_seconds_median": 0.30157835502177477,
+      "completed_at": 1792240241.802174,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9959821003522803,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_focal_q1_s2",
+        "dataset": "pneumoniamnist",
+        "method": "focal",
+        "seed": 2,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "47419cabb8f18ed8ae6b529ebfd1fdb7d0dfb53dc9d84abdfd3004dd07c26c72",
+        "order_seed": 1000005,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 1.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "2",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_pneumoniamnist_focal_q1_s3/result.json": {
+      "run_id": "confirm_pneumoniamnist_focal_q1_s3",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 3,
+      "epochs": 100,
+      "best_epoch": 47,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9956202989622012,
+          "acc": 0.9713740458015268
+        },
+        "test": {
+          "auc": 0.9289666885820732,
+          "acc": 0.8365384615384616
+        }
+      },
+      "initial_state_sha256": "d8c045966c89c381cff5741ecbd865b3e7db57b0459f3e541d7060d43b335784",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 55.2652473449707,
+      "epoch_seconds_median": 0.297778052277863,
+      "last10_epoch_seconds_median": 0.2986482782289386,
+      "completed_at": 1792240274.9125679,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9956202989622012,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_focal_q1_s3",
+        "dataset": "pneumoniamnist",
+        "method": "focal",
+        "seed": 3,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "d8c045966c89c381cff5741ecbd865b3e7db57b0459f3e541d7060d43b335784",
+        "order_seed": 1000006,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 1.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "3",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    },
+    "/data/lcm/jorsc_medmnist_adam_table_completion_20261017/runs/confirm_pneumoniamnist_focal_q1_s4/result.json": {
+      "run_id": "confirm_pneumoniamnist_focal_q1_s4",
+      "dataset": "pneumoniamnist",
+      "method": "focal",
+      "seed": 4,
+      "epochs": 100,
+      "best_epoch": 36,
+      "metrics": {
+        "train": {
+          "auc": 1.0,
+          "acc": 1.0
+        },
+        "val": {
+          "auc": 0.9955250880700752,
+          "acc": 0.9675572519083969
+        },
+        "test": {
+          "auc": 0.9465592811746658,
+          "acc": 0.8493589743589743
+        }
+      },
+      "initial_state_sha256": "27cb187ceef5cbcba8f3678b53267cc6924610ff8fbc34e4f61c27a89f8ac282",
+      "parameter_count": 11168706,
+      "total_wall_seconds": 55.220538854599,
+      "epoch_seconds_median": 0.3008940275758505,
+      "last10_epoch_seconds_median": 0.3009389415383339,
+      "completed_at": 1792240299.781218,
+      "smoke_only": false,
+      "selection": "validation_auc",
+      "selection_validation_auc": 0.9955250880700752,
+      "validation_recompute_delta": 0.0,
+      "test_used_for_selection": false,
+      "test_evaluated": true,
+      "config": {
+        "run_id": "confirm_pneumoniamnist_focal_q1_s4",
+        "dataset": "pneumoniamnist",
+        "method": "focal",
+        "seed": 4,
+        "epochs": 100,
+        "smoke_only": false,
+        "backbone": "official MedMNIST ResNet18",
+        "n_classes": 2,
+        "n_channels": 1,
+        "parameter_count": 11168706,
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "batch_size": 128,
+        "milestones": [
+          50,
+          75
+        ],
+        "lr_decay": 0.1,
+        "data_receipt": {
+          "dataset": "pneumoniamnist",
+          "url": "https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1",
+          "md5": "28209eda62fecd6e6a2d98b1501bb15f",
+          "bytes": 4170669,
+          "n_samples": {
+            "train": 4708,
+            "val": 524,
+            "test": 624
+          },
+          "shapes": {
+            "train": [
+              4708,
+              28,
+              28
+            ],
+            "val": [
+              524,
+              28,
+              28
+            ],
+            "test": [
+              624,
+              28,
+              28
+            ]
+          },
+          "verified_at": 1792159701.546766
+        },
+        "initial_state_sha256": "27cb187ceef5cbcba8f3678b53267cc6924610ff8fbc34e4f61c27a89f8ac282",
+        "order_seed": 1000007,
+        "gamma": 0.0,
+        "tau": 1.0,
+        "stage": "confirm",
+        "normalization_epsilon": 1e-08,
+        "focal_exponent": 1.0,
+        "label_smoothing": 0.0,
+        "class_weight": null,
+        "class_balanced_beta": null,
+        "train_class_counts": [
+          1214,
+          3494
+        ],
+        "class_balanced_reduction": null,
+        "training_precision": "float32",
+        "cudnn_allow_tf32": true,
+        "matmul_allow_tf32": false,
+        "cudnn_benchmark": true,
+        "memory_format": "channels_last",
+        "data_loading": "official uint8->ToTensor->Normalize exactly checked; tensors cached on GPU",
+        "torch": "2.8.0+cu128",
+        "cuda": "12.8",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "visible_device": "2",
+        "python": "3.13.5",
+        "selection": "max validation AUC; earliest on ties",
+        "test_used_for_selection": false,
+        "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+        "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+      }
+    }
+  },
+  "completed_at": 1792240577.4144366
+}

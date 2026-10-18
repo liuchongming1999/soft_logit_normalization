@@ -1,0 +1,442 @@
+[
+  {
+    "run_id": "pneumoniamnist_ce_s0",
+    "method": "ce",
+    "seed": 0,
+    "best_epoch": 7,
+    "metrics": {
+      "train": {
+        "auc": 0.999379496411358,
+        "acc": 0.9808836023789295
+      },
+      "val": {
+        "auc": 0.9969532514519661,
+        "acc": 0.9656488549618321
+      },
+      "test": {
+        "auc": 0.9433158010081087,
+        "acc": 0.8717948717948718
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s0__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s0__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_sln_s0",
+    "method": "sln",
+    "seed": 0,
+    "best_epoch": 27,
+    "metrics": {
+      "train": {
+        "auc": 0.9986239059852192,
+        "acc": 0.994052676295667
+      },
+      "val": {
+        "auc": 0.9980386556222032,
+        "acc": 0.9770992366412213
+      },
+      "test": {
+        "auc": 0.964486083716853,
+        "acc": 0.8365384615384616
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s0__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s0__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_s0",
+    "method": "ln",
+    "seed": 0,
+    "best_epoch": 40,
+    "metrics": {
+      "train": {
+        "auc": 0.9995499462953201,
+        "acc": 0.9987255734919286
+      },
+      "val": {
+        "auc": 0.9976006855184234,
+        "acc": 0.9770992366412213
+      },
+      "test": {
+        "auc": 0.9457155380232303,
+        "acc": 0.8685897435897436
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s0__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s0__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_refined_s0",
+    "method": "ln_refined",
+    "seed": 0,
+    "best_epoch": 19,
+    "metrics": {
+      "train": {
+        "auc": 0.9995461742370304,
+        "acc": 0.995964316057774
+      },
+      "val": {
+        "auc": 0.9968389983814148,
+        "acc": 0.9694656488549618
+      },
+      "test": {
+        "auc": 0.943474687705457,
+        "acc": 0.8509615384615384
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s0__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s0__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ce_s1",
+    "method": "ce",
+    "seed": 1,
+    "best_epoch": 22,
+    "metrics": {
+      "train": {
+        "auc": 1.0,
+        "acc": 1.0
+      },
+      "val": {
+        "auc": 0.996401028277635,
+        "acc": 0.9732824427480916
+      },
+      "test": {
+        "auc": 0.9372616699539776,
+        "acc": 0.8541666666666666
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s1__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s1__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_sln_s1",
+    "method": "sln",
+    "seed": 1,
+    "best_epoch": 73,
+    "metrics": {
+      "train": {
+        "auc": 0.99959403222658,
+        "acc": 0.9987255734919286
+      },
+      "val": {
+        "auc": 0.9975626011615728,
+        "acc": 0.9790076335877863
+      },
+      "test": {
+        "auc": 0.9632916940609249,
+        "acc": 0.8830128205128205
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s1__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s1__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_s1",
+    "method": "ln",
+    "seed": 1,
+    "best_epoch": 24,
+    "metrics": {
+      "train": {
+        "auc": 0.9990053553797567,
+        "acc": 0.9934154630416313
+      },
+      "val": {
+        "auc": 0.9954489193563744,
+        "acc": 0.9809160305343512
+      },
+      "test": {
+        "auc": 0.9340948937102783,
+        "acc": 0.8557692307692307
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s1__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s1__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_refined_s1",
+    "method": "ln_refined",
+    "seed": 1,
+    "best_epoch": 16,
+    "metrics": {
+      "train": {
+        "auc": 0.9998830661930218,
+        "acc": 0.994052676295667
+      },
+      "val": {
+        "auc": 0.9958488051033038,
+        "acc": 0.9675572519083969
+      },
+      "test": {
+        "auc": 0.9201512163050625,
+        "acc": 0.8493589743589743
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s1__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s1__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ce_s2",
+    "method": "ce",
+    "seed": 2,
+    "best_epoch": 100,
+    "metrics": {
+      "train": {
+        "auc": 1.0,
+        "acc": 1.0
+      },
+      "val": {
+        "auc": 0.9957916785680282,
+        "acc": 0.9732824427480916
+      },
+      "test": {
+        "auc": 0.9294378698224852,
+        "acc": 0.8669871794871795
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s2__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s2__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_sln_s2",
+    "method": "sln",
+    "seed": 2,
+    "best_epoch": 28,
+    "metrics": {
+      "train": {
+        "auc": 0.9991819348584394,
+        "acc": 0.9944774851316908
+      },
+      "val": {
+        "auc": 0.9979244025516518,
+        "acc": 0.9732824427480916
+      },
+      "test": {
+        "auc": 0.9645079991233837,
+        "acc": 0.8990384615384616
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s2__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s2__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_s2",
+    "method": "ln",
+    "seed": 2,
+    "best_epoch": 12,
+    "metrics": {
+      "train": {
+        "auc": 0.9997326553687235,
+        "acc": 0.9953271028037384
+      },
+      "val": {
+        "auc": 0.9964391126344854,
+        "acc": 0.9675572519083969
+      },
+      "test": {
+        "auc": 0.9447348235809774,
+        "acc": 0.8333333333333334
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s2__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s2__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_refined_s2",
+    "method": "ln_refined",
+    "seed": 2,
+    "best_epoch": 17,
+    "metrics": {
+      "train": {
+        "auc": 0.9999427118647265,
+        "acc": 0.9957519116397621
+      },
+      "val": {
+        "auc": 0.9971627154146434,
+        "acc": 0.9770992366412213
+      },
+      "test": {
+        "auc": 0.9591551610782381,
+        "acc": 0.8685897435897436
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s2__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s2__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ce_s3",
+    "method": "ce",
+    "seed": 3,
+    "best_epoch": 11,
+    "metrics": {
+      "train": {
+        "auc": 0.9999620436634608,
+        "acc": 0.995964316057774
+      },
+      "val": {
+        "auc": 0.9960963534228315,
+        "acc": 0.9713740458015268
+      },
+      "test": {
+        "auc": 0.9378972167433706,
+        "acc": 0.8589743589743589
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s3__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s3__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_sln_s3",
+    "method": "sln",
+    "seed": 3,
+    "best_epoch": 75,
+    "metrics": {
+      "train": {
+        "auc": 0.9995537183536096,
+        "acc": 0.9989379779099405
+      },
+      "val": {
+        "auc": 0.9974293059125963,
+        "acc": 0.9790076335877863
+      },
+      "test": {
+        "auc": 0.9454087223317993,
+        "acc": 0.8653846153846154
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s3__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s3__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_s3",
+    "method": "ln",
+    "seed": 3,
+    "best_epoch": 11,
+    "metrics": {
+      "train": {
+        "auc": 0.9993719522947787,
+        "acc": 0.9815208156329651
+      },
+      "val": {
+        "auc": 0.9961153956012568,
+        "acc": 0.9580152671755725
+      },
+      "test": {
+        "auc": 0.9285557747096208,
+        "acc": 0.8782051282051282
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s3__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s3__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_refined_s3",
+    "method": "ln_refined",
+    "seed": 3,
+    "best_epoch": 11,
+    "metrics": {
+      "train": {
+        "auc": 0.9988433926269463,
+        "acc": 0.9906542056074766
+      },
+      "val": {
+        "auc": 0.9965914500618871,
+        "acc": 0.9694656488549618
+      },
+      "test": {
+        "auc": 0.9387354810431734,
+        "acc": 0.8701923076923077
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s3__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s3__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ce_s4",
+    "method": "ce",
+    "seed": 4,
+    "best_epoch": 53,
+    "metrics": {
+      "train": {
+        "auc": 1.0,
+        "acc": 1.0
+      },
+      "val": {
+        "auc": 0.9955631724269257,
+        "acc": 0.9694656488549618
+      },
+      "test": {
+        "auc": 0.9548487836949375,
+        "acc": 0.8509615384615384
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s4__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ce_s4__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_sln_s4",
+    "method": "sln",
+    "seed": 4,
+    "best_epoch": 60,
+    "metrics": {
+      "train": {
+        "auc": 0.9997430285290198,
+        "acc": 0.9989379779099405
+      },
+      "val": {
+        "auc": 0.9968580405598401,
+        "acc": 0.9713740458015268
+      },
+      "test": {
+        "auc": 0.9550734166118782,
+        "acc": 0.8605769230769231
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s4__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_sln_s4__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_s4",
+    "method": "ln",
+    "seed": 4,
+    "best_epoch": 21,
+    "metrics": {
+      "train": {
+        "auc": 0.9996814968281704,
+        "acc": 0.9963891248937978
+      },
+      "val": {
+        "auc": 0.9962677330286585,
+        "acc": 0.9694656488549618
+      },
+      "test": {
+        "auc": 0.9270874424720578,
+        "acc": 0.8269230769230769
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s4__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_s4__val.npz"
+  },
+  {
+    "run_id": "pneumoniamnist_ln_refined_s4",
+    "method": "ln_refined",
+    "seed": 4,
+    "best_epoch": 8,
+    "metrics": {
+      "train": {
+        "auc": 0.9992335649062785,
+        "acc": 0.9874681393372983
+      },
+      "val": {
+        "auc": 0.99729601066362,
+        "acc": 0.9732824427480916
+      },
+      "test": {
+        "auc": 0.9485645408722332,
+        "acc": 0.8237179487179487
+      }
+    },
+    "train_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s4__train.npz",
+    "val_prediction_file": "records/diagnostic_checkpoints/pneumoniamnist_ln_refined_s4__val.npz"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "pinned_sources": {
+    "MedMNIST/experiments": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+    "MedMNIST/MedMNIST": "805b74237fb5bd2db376fd94e50646b6a8905d9d"
+  },
+  "sha256": {
+    "models.py": "db0a8cb6f9d2a50dec1e57bacb41469980c519cac3afd4387420e69a292fad47",
+    "vendor/medmnist/info.py": "d85e77f308dcfad2000b610448cefbae7fae69d8f2a7ac15a3f1686fc289c8d2",
+    "vendor/medmnist/evaluator.py": "d864edefba9b6f1899a3b3efe82830160b2fe5a7a38ace6b1fc904ffe8aab33b",
+    "vendor/sln_losses.py": "6925ea83ec8dda1ea4428d4d1ecaba372c35e5e9736fd0fdea71d7a0e5f48e51"
+  },
+  "portable_changes": [
+    "configurable data/output paths",
+    "all five existing loss families exposed through one CLI",
+    "optional original trajectory hook",
+    "resume copies instead of hard links"
+  ],
+  "preserved": [
+    "loss arithmetic",
+    "initialization and sample-order seeds",
+    "official architecture/evaluator",
+    "preprocessing",
+    "Adam/scheduler/checkpoint rule"
+  ]
+}

@@ -1,0 +1,464 @@
+[
+  {
+    "setting": "default",
+    "dataset": "bloodmnist",
+    "method": "ce",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9975760422066287,
+    "test_auc_std": 0.0001750667229776149,
+    "test_acc_mean": 0.9593686056708565,
+    "test_acc_std": 0.003002431830484379
+  },
+  {
+    "setting": "default",
+    "dataset": "bloodmnist",
+    "method": "focal",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9976247723317047,
+    "test_auc_std": 0.00020809911200861102,
+    "test_acc_mean": 0.9572639579070448,
+    "test_acc_std": 0.0023693521343653044
+  },
+  {
+    "setting": "default",
+    "dataset": "bloodmnist",
+    "method": "ln",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9951801605603343,
+    "test_auc_std": 0.000582462140507281,
+    "test_acc_mean": 0.9555685472084186,
+    "test_acc_std": 0.0062455014964108175
+  },
+  {
+    "setting": "default",
+    "dataset": "bloodmnist",
+    "method": "sln",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9974088576337203,
+    "test_auc_std": 0.00024608767191469606,
+    "test_acc_mean": 0.9570885705933937,
+    "test_acc_std": 0.0017587382585783514
+  },
+  {
+    "setting": "default",
+    "dataset": "pathmnist",
+    "method": "ce",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9870399110719194,
+    "test_auc_std": 0.0037830779131251117,
+    "test_acc_mean": 0.8984122562674095,
+    "test_acc_std": 0.014113178358151622
+  },
+  {
+    "setting": "default",
+    "dataset": "pathmnist",
+    "method": "focal",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9865052703566193,
+    "test_auc_std": 0.0034610599682906133,
+    "test_acc_mean": 0.8969359331476323,
+    "test_acc_std": 0.01007658001472246
+  },
+  {
+    "setting": "default",
+    "dataset": "pathmnist",
+    "method": "ln",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9721863137197594,
+    "test_auc_std": 0.007478840636157743,
+    "test_acc_mean": 0.8935097493036211,
+    "test_acc_std": 0.01166412713386599
+  },
+  {
+    "setting": "default",
+    "dataset": "pathmnist",
+    "method": "sln",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.982142251017568,
+    "test_auc_std": 0.00413561337367179,
+    "test_acc_mean": 0.9083565459610028,
+    "test_acc_std": 0.006589524926007606
+  },
+  {
+    "setting": "default",
+    "dataset": "pneumoniamnist",
+    "method": "ce",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9492373438527284,
+    "test_auc_std": 0.004748505886098,
+    "test_acc_mean": 0.8605769230769231,
+    "test_acc_std": 0.010323797056670789
+  },
+  {
+    "setting": "default",
+    "dataset": "pneumoniamnist",
+    "method": "focal",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9410683760683761,
+    "test_auc_std": 0.0036835090045746538,
+    "test_acc_mean": 0.8503205128205128,
+    "test_acc_std": 0.02063515205489728
+  },
+  {
+    "setting": "default",
+    "dataset": "pneumoniamnist",
+    "method": "ln",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9394543063773834,
+    "test_auc_std": 0.01914386159832828,
+    "test_acc_mean": 0.8599358974358974,
+    "test_acc_std": 0.010422828552249441
+  },
+  {
+    "setting": "default",
+    "dataset": "pneumoniamnist",
+    "method": "sln",
+    "n": 5,
+    "seeds": "0,1,2,3,4",
+    "test_auc_mean": 0.9350646504492659,
+    "test_auc_std": 0.009737960988386921,
+    "test_acc_mean": 0.8567307692307692,
+    "test_acc_std": 0.01543794176768242
+  },
+  {
+    "setting": "selected",
+    "dataset": "bloodmnist",
+    "method": "ce",
+    "n": 5,
+    "gamma": 0,
+    "tau": 1.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9975760422066287,
+    "test_auc_std": 0.0001750667229776149,
+    "test_acc_mean": 0.9593686056708565,
+    "test_acc_std": 0.003002431830484379
+  },
+  {
+    "setting": "selected",
+    "dataset": "bloodmnist",
+    "method": "ln",
+    "n": 5,
+    "gamma": 1.0,
+    "tau": 0.05,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9974802334573065,
+    "test_auc_std": 0.00022042022268634187,
+    "test_acc_mean": 0.9594270681087401,
+    "test_acc_std": 0.0026582736145897936
+  },
+  {
+    "setting": "selected",
+    "dataset": "bloodmnist",
+    "method": "sln",
+    "n": 5,
+    "gamma": 0.7,
+    "tau": 1.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9975262299489572,
+    "test_auc_std": 0.0002739098420268444,
+    "test_acc_mean": 0.9624671148786904,
+    "test_acc_std": 0.004304042635324386
+  },
+  {
+    "setting": "selected",
+    "dataset": "pathmnist",
+    "method": "ce",
+    "n": 5,
+    "gamma": 0.0,
+    "tau": 0.4,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9844747610694565,
+    "test_auc_std": 0.0048405025561513194,
+    "test_acc_mean": 0.9018941504178273,
+    "test_acc_std": 0.003655292412774221
+  },
+  {
+    "setting": "selected",
+    "dataset": "pathmnist",
+    "method": "ln",
+    "n": 5,
+    "gamma": 1.0,
+    "tau": 0.05,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9854425201026769,
+    "test_auc_std": 0.0026584846136296844,
+    "test_acc_mean": 0.9074651810584958,
+    "test_acc_std": 0.005403648444894507
+  },
+  {
+    "setting": "selected",
+    "dataset": "pathmnist",
+    "method": "sln",
+    "n": 5,
+    "gamma": 0.4,
+    "tau": 0.4,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9848919922308226,
+    "test_auc_std": 0.005400960819840919,
+    "test_acc_mean": 0.9047353760445682,
+    "test_acc_std": 0.01089871803303934
+  },
+  {
+    "setting": "selected",
+    "dataset": "pneumoniamnist",
+    "method": "ce",
+    "n": 5,
+    "gamma": 0,
+    "tau": 1.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9492373438527284,
+    "test_auc_std": 0.004748505886098,
+    "test_acc_mean": 0.8605769230769231,
+    "test_acc_std": 0.010323797056670789
+  },
+  {
+    "setting": "selected",
+    "dataset": "pneumoniamnist",
+    "method": "ln",
+    "n": 5,
+    "gamma": 1.0,
+    "tau": 0.4,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.934861932938856,
+    "test_auc_std": 0.015243780551271664,
+    "test_acc_mean": 0.8583333333333333,
+    "test_acc_std": 0.0233501893891718
+  },
+  {
+    "setting": "selected",
+    "dataset": "pneumoniamnist",
+    "method": "sln",
+    "n": 5,
+    "gamma": 0.9,
+    "tau": 1.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9507374534297611,
+    "test_auc_std": 0.007461340658968029,
+    "test_acc_mean": 0.8669871794871795,
+    "test_acc_std": 0.010569636184513552
+  },
+  {
+    "setting": "selected",
+    "dataset": "bloodmnist",
+    "method": "cbce",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "n": 5,
+    "label_smoothing": 0.0,
+    "class_balanced_beta": 0.99,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9974705758491187,
+    "test_auc_std": 0.0001511371978663786,
+    "test_acc_mean": 0.9556270096463022,
+    "test_acc_std": 0.0024665329564138136
+  },
+  {
+    "setting": "selected",
+    "dataset": "pathmnist",
+    "method": "cbce",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "n": 5,
+    "label_smoothing": 0.0,
+    "class_balanced_beta": 0.999,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9842265075928904,
+    "test_auc_std": 0.005401113768911757,
+    "test_acc_mean": 0.8976880222841226,
+    "test_acc_std": 0.008662348051881121
+  },
+  {
+    "setting": "selected",
+    "dataset": "pneumoniamnist",
+    "method": "cbce",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "n": 5,
+    "label_smoothing": 0.0,
+    "class_balanced_beta": 0.999,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.944516765285996,
+    "test_auc_std": 0.01435610384199616,
+    "test_acc_mean": 0.8615384615384615,
+    "test_acc_std": 0.030292276926968027
+  },
+  {
+    "setting": "default",
+    "dataset": "pneumoniamnist",
+    "method": "cbce",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.944516765285996,
+    "test_auc_std": 0.01435610384199616,
+    "test_acc_mean": 0.8615384615384615,
+    "test_acc_std": 0.030292276926968027
+  },
+  {
+    "setting": "default",
+    "dataset": "bloodmnist",
+    "method": "cbce",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9973994192432585,
+    "test_auc_std": 0.00045491366694127894,
+    "test_acc_mean": 0.9560947091493716,
+    "test_acc_std": 0.0017708425876481694
+  },
+  {
+    "setting": "default",
+    "dataset": "pathmnist",
+    "method": "cbce",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9842265075928904,
+    "test_auc_std": 0.005401113768911757,
+    "test_acc_mean": 0.8976880222841226,
+    "test_acc_std": 0.008662348051881121
+  },
+  {
+    "setting": "selected",
+    "dataset": "pneumoniamnist",
+    "method": "focal",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9399901380670611,
+    "test_auc_std": 0.012593883265134139,
+    "test_acc_mean": 0.8602564102564103,
+    "test_acc_std": 0.020251997653107867
+  },
+  {
+    "setting": "selected",
+    "dataset": "bloodmnist",
+    "method": "focal",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9973704506567467,
+    "test_auc_std": 0.00025903096011637436,
+    "test_acc_mean": 0.9579655071616486,
+    "test_acc_std": 0.0028446046479281917
+  },
+  {
+    "setting": "selected",
+    "dataset": "pathmnist",
+    "method": "focal",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_auc_mean": 0.9865052703566193,
+    "test_auc_std": 0.0034610599682906133,
+    "test_acc_mean": 0.8969359331476323,
+    "test_acc_std": 0.01007658001472246
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "locked_at": 1792172218.6939356,
+  "criterion": "max validation AUC on seed0, configuration ties by lexicographic run_id",
+  "test_used": false,
+  "configurations": [
+    {
+      "dataset": "pathmnist",
+      "method": "ce",
+      "gamma": 0.0,
+      "tau": 0.4,
+      "val_auc": 0.9998533209708942,
+      "val_acc": 0.9889044382247101,
+      "best_epoch": 98,
+      "run_id": "screen_pathmnist_g0_t0p4_s0"
+    },
+    {
+      "dataset": "pathmnist",
+      "method": "ln",
+      "gamma": 1.0,
+      "tau": 0.05,
+      "val_auc": 0.9998046046499778,
+      "val_acc": 0.9891043582566973,
+      "best_epoch": 99,
+      "run_id": "screen_pathmnist_g1_t0p05_s0"
+    },
+    {
+      "dataset": "pathmnist",
+      "method": "sln",
+      "gamma": 0.4,
+      "tau": 0.4,
+      "val_auc": 0.9998832648529699,
+      "val_acc": 0.990703718512595,
+      "best_epoch": 83,
+      "run_id": "screen_pathmnist_g0p4_t0p4_s0"
+    },
+    {
+      "dataset": "bloodmnist",
+      "method": "ce",
+      "gamma": 0.0,
+      "tau": 1.0,
+      "val_auc": 0.998740563903265,
+      "val_acc": 0.9632009345794392,
+      "best_epoch": 72,
+      "run_id": "screen_bloodmnist_g0_t1_s0"
+    },
+    {
+      "dataset": "bloodmnist",
+      "method": "ln",
+      "gamma": 1.0,
+      "tau": 0.05,
+      "val_auc": 0.99850166268683,
+      "val_acc": 0.9602803738317757,
+      "best_epoch": 94,
+      "run_id": "screen_bloodmnist_g1_t0p05_s0"
+    },
+    {
+      "dataset": "bloodmnist",
+      "method": "sln",
+      "gamma": 0.7,
+      "tau": 1.0,
+      "val_auc": 0.9990051958900719,
+      "val_acc": 0.9632009345794392,
+      "best_epoch": 94,
+      "run_id": "screen_bloodmnist_g0p7_t1_s0"
+    },
+    {
+      "dataset": "pneumoniamnist",
+      "method": "ce",
+      "gamma": 0.0,
+      "tau": 1.0,
+      "val_auc": 0.9978863181948014,
+      "val_acc": 0.9809160305343512,
+      "best_epoch": 7,
+      "run_id": "screen_pneumoniamnist_g0_t1_s0"
+    },
+    {
+      "dataset": "pneumoniamnist",
+      "method": "ln",
+      "gamma": 1.0,
+      "tau": 0.4,
+      "val_auc": 0.9976197276968485,
+      "val_acc": 0.9790076335877863,
+      "best_epoch": 48,
+      "run_id": "screen_pneumoniamnist_g1_t0p4_s0"
+    },
+    {
+      "dataset": "pneumoniamnist",
+      "method": "sln",
+      "gamma": 0.9,
+      "tau": 1.0,
+      "val_auc": 0.9979624869085023,
+      "val_acc": 0.9790076335877863,
+      "best_epoch": 7,
+      "run_id": "screen_pneumoniamnist_g0p9_t1_s0"
+    }
+  ]
+}

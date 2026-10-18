@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "pathmnist",
+    "method": "ce",
+    "gamma": 0.0,
+    "tau": 0.4,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "ln",
+    "gamma": 1.0,
+    "tau": 0.05,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "sln",
+    "gamma": 0.4,
+    "tau": 0.4,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "bloodmnist",
+    "method": "ce",
+    "gamma": 0,
+    "tau": 1.0,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "bloodmnist",
+    "method": "ln",
+    "gamma": 1.0,
+    "tau": 0.05,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "bloodmnist",
+    "method": "sln",
+    "gamma": 0.7,
+    "tau": 1.0,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pneumoniamnist",
+    "method": "ce",
+    "gamma": 0,
+    "tau": 1.0,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pneumoniamnist",
+    "method": "ln",
+    "gamma": 1.0,
+    "tau": 0.4,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pneumoniamnist",
+    "method": "sln",
+    "gamma": 0.9,
+    "tau": 1.0,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "focal",
+    "gamma": 0,
+    "tau": 1.0,
+    "focal_exponent": 2.0,
+    "beta": 0.999
+  },
+  {
+    "dataset": "bloodmnist",
+    "method": "focal",
+    "gamma": 0.0,
+    "tau": 1.0,
+    "focal_exponent": 3.0,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pneumoniamnist",
+    "method": "focal",
+    "gamma": 0.0,
+    "tau": 1.0,
+    "focal_exponent": 1.0,
+    "beta": 0.999
+  },
+  {
+    "dataset": "pneumoniamnist",
+    "method": "cbce",
+    "gamma": 0.0,
+    "tau": 1.0,
+    "focal_exponent": 2,
+    "beta": 0.999
+  },
+  {
+    "dataset": "bloodmnist",
+    "method": "cbce",
+    "gamma": 0.0,
+    "tau": 1.0,
+    "focal_exponent": 2,
+    "beta": 0.99
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "cbce",
+    "gamma": 0.0,
+    "tau": 1.0,
+    "focal_exponent": 2,
+    "beta": 0.999
+  }
+]

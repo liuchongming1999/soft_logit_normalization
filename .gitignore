@@ -40,3 +40,9 @@ config.json
 theory/population_flow/figures/
 theory/binary_orbits/figures/
 theory/population_flow/figure_provenance.json
+
+# Frozen medical outputs only; downloaded images and training runs stay ignored.
+!medical/records/predictions/*.npz
+!medical/records/diagnostic_checkpoints/*.npz
+medical/figures/
+medical/generated/

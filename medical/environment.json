@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "cudnn": 91002,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "training_precision": "float32",
+  "cudnn_allow_tf32": true,
+  "matmul_allow_tf32": false,
+  "cudnn_benchmark": true,
+  "memory_format": "channels_last",
+  "official_experiments_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+  "medmnist_api_commit": "805b74237fb5bd2db376fd94e50646b6a8905d9d",
+  "numpy": "2.3.4",
+  "torchvision": "0.23.0+cu128",
+  "scikit_learn": "1.7.1",
+  "scipy": "1.16.2",
+  "matplotlib": "3.10.6",
+  "pandas": "2.3.1"
+}

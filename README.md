@@ -1,8 +1,8 @@
 # Soft Logit Normalization (SLN)
 
-Official code for the paper **"Learning Dynamics under a Normalized Classification Loss: Class Separation
-and Covariance Contraction"** (Chongming Liu,
-Songting Li, Douglas Zhou).
+Official code for the paper **"Optimization Dynamics of Soft Logit Normalization with Applications
+to Biomedical Image Classification"** (Chong-ming Liu,
+Song-ting Li, Douglas Zhou).
 
 SLN is a minimal, drop-in loss modification. It rescales the logits before the
 softmax to
@@ -35,6 +35,24 @@ themselves optimized. Features drift along the loss-induced directions
 (here SLN). See [`toy_example/`](toy_example/).*
 
 ---
+
+## Current manuscript and medical reproducibility
+
+The JORSC-oriented manuscript analyzes SLN optimization dynamics and evaluates
+CIFAR classification followed by three medical image benchmarks. The medical
+ResNet-18/Adam experiments, original validation-selected settings, all150
+combined-table entries, paired statistics, task-specific metrics and independent
+logit trajectories are archived in [`medical/`](medical/). Rebuild the medical
+tables directly from frozen predictions with:
+
+```bash
+python medical/verify_records.py
+```
+
+See [`medical/README.md`](medical/README.md) for official data preparation,
+training/selection commands, environment versions and record provenance.
+ImageNet/GLUE code and results below remain historical experiments from earlier
+manuscript versions. The current journal article uses CIFAR and MedMNIST.
 
 ## Installation
 
@@ -267,8 +285,8 @@ If you find this code useful, please cite:
 
 ```bibtex
 @article{liu2026soft,
-  title  = {Learning Dynamics under a Normalized Classification Loss: Class
-            Separation and Covariance Contraction},
+  title  = {Optimization Dynamics of Soft Logit Normalization with Applications
+            to Biomedical Image Classification},
   author = {Liu, Chongming and Li, Songting and Zhou, Douglas},
   year   = {2026}
 }

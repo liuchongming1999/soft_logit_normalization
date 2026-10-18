@@ -1,0 +1,92 @@
+{
+  "completed_at": "2026-10-18 13:58:33 +0800",
+  "selection": [
+    {
+      "dataset": "pneumoniamnist",
+      "method": "ce",
+      "original_tau": 1.0,
+      "original_val_auc": 0.9978863181948014,
+      "best_new_tau": 2.0,
+      "best_new_val_auc": 0.9973150528420451,
+      "validation_auc_delta": -0.0005712653527563116,
+      "changed": false,
+      "selected_tau": 1.0,
+      "screen_run": "screen_pneumoniamnist_g0_t1_s0"
+    },
+    {
+      "dataset": "pneumoniamnist",
+      "method": "ln",
+      "original_tau": 0.4,
+      "original_val_auc": 0.9976197276968485,
+      "best_new_tau": 0.3,
+      "best_new_val_auc": 0.9981529086927544,
+      "validation_auc_delta": 0.0005331809959059353,
+      "changed": true,
+      "selected_tau": 0.3,
+      "screen_run": "screen_pneumoniamnist_ln_t0p3_s0",
+      "test_acc_mean": 0.8419871794871795,
+      "test_acc_sd": 0.011021633887211162,
+      "test_auc_mean": 0.9442548761779531,
+      "test_auc_sd": 0.016807740610972288
+    },
+    {
+      "dataset": "bloodmnist",
+      "method": "ce",
+      "original_tau": 1.0,
+      "original_val_auc": 0.998740563903265,
+      "best_new_tau": 0.7,
+      "best_new_val_auc": 0.9986026680579453,
+      "validation_auc_delta": -0.00013789584531975763,
+      "changed": false,
+      "selected_tau": 1.0,
+      "screen_run": "screen_bloodmnist_g0_t1_s0"
+    },
+    {
+      "dataset": "bloodmnist",
+      "method": "ln",
+      "original_tau": 0.05,
+      "original_val_auc": 0.99850166268683,
+      "best_new_tau": 0.01,
+      "best_new_val_auc": 0.9984824586404863,
+      "validation_auc_delta": -1.9204046343701542e-05,
+      "changed": false,
+      "selected_tau": 0.05,
+      "screen_run": "screen_bloodmnist_g1_t0p05_s0"
+    },
+    {
+      "dataset": "pathmnist",
+      "method": "ce",
+      "original_tau": 0.4,
+      "original_val_auc": 0.9998533209708942,
+      "best_new_tau": 0.3,
+      "best_new_val_auc": 0.9998543803419468,
+      "validation_auc_delta": 1.0593710526585198e-06,
+      "changed": true,
+      "selected_tau": 0.3,
+      "screen_run": "screen_pathmnist_ce_t0p3_s0",
+      "test_acc_mean": 0.8922841225626741,
+      "test_acc_sd": 0.011183158885205371,
+      "test_auc_mean": 0.9853198144714036,
+      "test_auc_sd": 0.004754619735768244
+    },
+    {
+      "dataset": "pathmnist",
+      "method": "ln",
+      "original_tau": 0.05,
+      "original_val_auc": 0.9998046046499778,
+      "best_new_tau": 0.02,
+      "best_new_val_auc": 0.9998555797685462,
+      "validation_auc_delta": 5.09751185684415e-05,
+      "changed": true,
+      "selected_tau": 0.02,
+      "screen_run": "screen_pathmnist_ln_t0p02_s0",
+      "test_acc_mean": 0.9066852367688022,
+      "test_acc_sd": 0.006665622339920832,
+      "test_auc_mean": 0.9879514393762072,
+      "test_auc_sd": 0.0033669473408282366
+    }
+  ],
+  "screen_runs": 12,
+  "new_confirmation_runs": 15,
+  "all_new_results_reported": true
+}

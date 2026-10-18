@@ -1,0 +1,32 @@
+{
+  "one_epoch_smoke": true,
+  "methods": [
+    {
+      "method": "ce",
+      "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+      "finite": true
+    },
+    {
+      "method": "ln",
+      "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+      "finite": true
+    },
+    {
+      "method": "focal",
+      "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+      "finite": true
+    },
+    {
+      "method": "cbce",
+      "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+      "finite": true
+    },
+    {
+      "method": "sln",
+      "initial_state_sha256": "780aba0b7c0a5273db6bbc78af1a6c3abd5aedf8ba4bb959ca6612399b1e92e0",
+      "finite": true
+    }
+  ],
+  "paired_initial_weights": true,
+  "epoch0_and_1_train_val_recorded": true
+}

@@ -1,0 +1,3422 @@
+{
+  "rows": [
+    {
+      "method": "ce",
+      "seed": 0,
+      "epoch": 7,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -5.411177903318807,
+                1.3106220805850608
+              ],
+              "covariance": [
+                [
+                  4.216922543736439,
+                  -0.5169907808500315
+                ],
+                [
+                  -0.5169907808500315,
+                  0.0841191885072477
+                ]
+              ],
+              "variance_margin": 4.216922543736439,
+              "variance_common": 0.0841191885072477,
+              "trace": 4.301041732243687,
+              "signed_mean_margin": 5.411177903318807,
+              "covariance_correlation": -0.868035425288325,
+              "concentration": 0.14688925613612056,
+              "radius_q95_over_boundary_distance": 0.7320973958155538,
+              "radius_max_over_boundary_distance": 1.268043496360154,
+              "error": 0.006589785831960461
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                5.947766768831908,
+                0.5539600037000473
+              ],
+              "covariance": [
+                [
+                  6.891804407693525,
+                  -0.25677443351085705
+                ],
+                [
+                  -0.25677443351085705,
+                  0.016007821469369757
+                ]
+              ],
+              "variance_margin": 6.891804407693525,
+              "variance_common": 0.016007821469369757,
+              "trace": 6.907812229162895,
+              "signed_mean_margin": 5.947766768831908,
+              "covariance_correlation": -0.7730706617248934,
+              "concentration": 0.1952687129267086,
+              "radius_q95_over_boundary_distance": 0.84384871494764,
+              "radius_max_over_boundary_distance": 1.746016990914725,
+              "error": 0.02346880366342301
+            }
+          ],
+          "separation": 11.384118831230507,
+          "squared_separation": 129.59816156357707,
+          "margin_mean_gap": 11.358944672150715,
+          "common_mean_gap": -0.7566620768850135,
+          "mean_symmetry_defect": 0.17043533953000248,
+          "variance_margin": 5.5543634757149825,
+          "variance_common": 0.05006350498830873,
+          "variance_margin_over_D2": 0.04285835083385943,
+          "variance_common_over_D2": 0.00038629795657825776,
+          "cdnv": 0.04324464879043769,
+          "error": 0.019116397621070518,
+          "balanced_error": 0.015029294747691737,
+          "empirical_ncm_error": 0.02102803738317757,
+          "mean_raw_norm": 5.923375354589828
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -5.417489171119152,
+                1.30549561387643
+              ],
+              "covariance": [
+                [
+                  4.9708895138613425,
+                  -0.5709464242492964
+                ],
+                [
+                  -0.5709464242492964,
+                  0.09063575274229399
+                ]
+              ],
+              "variance_margin": 4.9708895138613425,
+              "variance_common": 0.09063575274229399,
+              "trace": 5.0615252666036366,
+              "signed_mean_margin": 5.417489171119152,
+              "covariance_correlation": -0.8506061711974663,
+              "concentration": 0.17245877835123363,
+              "radius_q95_over_boundary_distance": 0.8690279136938998,
+              "radius_max_over_boundary_distance": 1.0340533925873736,
+              "error": 0.022222222222222223
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                5.707394707198113,
+                0.5632732403498267
+              ],
+              "covariance": [
+                [
+                  8.098251950897787,
+                  -0.3071771066684553
+                ],
+                [
+                  -0.3071771066684553,
+                  0.01852964144019897
+                ]
+              ],
+              "variance_margin": 8.098251950897787,
+              "variance_common": 0.01852964144019897,
+              "trace": 8.116781592337986,
+              "signed_mean_margin": 5.707394707198113,
+              "covariance_correlation": -0.7929753649824719,
+              "concentration": 0.24917705218905087,
+              "radius_q95_over_boundary_distance": 0.9429108703180689,
+              "radius_max_over_boundary_distance": 1.8048823176287045,
+              "error": 0.038560411311053984
+            }
+          ],
+          "separation": 11.149615928712832,
+          "squared_separation": 124.31393535780688,
+          "margin_mean_gap": 11.124883878317267,
+          "common_mean_gap": -0.7422223735266033,
+          "mean_symmetry_defect": 0.16961319273584696,
+          "variance_margin": 6.5345707323795645,
+          "variance_common": 0.05458269709124648,
+          "variance_margin_over_D2": 0.052565070147376644,
+          "variance_common_over_D2": 0.0004390714277859815,
+          "cdnv": 0.05300414157516263,
+          "error": 0.03435114503816794,
+          "balanced_error": 0.030391316766638102,
+          "empirical_ncm_error": 0.03435114503816794,
+          "mean_raw_norm": 5.799618632840403
+        }
+      }
+    },
+    {
+      "method": "sln",
+      "seed": 0,
+      "epoch": 27,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -48.25131747831587,
+                4.842669899123379
+              ],
+              "covariance": [
+                [
+                  522.3924563635335,
+                  -6.130463824321103
+                ],
+                [
+                  -6.130463824321103,
+                  0.2668858315582653
+                ]
+              ],
+              "variance_margin": 522.3924563635335,
+              "variance_common": 0.2668858315582653,
+              "trace": 522.6593421950918,
+              "signed_mean_margin": 48.25131747831587,
+              "covariance_correlation": -0.5191969425275565,
+              "concentration": 0.22449173966593128,
+              "radius_q95_over_boundary_distance": 0.892843954595957,
+              "radius_max_over_boundary_distance": 2.3206595568840314,
+              "error": 0.018121911037891267
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                67.85111316910239,
+                -3.4284161217689313
+              ],
+              "covariance": [
+                [
+                  214.18114931912845,
+                  -29.125169883238918
+                ],
+                [
+                  -29.125169883238918,
+                  4.2694608285514875
+                ]
+              ],
+              "variance_margin": 214.18114931912845,
+              "variance_common": 4.2694608285514875,
+              "trace": 218.45061014767992,
+              "signed_mean_margin": 67.85111316910239,
+              "covariance_correlation": -0.9631442321861724,
+              "concentration": 0.04745033772447177,
+              "radius_q95_over_boundary_distance": 0.41567983803149156,
+              "radius_max_over_boundary_distance": 2.038130810153375,
+              "error": 0.0017172295363480253
+            }
+          ],
+          "separation": 116.39667205811155,
+          "squared_separation": 13548.185266203567,
+          "margin_mean_gap": 116.10243064741826,
+          "common_mean_gap": -8.27108602089231,
+          "mean_symmetry_defect": 0.1688257313771204,
+          "variance_margin": 368.286802841331,
+          "variance_common": 2.2681733300548763,
+          "variance_margin_over_D2": 0.027183478495827453,
+          "variance_common_over_D2": 0.00016741528739741372,
+          "cdnv": 0.027350893783224865,
+          "error": 0.00594732370433305,
+          "balanced_error": 0.009919570287119647,
+          "empirical_ncm_error": 0.005097706032285472,
+          "mean_raw_norm": 63.26000548718955
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -46.559530966509826,
+                4.789425124680276
+              ],
+              "covariance": [
+                [
+                  585.8180381235807,
+                  -5.55826745553823
+                ],
+                [
+                  -5.55826745553823,
+                  0.20565367990812253
+                ]
+              ],
+              "variance_margin": 585.8180381235807,
+              "variance_common": 0.20565367990812253,
+              "trace": 586.0236918034888,
+              "signed_mean_margin": 46.559530966509826,
+              "covariance_correlation": -0.5063954886287884,
+              "concentration": 0.2703323257312887,
+              "radius_q95_over_boundary_distance": 1.028140502792285,
+              "radius_max_over_boundary_distance": 1.5851131540693915,
+              "error": 0.05185185185185185
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                65.89492096486426,
+                -3.1684337802789995
+              ],
+              "covariance": [
+                [
+                  313.5905115211587,
+                  -41.80327707751524
+                ],
+                [
+                  -41.80327707751524,
+                  5.871568314480453
+                ]
+              ],
+              "variance_margin": 313.5905115211587,
+              "variance_common": 5.871568314480453,
+              "trace": 319.46207983563914,
+              "signed_mean_margin": 65.89492096486426,
+              "covariance_correlation": -0.9742082719814354,
+              "concentration": 0.07357248615487251,
+              "radius_q95_over_boundary_distance": 0.4944865501687679,
+              "radius_max_over_boundary_distance": 1.5445235995275737,
+              "error": 0.012853470437017995
+            }
+          ],
+          "separation": 112.7356699431771,
+          "squared_separation": 12709.331277536963,
+          "margin_mean_gap": 112.45445193137408,
+          "common_mean_gap": -7.957858904959275,
+          "mean_symmetry_defect": 0.17211251162080785,
+          "variance_margin": 449.7042748223697,
+          "variance_common": 3.038610997194288,
+          "variance_margin_over_D2": 0.03538378731359352,
+          "variance_common_over_D2": 0.0002390850415996996,
+          "cdnv": 0.035622872355193215,
+          "error": 0.022900763358778626,
+          "balanced_error": 0.03235266114443492,
+          "empirical_ncm_error": 0.019083969465648856,
+          "mean_raw_norm": 61.69542476675229
+        }
+      }
+    },
+    {
+      "method": "ln",
+      "seed": 0,
+      "epoch": 40,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -9.639866816611912,
+                -0.020179094803810707
+              ],
+              "covariance": [
+                [
+                  15.930044560772346,
+                  3.029253331653551
+                ],
+                [
+                  3.029253331653551,
+                  0.6781021382177767
+                ]
+              ],
+              "variance_margin": 15.930044560772346,
+              "variance_common": 0.6781021382177767,
+              "trace": 16.608146698990122,
+              "signed_mean_margin": 9.639866816611912,
+              "covariance_correlation": 0.9216786807370388,
+              "concentration": 0.17872244812183957,
+              "radius_q95_over_boundary_distance": 0.7875228065365797,
+              "radius_max_over_boundary_distance": 1.3645001957701397,
+              "error": 0.0016474464579901153
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                10.361460447162887,
+                0.033568425034644196
+              ],
+              "covariance": [
+                [
+                  10.799394624126757,
+                  -0.9451272799492325
+                ],
+                [
+                  -0.9451272799492325,
+                  0.16178097896736524
+                ]
+              ],
+              "variance_margin": 10.799394624126757,
+              "variance_common": 0.16178097896736524,
+              "trace": 10.961175603094123,
+              "signed_mean_margin": 10.361460447162887,
+              "covariance_correlation": -0.7150342807679002,
+              "concentration": 0.10209751892217837,
+              "radius_q95_over_boundary_distance": 0.608632945794277,
+              "radius_max_over_boundary_distance": 2.263525629024381,
+              "error": 0.0011448196908986834
+            }
+          ],
+          "separation": 20.001399478749224,
+          "squared_separation": 400.0559811085098,
+          "margin_mean_gap": 20.001327263774797,
+          "common_mean_gap": 0.0537475198384549,
+          "mean_symmetry_defect": 0.036083367147728924,
+          "variance_margin": 13.364719592449552,
+          "variance_common": 0.41994155859257093,
+          "variance_margin_over_D2": 0.033407123561601124,
+          "variance_common_over_D2": 0.0010497069870795594,
+          "cdnv": 0.034456830548680685,
+          "error": 0.001274426508071368,
+          "balanced_error": 0.0013961330744443994,
+          "empirical_ncm_error": 0.0010620220900594733,
+          "mean_raw_norm": 10.211725071017954
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -9.233030315550932,
+                0.00031231470364214656
+              ],
+              "covariance": [
+                [
+                  23.760210765101764,
+                  4.237925839268402
+                ],
+                [
+                  4.237925839268402,
+                  0.849434885702584
+                ]
+              ],
+              "variance_margin": 23.760210765101764,
+              "variance_common": 0.849434885702584,
+              "trace": 24.60964565080435,
+              "signed_mean_margin": 9.233030315550932,
+              "covariance_correlation": 0.9433289474746686,
+              "concentration": 0.28868009357246377,
+              "radius_q95_over_boundary_distance": 1.0351437705334285,
+              "radius_max_over_boundary_distance": 1.6369742400020442,
+              "error": 0.037037037037037035
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                9.970264010635358,
+                0.0724449390627287
+              ],
+              "covariance": [
+                [
+                  14.698877411823684,
+                  -1.453016671818191
+                ],
+                [
+                  -1.453016671818191,
+                  0.22827772518346337
+                ]
+              ],
+              "variance_margin": 14.698877411823684,
+              "variance_common": 0.22827772518346337,
+              "trace": 14.927155137007148,
+              "signed_mean_margin": 9.970264010635358,
+              "covariance_correlation": -0.7932256429504034,
+              "concentration": 0.15016327428819626,
+              "radius_q95_over_boundary_distance": 0.748256775219255,
+              "radius_max_over_boundary_distance": 1.6510825793860366,
+              "error": 0.017994858611825194
+            }
+          ],
+          "separation": 19.203429800263166,
+          "squared_separation": 368.77171609363546,
+          "margin_mean_gap": 19.20329432618629,
+          "common_mean_gap": 0.07213262435908654,
+          "mean_symmetry_defect": 0.038577232986848176,
+          "variance_margin": 19.229544088462724,
+          "variance_common": 0.5388563054430237,
+          "variance_margin_over_D2": 0.05214484530473079,
+          "variance_common_over_D2": 0.001461219182292716,
+          "cdnv": 0.05360606448702351,
+          "error": 0.022900763358778626,
+          "balanced_error": 0.027515947824431113,
+          "empirical_ncm_error": 0.02480916030534351,
+          "mean_raw_norm": 9.942378976149651
+        }
+      }
+    },
+    {
+      "method": "ln_refined",
+      "seed": 0,
+      "epoch": 19,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -8.43062145091643,
+                1.4467572670301867
+              ],
+              "covariance": [
+                [
+                  9.801549770991802,
+                  2.2676461015292784
+                ],
+                [
+                  2.2676461015292784,
+                  0.7116884972244887
+                ]
+              ],
+              "variance_margin": 9.801549770991802,
+              "variance_common": 0.7116884972244887,
+              "trace": 10.51323826821629,
+              "signed_mean_margin": 8.43062145091643,
+              "covariance_correlation": 0.8585842740751257,
+              "concentration": 0.14791674074557587,
+              "radius_q95_over_boundary_distance": 0.736056518434994,
+              "radius_max_over_boundary_distance": 1.2140351518154902,
+              "error": 0.0008237232289950577
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                10.288446115730574,
+                0.18871025536707012
+              ],
+              "covariance": [
+                [
+                  11.49397755380741,
+                  -3.8271152770932706
+                ],
+                [
+                  -3.8271152770932706,
+                  1.4954883872765488
+                ]
+              ],
+              "variance_margin": 11.49397755380741,
+              "variance_common": 1.4954883872765488,
+              "trace": 12.989465941083958,
+              "signed_mean_margin": 10.288446115730574,
+              "covariance_correlation": -0.923091706393308,
+              "concentration": 0.12271332415918233,
+              "radius_q95_over_boundary_distance": 0.6754468940882964,
+              "radius_max_over_boundary_distance": 2.0630937018605864,
+              "error": 0.005151688609044075
+            }
+          ],
+          "separation": 18.761294540842602,
+          "squared_separation": 351.98617284825036,
+          "margin_mean_gap": 18.719067566647006,
+          "common_mean_gap": -1.2580470116631166,
+          "mean_symmetry_defect": 0.13192744176496982,
+          "variance_margin": 10.647763662399605,
+          "variance_common": 1.1035884422505187,
+          "variance_margin_over_D2": 0.030250516877519815,
+          "variance_common_over_D2": 0.003135317598757784,
+          "cdnv": 0.033385834476277604,
+          "error": 0.004035683942225999,
+          "balanced_error": 0.0029877059190195664,
+          "empirical_ncm_error": 0.008071367884451997,
+          "mean_raw_norm": 9.996045394384787
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -8.213149704340179,
+                1.4760422041144985
+              ],
+              "covariance": [
+                [
+                  13.097005922394624,
+                  2.653714651898435
+                ],
+                [
+                  2.653714651898435,
+                  0.7411395554566094
+                ]
+              ],
+              "variance_margin": 13.097005922394624,
+              "variance_common": 0.7411395554566094,
+              "trace": 13.838145477851233,
+              "signed_mean_margin": 8.213149704340179,
+              "covariance_correlation": 0.8517619082246759,
+              "concentration": 0.20514380854285277,
+              "radius_q95_over_boundary_distance": 0.883002266187108,
+              "radius_max_over_boundary_distance": 1.2091966133080954,
+              "error": 0.014814814814814815
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                9.682626787464713,
+                0.3045582551566302
+              ],
+              "covariance": [
+                [
+                  16.80578443605827,
+                  -4.612796928155146
+                ],
+                [
+                  -4.612796928155146,
+                  1.5015265275634615
+                ]
+              ],
+              "variance_margin": 16.80578443605827,
+              "variance_common": 1.5015265275634615,
+              "trace": 18.30731096362173,
+              "signed_mean_margin": 9.682626787464713,
+              "covariance_correlation": -0.9182658574016129,
+              "concentration": 0.19527119024633707,
+              "radius_q95_over_boundary_distance": 0.940321924632236,
+              "radius_max_over_boundary_distance": 1.7495698395599912,
+              "error": 0.03598971722365039
+            }
+          ],
+          "separation": 17.93407903649648,
+          "squared_separation": 321.6311908873025,
+          "margin_mean_gap": 17.89577649180489,
+          "common_mean_gap": -1.1714839489578683,
+          "mean_symmetry_defect": 0.1287302128759952,
+          "variance_margin": 14.951395179226449,
+          "variance_common": 1.1213330415100353,
+          "variance_margin_over_D2": 0.04648614811884125,
+          "variance_common_over_D2": 0.0034863939607864187,
+          "cdnv": 0.04997254207962767,
+          "error": 0.030534351145038167,
+          "balanced_error": 0.0254022660192326,
+          "empirical_ncm_error": 0.03816793893129771,
+          "mean_raw_norm": 9.666395972051957
+        }
+      }
+    },
+    {
+      "method": "ce",
+      "seed": 1,
+      "epoch": 22,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -9.55599854323713,
+                -0.7433470401223898
+              ],
+              "covariance": [
+                [
+                  9.643306405992252,
+                  0.7387230815360049
+                ],
+                [
+                  0.7387230815360049,
+                  0.061570630951394964
+                ]
+              ],
+              "variance_margin": 9.643306405992252,
+              "variance_common": 0.061570630951394964,
+              "trace": 9.704877036943648,
+              "signed_mean_margin": 9.55599854323713,
+              "covariance_correlation": 0.9586981375617303,
+              "concentration": 0.10627665760193283,
+              "radius_q95_over_boundary_distance": 0.6120413941189828,
+              "radius_max_over_boundary_distance": 1.1151586882817637,
+              "error": 0.0
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                9.839568642756985,
+                0.6420978382921276
+              ],
+              "covariance": [
+                [
+                  4.784141030666722,
+                  0.2231262268742442
+                ],
+                [
+                  0.2231262268742442,
+                  0.019314699255852375
+                ]
+              ],
+              "variance_margin": 4.784141030666722,
+              "variance_common": 0.019314699255852375,
+              "trace": 4.8034557299225735,
+              "signed_mean_margin": 9.839568642756985,
+              "covariance_correlation": 0.7340145343033948,
+              "concentration": 0.049613706467397295,
+              "radius_q95_over_boundary_distance": 0.43392503681817335,
+              "radius_max_over_boundary_distance": 0.8757187978053521,
+              "error": 0.0
+            }
+          ],
+          "separation": 19.4449860883863,
+          "squared_separation": 378.1074839775368,
+          "margin_mean_gap": 19.395567185994118,
+          "common_mean_gap": 1.3854448784145175,
+          "mean_symmetry_defect": 0.015484898726576728,
+          "variance_margin": 7.2137237183294864,
+          "variance_common": 0.04044266510362367,
+          "variance_margin_over_D2": 0.01907850022550215,
+          "variance_common_over_D2": 0.0001069607633210094,
+          "cdnv": 0.01918546098882316,
+          "error": 0.0,
+          "balanced_error": 0.0,
+          "empirical_ncm_error": 0.0,
+          "mean_raw_norm": 9.789967879975057
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -8.566118171096525,
+                -0.6662139083079432
+              ],
+              "covariance": [
+                [
+                  19.907002738816406,
+                  1.5027010472598021
+                ],
+                [
+                  1.5027010472598021,
+                  0.11822678500072119
+                ]
+              ],
+              "variance_margin": 19.907002738816406,
+              "variance_common": 0.11822678500072119,
+              "trace": 20.025229523817128,
+              "signed_mean_margin": 8.566118171096525,
+              "covariance_correlation": 0.9795163984901175,
+              "concentration": 0.27290367246568326,
+              "radius_q95_over_boundary_distance": 1.041563667103741,
+              "radius_max_over_boundary_distance": 1.6226322258853596,
+              "error": 0.05185185185185185
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                9.366395302863136,
+                0.6088450287290629
+              ],
+              "covariance": [
+                [
+                  9.619610882898455,
+                  0.5514467512113307
+                ],
+                [
+                  0.5514467512113307,
+                  0.0411807457312966
+                ]
+              ],
+              "variance_margin": 9.619610882898455,
+              "variance_common": 0.0411807457312966,
+              "trace": 9.66079162862975,
+              "signed_mean_margin": 9.366395302863136,
+              "covariance_correlation": 0.8761485095966793,
+              "concentration": 0.11012039209984437,
+              "radius_q95_over_boundary_distance": 0.6818718658080021,
+              "radius_max_over_boundary_distance": 1.8125484702957615,
+              "error": 0.017994858611825194
+            }
+          ],
+          "separation": 17.977786704337735,
+          "squared_separation": 323.20081478666265,
+          "margin_mean_gap": 17.93251347395966,
+          "common_mean_gap": 1.2750589370370062,
+          "mean_symmetry_defect": 0.04462900747192765,
+          "variance_margin": 14.76330681085743,
+          "variance_common": 0.0797037653660089,
+          "variance_margin_over_D2": 0.04567843314566625,
+          "variance_common_over_D2": 0.0002466075632223251,
+          "cdnv": 0.04592504070888857,
+          "error": 0.026717557251908396,
+          "balanced_error": 0.034923355231838524,
+          "empirical_ncm_error": 0.02862595419847328,
+          "mean_raw_norm": 9.310401858354831
+        }
+      }
+    },
+    {
+      "method": "sln",
+      "seed": 1,
+      "epoch": 73,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -97.05391382988395,
+                5.0987176498990845
+              ],
+              "covariance": [
+                [
+                  653.3111672805077,
+                  -23.852916583400628
+                ],
+                [
+                  -23.852916583400628,
+                  0.9034307803546591
+                ]
+              ],
+              "variance_margin": 653.3111672805077,
+              "variance_common": 0.9034307803546591,
+              "trace": 654.2145980608624,
+              "signed_mean_margin": 97.05391382988395,
+              "covariance_correlation": -0.9818248206940875,
+              "concentration": 0.06945349796895356,
+              "radius_q95_over_boundary_distance": 0.49132572325484836,
+              "radius_max_over_boundary_distance": 1.9650930503088364,
+              "error": 0.0016474464579901153
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                109.65700503179052,
+                -6.07452736042287
+              ],
+              "covariance": [
+                [
+                  370.1721461576204,
+                  -30.51580363070172
+                ],
+                [
+                  -30.51580363070172,
+                  2.6418929618311213
+                ]
+              ],
+              "variance_margin": 370.1721461576204,
+              "variance_common": 2.6418929618311213,
+              "trace": 372.8140391194515,
+              "signed_mean_margin": 109.65700503179052,
+              "covariance_correlation": -0.9758101567435794,
+              "concentration": 0.031004126336694166,
+              "radius_q95_over_boundary_distance": 0.34335964612362196,
+              "radius_max_over_boundary_distance": 2.015964022075477,
+              "error": 0.0011448196908986834
+            }
+          ],
+          "separation": 207.01266961395976,
+          "squared_separation": 42854.24538069846,
+          "margin_mean_gap": 206.7109188616745,
+          "common_mean_gap": -11.173245010321954,
+          "mean_symmetry_defect": 0.061062984246965456,
+          "variance_margin": 511.74165671906405,
+          "variance_common": 1.77266187109289,
+          "variance_margin_over_D2": 0.011941445991475848,
+          "variance_common_over_D2": 4.1364906915180364e-05,
+          "cdnv": 0.011982810898391028,
+          "error": 0.001274426508071368,
+          "balanced_error": 0.0013961330744443994,
+          "empirical_ncm_error": 0.0014868309260832626,
+          "mean_raw_norm": 106.73947503157827
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -91.1154543986181,
+                4.982822719056517
+              ],
+              "covariance": [
+                [
+                  1337.7355932014843,
+                  -41.51697341492168
+                ],
+                [
+                  -41.51697341492168,
+                  1.361794333405196
+                ]
+              ],
+              "variance_margin": 1337.7355932014843,
+              "variance_common": 1.361794333405196,
+              "trace": 1339.0973875348895,
+              "signed_mean_margin": 91.1154543986181,
+              "covariance_correlation": -0.9727131416028407,
+              "concentration": 0.16129766187831127,
+              "radius_q95_over_boundary_distance": 0.8541034084531128,
+              "radius_max_over_boundary_distance": 1.234178991883996,
+              "error": 0.022222222222222223
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                104.77564405086659,
+                -5.709130313265221
+              ],
+              "covariance": [
+                [
+                  888.4011909297125,
+                  -66.95097313063302
+                ],
+                [
+                  -66.95097313063302,
+                  5.292334713089941
+                ]
+              ],
+              "variance_margin": 888.4011909297125,
+              "variance_common": 5.292334713089941,
+              "trace": 893.6935256428025,
+              "signed_mean_margin": 104.77564405086659,
+              "covariance_correlation": -0.976402035635646,
+              "concentration": 0.0814081589948678,
+              "radius_q95_over_boundary_distance": 0.5381736391070515,
+              "radius_max_over_boundary_distance": 1.6757276852864298,
+              "error": 0.02056555269922879
+            }
+          ],
+          "separation": 196.18267077239793,
+          "squared_separation": 38487.64031139107,
+          "margin_mean_gap": 195.89109844948467,
+          "common_mean_gap": -10.691953032321738,
+          "mean_symmetry_defect": 0.06972830339110915,
+          "variance_margin": 1113.0683920655983,
+          "variance_common": 3.327064523247569,
+          "variance_margin_over_D2": 0.02892015158788955,
+          "variance_common_over_D2": 8.644501186171363e-05,
+          "cdnv": 0.029006596599751265,
+          "error": 0.02099236641221374,
+          "balanced_error": 0.021393887460725507,
+          "empirical_ncm_error": 0.022900763358778626,
+          "mean_raw_norm": 102.74906534889814
+        }
+      }
+    },
+    {
+      "method": "ln",
+      "seed": 1,
+      "epoch": 24,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -9.130006256811686,
+                -0.3187318240359695
+              ],
+              "covariance": [
+                [
+                  14.167460898045718,
+                  3.053124861413702
+                ],
+                [
+                  3.053124861413702,
+                  9.622524435834242
+                ]
+              ],
+              "variance_margin": 14.167460898045718,
+              "variance_common": 9.622524435834242,
+              "trace": 23.78998533387996,
+              "signed_mean_margin": 9.130006256811686,
+              "covariance_correlation": 0.2614893725901087,
+              "concentration": 0.2853987219683236,
+              "radius_q95_over_boundary_distance": 0.975059229614699,
+              "radius_max_over_boundary_distance": 2.1434232189687012,
+              "error": 0.009060955518945634
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                10.803149717781524,
+                -0.1003917984981572
+              ],
+              "covariance": [
+                [
+                  11.13660211510646,
+                  -0.45233646504811864
+                ],
+                [
+                  -0.45233646504811864,
+                  1.7037181982148804
+                ]
+              ],
+              "variance_margin": 11.13660211510646,
+              "variance_common": 1.7037181982148804,
+              "trace": 12.840320313321339,
+              "signed_mean_margin": 10.803149717781524,
+              "covariance_correlation": -0.10384518557905036,
+              "concentration": 0.11002086824963549,
+              "radius_q95_over_boundary_distance": 0.670503141682687,
+              "radius_max_over_boundary_distance": 2.1917942320142116,
+              "error": 0.005724098454493417
+            }
+          ],
+          "separation": 19.93435174451913,
+          "squared_separation": 397.3783794742129,
+          "margin_mean_gap": 19.933155974593213,
+          "common_mean_gap": 0.2183400255378123,
+          "mean_symmetry_defect": 0.08652602320225679,
+          "variance_margin": 12.652031506576089,
+          "variance_common": 5.663121317024562,
+          "variance_margin_over_D2": 0.03183875157807149,
+          "variance_common_over_D2": 0.014251206430801952,
+          "cdnv": 0.04608995800887344,
+          "error": 0.006584536958368734,
+          "balanced_error": 0.0073925269867195255,
+          "empirical_ncm_error": 0.008071367884451997,
+          "mean_raw_norm": 10.684219769105285
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -8.9987373380415,
+                -0.363515975677379
+              ],
+              "covariance": [
+                [
+                  18.782649115196236,
+                  2.122232453106802
+                ],
+                [
+                  2.122232453106802,
+                  11.082188062436373
+                ]
+              ],
+              "variance_margin": 18.782649115196236,
+              "variance_common": 11.082188062436373,
+              "trace": 29.86483717763261,
+              "signed_mean_margin": 8.9987373380415,
+              "covariance_correlation": 0.14709630748103653,
+              "concentration": 0.36880516990478235,
+              "radius_q95_over_boundary_distance": 1.1419948531542021,
+              "radius_max_over_boundary_distance": 1.5216730757152674,
+              "error": 0.022222222222222223
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                10.388480402847609,
+                0.004295010351898525
+              ],
+              "covariance": [
+                [
+                  14.024117670374167,
+                  -0.8430058774729495
+                ],
+                [
+                  -0.8430058774729495,
+                  1.811620635624993
+                ]
+              ],
+              "variance_margin": 14.024117670374167,
+              "variance_common": 1.811620635624993,
+              "trace": 15.835738305999161,
+              "signed_mean_margin": 10.388480402847609,
+              "covariance_correlation": -0.16724733241980733,
+              "concentration": 0.14673518586208845,
+              "radius_q95_over_boundary_distance": 0.8059870753393531,
+              "radius_max_over_boundary_distance": 1.7685220227212275,
+              "error": 0.017994858611825194
+            }
+          ],
+          "separation": 19.39070645061931,
+          "squared_separation": 375.9994966540893,
+          "margin_mean_gap": 19.38721774088911,
+          "common_mean_gap": 0.3678109860292775,
+          "mean_symmetry_defect": 0.07402609240918558,
+          "variance_margin": 16.4033833927852,
+          "variance_common": 6.446904349030683,
+          "variance_margin_over_D2": 0.043626078063279776,
+          "variance_common_over_D2": 0.017146045158038293,
+          "cdnv": 0.060772123221318065,
+          "error": 0.019083969465648856,
+          "balanced_error": 0.02010854041702371,
+          "empirical_ncm_error": 0.026717557251908396,
+          "mean_raw_norm": 10.49714575262642
+        }
+      }
+    },
+    {
+      "method": "ln_refined",
+      "seed": 1,
+      "epoch": 16,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -6.0387477957122115,
+                0.36443541027120785
+              ],
+              "covariance": [
+                [
+                  3.4580502401590634,
+                  1.5132375786232708
+                ],
+                [
+                  1.5132375786232708,
+                  0.7281648036404677
+                ]
+              ],
+              "variance_margin": 3.4580502401590634,
+              "variance_common": 0.7281648036404677,
+              "trace": 4.186215043799531,
+              "signed_mean_margin": 6.0387477957122115,
+              "covariance_correlation": 0.9536228017931653,
+              "concentration": 0.11479626288699842,
+              "radius_q95_over_boundary_distance": 0.6381921611044608,
+              "radius_max_over_boundary_distance": 2.573044321595281,
+              "error": 0.0008237232289950577
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                6.62316170166598,
+                0.5480068821529162
+              ],
+              "covariance": [
+                [
+                  12.565666052707646,
+                  0.13992707420434108
+                ],
+                [
+                  0.13992707420434108,
+                  1.3410582880305029
+                ]
+              ],
+              "variance_margin": 12.565666052707646,
+              "variance_common": 1.3410582880305029,
+              "trace": 13.90672434073815,
+              "signed_mean_margin": 6.62316170166598,
+              "covariance_correlation": 0.03408671655476023,
+              "concentration": 0.31702545137849686,
+              "radius_q95_over_boundary_distance": 0.8992891903839221,
+              "radius_max_over_boundary_distance": 6.220658074422447,
+              "error": 0.007727532913566113
+            }
+          ],
+          "separation": 12.663240130593941,
+          "squared_separation": 160.35765060508487,
+          "margin_mean_gap": 12.661909497378192,
+          "common_mean_gap": 0.1835714718817083,
+          "mean_symmetry_defect": 0.08556693068056466,
+          "variance_margin": 8.011858146433354,
+          "variance_common": 1.0346115458354852,
+          "variance_margin_over_D2": 0.04996243157842387,
+          "variance_common_over_D2": 0.006451900124076014,
+          "cdnv": 0.05641433170249989,
+          "error": 0.00594732370433305,
+          "balanced_error": 0.004275628071280586,
+          "empirical_ncm_error": 0.007858963466440102,
+          "mean_raw_norm": 6.627749164968143
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -5.812575919584186,
+                0.4136966000776035
+              ],
+              "covariance": [
+                [
+                  5.5540540547210355,
+                  2.106533521928879
+                ],
+                [
+                  2.106533521928879,
+                  0.9172624301674606
+                ]
+              ],
+              "variance_margin": 5.5540540547210355,
+              "variance_common": 0.9172624301674606,
+              "trace": 6.471316484888496,
+              "signed_mean_margin": 5.812575919584186,
+              "covariance_correlation": 0.9332898025599597,
+              "concentration": 0.19153818295146252,
+              "radius_q95_over_boundary_distance": 0.8467036864518688,
+              "radius_max_over_boundary_distance": 1.5457744078807258,
+              "error": 0.022222222222222223
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                6.337759331938534,
+                0.6303345376431088
+              ],
+              "covariance": [
+                [
+                  16.78085966791879,
+                  -0.45566207458581925
+                ],
+                [
+                  -0.45566207458581925,
+                  1.2200436017716376
+                ]
+              ],
+              "variance_margin": 16.78085966791879,
+              "variance_common": 1.2200436017716376,
+              "trace": 18.00090326969043,
+              "signed_mean_margin": 6.337759331938534,
+              "covariance_correlation": -0.10070432074865197,
+              "concentration": 0.4481493917941706,
+              "radius_q95_over_boundary_distance": 1.2354886701711367,
+              "radius_max_over_boundary_distance": 4.697701854026866,
+              "error": 0.03598971722365039
+            }
+          ],
+          "separation": 12.15226640262582,
+          "squared_separation": 147.67757872038828,
+          "margin_mean_gap": 12.15033525152272,
+          "common_mean_gap": 0.21663793756550526,
+          "mean_symmetry_defect": 0.09616991563261255,
+          "variance_margin": 11.167456861319913,
+          "variance_common": 1.068653015969549,
+          "variance_margin_over_D2": 0.07562053060515232,
+          "variance_common_over_D2": 0.007236393129067544,
+          "cdnv": 0.08285692373421986,
+          "error": 0.03244274809160305,
+          "balanced_error": 0.029105969722936303,
+          "empirical_ncm_error": 0.030534351145038167,
+          "mean_raw_norm": 6.512040519944385
+        }
+      }
+    },
+    {
+      "method": "ce",
+      "seed": 2,
+      "epoch": 100,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -12.761389326894644,
+                3.175593707870627
+              ],
+              "covariance": [
+                [
+                  12.258661053301847,
+                  -2.802566746068491
+                ],
+                [
+                  -2.802566746068491,
+                  0.647477248279483
+                ]
+              ],
+              "variance_margin": 12.258661053301847,
+              "variance_common": 0.647477248279483,
+              "trace": 12.90613830158133,
+              "signed_mean_margin": 12.761389326894644,
+              "covariance_correlation": -0.9947688784636384,
+              "concentration": 0.07925020564882124,
+              "radius_q95_over_boundary_distance": 0.5218000474590903,
+              "radius_max_over_boundary_distance": 1.065669286447505,
+              "error": 0.0
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                10.892692356724762,
+                -0.3606279960499646
+              ],
+              "covariance": [
+                [
+                  3.8610584298850052,
+                  -0.30989683706905824
+                ],
+                [
+                  -0.30989683706905824,
+                  0.07469559792332484
+                ]
+              ],
+              "variance_margin": 3.8610584298850052,
+              "variance_common": 0.07469559792332484,
+              "trace": 3.93575402780833,
+              "signed_mean_margin": 10.892692356724762,
+              "covariance_correlation": -0.5770539958809444,
+              "concentration": 0.03317091661600731,
+              "radius_q95_over_boundary_distance": 0.34666301758432005,
+              "radius_max_over_boundary_distance": 0.6272527763481555,
+              "error": 0.0
+            }
+          ],
+          "separation": 23.91694889058005,
+          "squared_separation": 572.0204442346181,
+          "margin_mean_gap": 23.654081683619406,
+          "common_mean_gap": -3.536221703920592,
+          "mean_symmetry_defect": 0.14127078292913395,
+          "variance_margin": 8.059859741593426,
+          "variance_common": 0.36108642310140393,
+          "variance_margin_over_D2": 0.014090160278061004,
+          "variance_common_over_D2": 0.0006312474086211189,
+          "cdnv": 0.014721407686682121,
+          "error": 0.0,
+          "balanced_error": 0.0,
+          "empirical_ncm_error": 0.0,
+          "mean_raw_norm": 11.481507539135984
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -11.684457043332058,
+                2.9681218718798266
+              ],
+              "covariance": [
+                [
+                  33.63322499886304,
+                  -7.173727749814857
+                ],
+                [
+                  -7.173727749814857,
+                  1.5517113035826757
+                ]
+              ],
+              "variance_margin": 33.63322499886304,
+              "variance_common": 1.5517113035826757,
+              "trace": 35.18493630244572,
+              "signed_mean_margin": 11.684457043332058,
+              "covariance_correlation": -0.9930135451861254,
+              "concentration": 0.25771499981520946,
+              "radius_q95_over_boundary_distance": 0.9733796660581304,
+              "radius_max_over_boundary_distance": 1.7305744432923946,
+              "error": 0.037037037037037035
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                10.16922486156978,
+                -0.2919687081122085
+              ],
+              "covariance": [
+                [
+                  11.11521690982961,
+                  -1.0782012559858072
+                ],
+                [
+                  -1.0782012559858072,
+                  0.15696110755300102
+                ]
+              ],
+              "variance_margin": 11.11521690982961,
+              "variance_common": 0.15696110755300102,
+              "trace": 11.27217801738261,
+              "signed_mean_margin": 10.16922486156978,
+              "covariance_correlation": -0.8162906744527371,
+              "concentration": 0.1090014154904037,
+              "radius_q95_over_boundary_distance": 0.6548332829595894,
+              "radius_max_over_boundary_distance": 2.225537277432315,
+              "error": 0.02313624678663239
+            }
+          ],
+          "separation": 22.095510933001457,
+          "squared_separation": 488.2116033903869,
+          "margin_mean_gap": 21.85368190490184,
+          "common_mean_gap": -3.260090579992035,
+          "mean_symmetry_defect": 0.13918398824640427,
+          "variance_margin": 22.374220954346328,
+          "variance_common": 0.8543362055678384,
+          "variance_margin_over_D2": 0.045828941383138956,
+          "variance_common_over_D2": 0.0017499301524889989,
+          "cdnv": 0.04757887153562796,
+          "error": 0.026717557251908396,
+          "balanced_error": 0.030086641911834713,
+          "empirical_ncm_error": 0.026717557251908396,
+          "mean_raw_norm": 10.849753485078699
+        }
+      }
+    },
+    {
+      "method": "sln",
+      "seed": 2,
+      "epoch": 28,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -58.17426779047614,
+                2.2237046045992774
+              ],
+              "covariance": [
+                [
+                  402.8287730591182,
+                  1.1726999919104144
+                ],
+                [
+                  1.1726999919104144,
+                  0.077052588633252
+                ]
+              ],
+              "variance_margin": 402.8287730591182,
+              "variance_common": 0.077052588633252,
+              "trace": 402.90582564775144,
+              "signed_mean_margin": 58.17426779047614,
+              "covariance_correlation": 0.2104907732465552,
+              "concentration": 0.11905337057530964,
+              "radius_q95_over_boundary_distance": 0.6728499107702434,
+              "radius_max_over_boundary_distance": 1.7643593081996283,
+              "error": 0.006589785831960461
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                59.014200412480605,
+                -1.6739219784985688
+              ],
+              "covariance": [
+                [
+                  236.65158879303735,
+                  -18.50184703239498
+                ],
+                [
+                  -18.50184703239498,
+                  1.6035744112695207
+                ]
+              ],
+              "variance_margin": 236.65158879303735,
+              "variance_common": 1.6035744112695207,
+              "trace": 238.25516320430688,
+              "signed_mean_margin": 59.014200412480605,
+              "covariance_correlation": -0.9497642428378125,
+              "concentration": 0.06841152419686501,
+              "radius_q95_over_boundary_distance": 0.5146133774483591,
+              "radius_max_over_boundary_distance": 2.245150917348041,
+              "error": 0.005151688609044075
+            }
+          ],
+          "separation": 117.25326678918874,
+          "squared_separation": 13748.328572736673,
+          "margin_mean_gap": 117.18846820295674,
+          "common_mean_gap": -3.8976265830978463,
+          "mean_symmetry_defect": 0.008561521787039204,
+          "variance_margin": 319.74018092607776,
+          "variance_common": 0.8403134999513864,
+          "variance_margin_over_D2": 0.02325665838101452,
+          "variance_common_over_D2": 6.112113887194637e-05,
+          "cdnv": 0.023317779519886467,
+          "error": 0.0055225148683092605,
+          "balanced_error": 0.005870737220502268,
+          "empirical_ncm_error": 0.0055225148683092605,
+          "mean_raw_norm": 59.05699656778985
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -56.70790978516187,
+                2.2430368957920503
+              ],
+              "covariance": [
+                [
+                  486.2427446222862,
+                  3.155320327740065
+                ],
+                [
+                  3.155320327740065,
+                  0.10370535543161696
+                ]
+              ],
+              "variance_margin": 486.2427446222862,
+              "variance_common": 0.10370535543161696,
+              "trace": 486.3464499777178,
+              "signed_mean_margin": 56.70790978516187,
+              "covariance_correlation": 0.4443409059116898,
+              "concentration": 0.15123714509312047,
+              "radius_q95_over_boundary_distance": 0.8404013071367866,
+              "radius_max_over_boundary_distance": 1.0898204944756777,
+              "error": 0.022222222222222223
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                56.45038745740796,
+                -1.5085299580114138
+              ],
+              "covariance": [
+                [
+                  377.9813574029122,
+                  -27.284461341342194
+                ],
+                [
+                  -27.284461341342194,
+                  2.1541831593595346
+                ]
+              ],
+              "variance_margin": 377.9813574029122,
+              "variance_common": 2.1541831593595346,
+              "trace": 380.13554056227173,
+              "signed_mean_margin": 56.45038745740796,
+              "covariance_correlation": -0.9561782944665764,
+              "concentration": 0.11929016007569078,
+              "radius_q95_over_boundary_distance": 0.7427056205504511,
+              "radius_max_over_boundary_distance": 1.891579511486169,
+              "error": 0.028277634961439587
+            }
+          ],
+          "separation": 113.22046850590375,
+          "squared_separation": 12818.874488696343,
+          "margin_mean_gap": 113.15829724256983,
+          "common_mean_gap": -3.751566853803464,
+          "mean_symmetry_defect": 0.006874580585387435,
+          "variance_margin": 432.1120510125992,
+          "variance_common": 1.1289442573955757,
+          "variance_margin_over_D2": 0.03370904765419419,
+          "variance_common_over_D2": 8.806890639198288e-05,
+          "cdnv": 0.03379711656058617,
+          "error": 0.026717557251908396,
+          "balanced_error": 0.025249928591830905,
+          "empirical_ncm_error": 0.026717557251908396,
+          "mean_raw_norm": 57.19119415224279
+        }
+      }
+    },
+    {
+      "method": "ln",
+      "seed": 2,
+      "epoch": 12,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -5.434412987297611,
+                1.9020572417619723
+              ],
+              "covariance": [
+                [
+                  5.98177887434238,
+                  1.8859696903929721
+                ],
+                [
+                  1.8859696903929721,
+                  0.7223977683473847
+                ]
+              ],
+              "variance_margin": 5.98177887434238,
+              "variance_common": 0.7223977683473847,
+              "trace": 6.704176642689765,
+              "signed_mean_margin": 5.434412987297611,
+              "covariance_correlation": 0.9072591015825193,
+              "concentration": 0.22700748107559066,
+              "radius_q95_over_boundary_distance": 0.9029855526710132,
+              "radius_max_over_boundary_distance": 1.7756724400854476,
+              "error": 0.011532125205930808
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                7.945330747886175,
+                0.2054478899449933
+              ],
+              "covariance": [
+                [
+                  5.378869059503151,
+                  -0.5869726004948981
+                ],
+                [
+                  -0.5869726004948981,
+                  0.24082612735848796
+                ]
+              ],
+              "variance_margin": 5.378869059503151,
+              "variance_common": 0.24082612735848796,
+              "trace": 5.619695186861639,
+              "signed_mean_margin": 7.945330747886175,
+              "covariance_correlation": -0.5157277995650736,
+              "concentration": 0.08902024774227038,
+              "radius_q95_over_boundary_distance": 0.5430997857326784,
+              "radius_max_over_boundary_distance": 1.600905067804484,
+              "error": 0.0022896393817973667
+            }
+          ],
+          "separation": 13.486883469203054,
+          "squared_separation": 181.89602571186262,
+          "margin_mean_gap": 13.379743735183787,
+          "common_mean_gap": -1.6966093518169791,
+          "mean_symmetry_defect": 0.2430622925458356,
+          "variance_margin": 5.680323966922765,
+          "variance_common": 0.4816119478529363,
+          "variance_margin_over_D2": 0.03122841164171909,
+          "variance_common_over_D2": 0.002647732109418635,
+          "cdnv": 0.033876143751137726,
+          "error": 0.004672897196261682,
+          "balanced_error": 0.006910882293864088,
+          "empirical_ncm_error": 0.0055225148683092605,
+          "mean_raw_norm": 7.486024920980715
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -5.022312479464738,
+                1.887562985996418
+              ],
+              "covariance": [
+                [
+                  8.93782744130807,
+                  2.1140063705239465
+                ],
+                [
+                  2.1140063705239465,
+                  0.7580798404624784
+                ]
+              ],
+              "variance_margin": 8.93782744130807,
+              "variance_common": 0.7580798404624784,
+              "trace": 9.695907281770548,
+              "signed_mean_margin": 5.022312479464738,
+              "covariance_correlation": 0.8121436164565253,
+              "concentration": 0.38439788842469363,
+              "radius_q95_over_boundary_distance": 1.2338768349376483,
+              "radius_max_over_boundary_distance": 1.8244816724745594,
+              "error": 0.07407407407407407
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                7.554365689231483,
+                0.311875428534903
+              ],
+              "covariance": [
+                [
+                  7.610777695560404,
+                  -1.3009405619170615
+                ],
+                [
+                  -1.3009405619170615,
+                  0.4553105973356088
+                ]
+              ],
+              "variance_margin": 7.610777695560404,
+              "variance_common": 0.4553105973356088,
+              "trace": 8.066088292896012,
+              "signed_mean_margin": 7.554365689231483,
+              "covariance_correlation": -0.6988581867331798,
+              "concentration": 0.1413406106119394,
+              "radius_q95_over_boundary_distance": 0.680111208739446,
+              "radius_max_over_boundary_distance": 1.5891149701846796,
+              "error": 0.017994858611825194
+            }
+          ],
+          "separation": 12.675000001487147,
+          "squared_separation": 160.65562503769917,
+          "margin_mean_gap": 12.57667816869622,
+          "common_mean_gap": -1.575687557461515,
+          "mean_symmetry_defect": 0.2646095837565725,
+          "variance_margin": 8.274302568434237,
+          "variance_common": 0.6066952188990437,
+          "variance_margin_over_D2": 0.05150334802464964,
+          "variance_common_over_D2": 0.003776370847623154,
+          "cdnv": 0.055279718872272794,
+          "error": 0.03244274809160305,
+          "balanced_error": 0.04603446634294963,
+          "empirical_ncm_error": 0.030534351145038167,
+          "mean_raw_norm": 7.222763156534675
+        }
+      }
+    },
+    {
+      "method": "ln_refined",
+      "seed": 2,
+      "epoch": 17,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -8.545613796109611,
+                0.858214519991152
+              ],
+              "covariance": [
+                [
+                  11.439888800092467,
+                  4.394975357403932
+                ],
+                [
+                  4.394975357403932,
+                  1.9148699358997732
+                ]
+              ],
+              "variance_margin": 11.439888800092467,
+              "variance_common": 1.9148699358997732,
+              "trace": 13.35475873599224,
+              "signed_mean_margin": 8.545613796109611,
+              "covariance_correlation": 0.9390222923588233,
+              "concentration": 0.18287297203181838,
+              "radius_q95_over_boundary_distance": 0.8096112839436965,
+              "radius_max_over_boundary_distance": 1.223074778690616,
+              "error": 0.002471169686985173
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                8.972082359898094,
+                0.5295453611280914
+              ],
+              "covariance": [
+                [
+                  11.885251223003808,
+                  -2.262185417222511
+                ],
+                [
+                  -2.262185417222511,
+                  0.6983632843231247
+                ]
+              ],
+              "variance_margin": 11.885251223003808,
+              "variance_common": 0.6983632843231247,
+              "trace": 12.583614507326931,
+              "signed_mean_margin": 8.972082359898094,
+              "covariance_correlation": -0.7852054694647808,
+              "concentration": 0.1563215678769796,
+              "radius_q95_over_boundary_distance": 0.7352525738110667,
+              "radius_max_over_boundary_distance": 1.3554908255284936,
+              "error": 0.004865483686319404
+            }
+          ],
+          "separation": 17.520779150203193,
+          "squared_separation": 306.9777020301949,
+          "margin_mean_gap": 17.517696156007705,
+          "common_mean_gap": -0.3286691588630606,
+          "mean_symmetry_defect": 0.08286219525581585,
+          "variance_margin": 11.662570011548137,
+          "variance_common": 1.306616610111449,
+          "variance_margin_over_D2": 0.03799158679740519,
+          "variance_common_over_D2": 0.004256389312546641,
+          "cdnv": 0.04224797610995183,
+          "error": 0.004248088360237893,
+          "balanced_error": 0.0036683266866522884,
+          "empirical_ncm_error": 0.00594732370433305,
+          "mean_raw_norm": 9.026453347527916
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -8.043752416416591,
+                0.9653904209545673
+              ],
+              "covariance": [
+                [
+                  15.513955180342387,
+                  5.42062737424132
+                ],
+                [
+                  5.42062737424132,
+                  2.2427821974273727
+                ]
+              ],
+              "variance_margin": 15.513955180342387,
+              "variance_common": 2.2427821974273727,
+              "trace": 17.75673737776976,
+              "signed_mean_margin": 8.043752416416591,
+              "covariance_correlation": 0.9189560422967341,
+              "concentration": 0.274438970878778,
+              "radius_q95_over_boundary_distance": 0.9481897732132103,
+              "radius_max_over_boundary_distance": 1.269629299634311,
+              "error": 0.022222222222222223
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                8.435108949355463,
+                0.6236506509567594
+              ],
+              "covariance": [
+                [
+                  15.990336350780215,
+                  -3.007444809236945
+                ],
+                [
+                  -3.007444809236945,
+                  0.7954799797974218
+                ]
+              ],
+              "variance_margin": 15.990336350780215,
+              "variance_common": 0.7954799797974218,
+              "trace": 16.785816330577635,
+              "signed_mean_margin": 8.435108949355463,
+              "covariance_correlation": -0.8432459026720353,
+              "concentration": 0.23591799792966417,
+              "radius_q95_over_boundary_distance": 0.8983946034596698,
+              "radius_max_over_boundary_distance": 1.6308158690640822,
+              "error": 0.02313624678663239
+            }
+          ],
+          "separation": 16.48240449639351,
+          "squared_separation": 271.669657982733,
+          "margin_mean_gap": 16.478861365772055,
+          "common_mean_gap": -0.34173976999780786,
+          "mean_symmetry_defect": 0.09928916636338353,
+          "variance_margin": 15.752145765561302,
+          "variance_common": 1.5191310886123972,
+          "variance_margin_over_D2": 0.057982720199701104,
+          "variance_common_over_D2": 0.0055918320061674,
+          "cdnv": 0.06357455220586851,
+          "error": 0.022900763358778626,
+          "balanced_error": 0.022679234504427305,
+          "empirical_ncm_error": 0.03244274809160305,
+          "mean_raw_norm": 8.67006209556329
+        }
+      }
+    },
+    {
+      "method": "ce",
+      "seed": 3,
+      "epoch": 11,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -7.042794758995014,
+                -0.1965075623568583
+              ],
+              "covariance": [
+                [
+                  6.747937060704036,
+                  0.02669412750033553
+                ],
+                [
+                  0.02669412750033553,
+                  0.0030100766655095437
+                ]
+              ],
+              "variance_margin": 6.747937060704036,
+              "variance_common": 0.0030100766655095437,
+              "trace": 6.750947137369545,
+              "signed_mean_margin": 7.042794758995014,
+              "covariance_correlation": 0.18730157975619358,
+              "concentration": 0.13610517633573052,
+              "radius_q95_over_boundary_distance": 0.7162049847607447,
+              "radius_max_over_boundary_distance": 1.1584161460155247,
+              "error": 0.0008237232289950577
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                7.511413586994995,
+                -0.039216493186595335
+              ],
+              "covariance": [
+                [
+                  5.576197933928441,
+                  0.17050507226369832
+                ],
+                [
+                  0.17050507226369832,
+                  0.00852212064857035
+                ]
+              ],
+              "variance_margin": 5.576197933928441,
+              "variance_common": 0.00852212064857035,
+              "trace": 5.584720054577011,
+              "signed_mean_margin": 7.511413586994995,
+              "covariance_correlation": 0.7821577869810283,
+              "concentration": 0.09898241766428137,
+              "radius_q95_over_boundary_distance": 0.6213026569216967,
+              "radius_max_over_boundary_distance": 1.3183431407322754,
+              "error": 0.005151688609044075
+            }
+          ],
+          "separation": 14.555058263673352,
+          "squared_separation": 211.84972105892595,
+          "margin_mean_gap": 14.55420834599001,
+          "common_mean_gap": 0.15729106917026295,
+          "mean_symmetry_defect": 0.03604011340223507,
+          "variance_margin": 6.162067497316238,
+          "variance_common": 0.005766098657039947,
+          "variance_margin_over_D2": 0.029086974797584278,
+          "variance_common_over_D2": 2.721787231164731e-05,
+          "cdnv": 0.029114192669895927,
+          "error": 0.004035683942225999,
+          "balanced_error": 0.0029877059190195664,
+          "empirical_ncm_error": 0.005097706032285472,
+          "mean_raw_norm": 7.398034197700103
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -6.745930329393075,
+                -0.20173474109576275
+              ],
+              "covariance": [
+                [
+                  12.333214319445256,
+                  0.1051214654384449
+                ],
+                [
+                  0.1051214654384449,
+                  0.006143017108858528
+                ]
+              ],
+              "variance_margin": 12.333214319445256,
+              "variance_common": 0.006143017108858528,
+              "trace": 12.339357336554114,
+              "signed_mean_margin": 6.745930329393075,
+              "covariance_correlation": 0.3819112088560495,
+              "concentration": 0.2711495187989554,
+              "radius_q95_over_boundary_distance": 0.9808400313143129,
+              "radius_max_over_boundary_distance": 1.5698941282127592,
+              "error": 0.02962962962962963
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                7.112788094384327,
+                -0.045524881120706476
+              ],
+              "covariance": [
+                [
+                  8.330310467175032,
+                  0.21933091375474578
+                ],
+                [
+                  0.21933091375474578,
+                  0.00930649677836381
+                ]
+              ],
+              "variance_margin": 8.330310467175032,
+              "variance_common": 0.00930649677836381,
+              "trace": 8.339616963953395,
+              "signed_mean_margin": 7.112788094384327,
+              "covariance_correlation": 0.787727738040395,
+              "concentration": 0.164841426244132,
+              "radius_q95_over_boundary_distance": 0.8609130309159975,
+              "radius_max_over_boundary_distance": 1.6458944854028508,
+              "error": 0.028277634961439587
+            }
+          ],
+          "separation": 13.859598762947671,
+          "squared_separation": 192.08847786990063,
+          "margin_mean_gap": 13.858718423777402,
+          "common_mean_gap": 0.15620985997505626,
+          "mean_symmetry_defect": 0.031920456887162045,
+          "variance_margin": 10.331762393310143,
+          "variance_common": 0.007724756943611169,
+          "variance_margin_over_D2": 0.05378647646064294,
+          "variance_common_over_D2": 4.021457730974921e-05,
+          "cdnv": 0.05382669103795269,
+          "error": 0.02862595419847328,
+          "balanced_error": 0.02895363229553461,
+          "empirical_ncm_error": 0.02862595419847328,
+          "mean_raw_norm": 7.107203765354668
+        }
+      }
+    },
+    {
+      "method": "sln",
+      "seed": 3,
+      "epoch": 75,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -169.1363413437081,
+                4.1751456957252495
+              ],
+              "covariance": [
+                [
+                  2113.7021802904083,
+                  13.817781387734714
+                ],
+                [
+                  13.817781387734714,
+                  0.1769294842349041
+                ]
+              ],
+              "variance_margin": 2113.7021802904083,
+              "variance_common": 0.1769294842349041,
+              "trace": 2113.879109774643,
+              "signed_mean_margin": 169.1363413437081,
+              "covariance_correlation": 0.7145231661049855,
+              "concentration": 0.07389350772051996,
+              "radius_q95_over_boundary_distance": 0.49646460374872203,
+              "radius_max_over_boundary_distance": 1.9663434423291102,
+              "error": 0.0008237232289950577
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                244.03666752207536,
+                2.2926480032335244
+              ],
+              "covariance": [
+                [
+                  1323.201979658962,
+                  -3.9892664055541163
+                ],
+                [
+                  -3.9892664055541163,
+                  0.47323150095553185
+                ]
+              ],
+              "variance_margin": 1323.201979658962,
+              "variance_common": 0.47323150095553185,
+              "trace": 1323.6752111599176,
+              "signed_mean_margin": 244.03666752207536,
+              "covariance_correlation": -0.15942012515192233,
+              "concentration": 0.022226509433886345,
+              "radius_q95_over_boundary_distance": 0.2776682003492593,
+              "radius_max_over_boundary_distance": 1.8518814965979435,
+              "error": 0.0011448196908986834
+            }
+          ],
+          "separation": 413.17729735885416,
+          "squared_separation": 170715.479052767,
+          "margin_mean_gap": 413.17300886578346,
+          "common_mean_gap": -1.8824976924917252,
+          "mean_symmetry_defect": 0.1819535136803085,
+          "variance_margin": 1718.4520799746851,
+          "variance_common": 0.325080492595218,
+          "variance_margin_over_D2": 0.010066176128314194,
+          "variance_common_over_D2": 1.9042238840845696e-06,
+          "cdnv": 0.010068080352198278,
+          "error": 0.0010620220900594733,
+          "balanced_error": 0.0009842714599468706,
+          "empirical_ncm_error": 0.0010620220900594733,
+          "mean_raw_norm": 225.06535088757315
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -157.81715958287288,
+                4.391190298010594
+              ],
+              "covariance": [
+                [
+                  5315.384142327686,
+                  51.41892407774526
+                ],
+                [
+                  51.41892407774526,
+                  0.746122601468045
+                ]
+              ],
+              "variance_margin": 5315.384142327686,
+              "variance_common": 0.746122601468045,
+              "trace": 5316.130264929155,
+              "signed_mean_margin": 157.81715958287288,
+              "covariance_correlation": 0.8164894148967782,
+              "concentration": 0.2134455815063652,
+              "radius_q95_over_boundary_distance": 0.7986802330718363,
+              "radius_max_over_boundary_distance": 1.9257351153527247,
+              "error": 0.037037037037037035
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                232.81703692198565,
+                2.4624536763394587
+              ],
+              "covariance": [
+                [
+                  3589.316809467841,
+                  -45.3586612210807
+                ],
+                [
+                  -45.3586612210807,
+                  1.3325528424197821
+                ]
+              ],
+              "variance_margin": 3589.316809467841,
+              "variance_common": 1.3325528424197821,
+              "trace": 3590.6493623102606,
+              "signed_mean_margin": 232.81703692198565,
+              "covariance_correlation": -0.6558614597285776,
+              "concentration": 0.06624353222483464,
+              "radius_q95_over_boundary_distance": 0.4494880014286997,
+              "radius_max_over_boundary_distance": 1.5785056199400296,
+              "error": 0.015424164524421594
+            }
+          ],
+          "separation": 390.638957995682,
+          "squared_separation": 152598.79550395222,
+          "margin_mean_gap": 390.63419650485855,
+          "common_mean_gap": -1.9287366216711352,
+          "mean_symmetry_defect": 0.19279279458055967,
+          "variance_margin": 4452.350475897763,
+          "variance_common": 1.0393377219439135,
+          "variance_margin_over_D2": 0.029176838920608978,
+          "variance_common_over_D2": 6.810916944078993e-06,
+          "cdnv": 0.029183649837553057,
+          "error": 0.02099236641221374,
+          "balanced_error": 0.026230600780729314,
+          "empirical_ncm_error": 0.030534351145038167,
+          "mean_raw_norm": 216.57352888522385
+        }
+      }
+    },
+    {
+      "method": "ln",
+      "seed": 3,
+      "epoch": 11,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -9.64928255193364,
+                1.078312532643157
+              ],
+              "covariance": [
+                [
+                  11.560963545332283,
+                  3.9880635034426017
+                ],
+                [
+                  3.9880635034426017,
+                  1.9521795991893618
+                ]
+              ],
+              "variance_margin": 11.560963545332283,
+              "variance_common": 1.9521795991893618,
+              "trace": 13.513143144521646,
+              "signed_mean_margin": 9.64928255193364,
+              "covariance_correlation": 0.8394699687489333,
+              "concentration": 0.14513305259820694,
+              "radius_q95_over_boundary_distance": 0.7069582687886999,
+              "radius_max_over_boundary_distance": 1.4686608768973308,
+              "error": 0.004942339373970346
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                8.812546772766698,
+                0.7871164159560698
+              ],
+              "covariance": [
+                [
+                  14.043118382901401,
+                  -5.039806742897278
+                ],
+                [
+                  -5.039806742897278,
+                  1.9145148636789824
+                ]
+              ],
+              "variance_margin": 14.043118382901401,
+              "variance_common": 1.9145148636789824,
+              "trace": 15.957633246580384,
+              "signed_mean_margin": 8.812546772766698,
+              "covariance_correlation": -0.9719697157651893,
+              "concentration": 0.20547813224519879,
+              "radius_q95_over_boundary_distance": 0.8955323659896783,
+              "radius_max_over_boundary_distance": 1.910672586813121,
+              "error": 0.02318259874069834
+            }
+          ],
+          "separation": 18.46412568178464,
+          "squared_separation": 340.92393719273906,
+          "margin_mean_gap": 18.46182932470034,
+          "common_mean_gap": -0.2911961166870872,
+          "mean_symmetry_defect": 0.11072785727561021,
+          "variance_margin": 12.802040964116841,
+          "variance_common": 1.9333472314341722,
+          "variance_margin_over_D2": 0.0375510181817456,
+          "variance_common_over_D2": 0.005670904916075656,
+          "cdnv": 0.04322192309782126,
+          "error": 0.018479184367034836,
+          "balanced_error": 0.014062469057334343,
+          "empirical_ncm_error": 0.015717926932880204,
+          "mean_raw_norm": 9.398216580350871
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -9.559283392859127,
+                1.0934301853656707
+              ],
+              "covariance": [
+                [
+                  17.191497581399986,
+                  5.5650874912181605
+                ],
+                [
+                  5.5650874912181605,
+                  2.3679837364476444
+                ]
+              ],
+              "variance_margin": 17.191497581399986,
+              "variance_common": 2.3679837364476444,
+              "trace": 19.55948131784763,
+              "signed_mean_margin": 9.559283392859127,
+              "covariance_correlation": 0.8722194833595834,
+              "concentration": 0.21404577522087176,
+              "radius_q95_over_boundary_distance": 0.9668943756609407,
+              "radius_max_over_boundary_distance": 1.233600078719261,
+              "error": 0.007407407407407408
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                8.44610698236309,
+                0.8892481330239145
+              ],
+              "covariance": [
+                [
+                  17.872587600566312,
+                  -6.012289081425612
+                ],
+                [
+                  -6.012289081425612,
+                  2.2074757276733847
+                ]
+              ],
+              "variance_margin": 17.872587600566312,
+              "variance_common": 2.2074757276733847,
+              "trace": 20.080063328239696,
+              "signed_mean_margin": 8.44610698236309,
+              "covariance_correlation": -0.9571900343539765,
+              "concentration": 0.2814828385640843,
+              "radius_q95_over_boundary_distance": 1.0929028746947826,
+              "radius_max_over_boundary_distance": 1.8902144823673486,
+              "error": 0.05398457583547558
+            }
+          ],
+          "separation": 18.006548055489244,
+          "squared_separation": 324.23577287464343,
+          "margin_mean_gap": 18.00539037522222,
+          "common_mean_gap": -0.20418205234175624,
+          "mean_symmetry_defect": 0.1262763902898811,
+          "variance_margin": 17.53204259098315,
+          "variance_common": 2.2877297320605146,
+          "variance_margin_over_D2": 0.05407189476825994,
+          "variance_common_over_D2": 0.007055759800276573,
+          "cdnv": 0.06112765456853651,
+          "error": 0.04198473282442748,
+          "balanced_error": 0.030695991621441494,
+          "empirical_ncm_error": 0.04580152671755725,
+          "mean_raw_norm": 9.323080119037764
+        }
+      }
+    },
+    {
+      "method": "ln_refined",
+      "seed": 3,
+      "epoch": 11,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -7.819039877790106,
+                2.4220090969072037
+              ],
+              "covariance": [
+                [
+                  13.903350237869661,
+                  9.266132294548843
+                ],
+                [
+                  9.266132294548843,
+                  13.563276612507112
+                ]
+              ],
+              "variance_margin": 13.903350237869661,
+              "variance_common": 13.563276612507112,
+              "trace": 27.466626850376773,
+              "signed_mean_margin": 7.819039877790106,
+              "covariance_correlation": 0.6747710714127833,
+              "concentration": 0.4492607432486105,
+              "radius_q95_over_boundary_distance": 1.0348956314287545,
+              "radius_max_over_boundary_distance": 5.591062670500663,
+              "error": 0.009060955518945634
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                6.996727683814352,
+                0.8271373670519478
+              ],
+              "covariance": [
+                [
+                  6.120475017322783,
+                  -3.986255055702963
+                ],
+                [
+                  -3.986255055702963,
+                  3.641976237192064
+                ]
+              ],
+              "variance_margin": 6.120475017322783,
+              "variance_common": 3.641976237192064,
+              "trace": 9.762451254514847,
+              "signed_mean_margin": 6.996727683814352,
+              "covariance_correlation": -0.8443139490150505,
+              "concentration": 0.1994201028150279,
+              "radius_q95_over_boundary_distance": 0.8536763912982023,
+              "radius_max_over_boundary_distance": 4.292055834293675,
+              "error": 0.009444762449914138
+            }
+          ],
+          "separation": 14.901361826161473,
+          "squared_separation": 222.05058427418237,
+          "margin_mean_gap": 14.815767561604456,
+          "common_mean_gap": -1.5948717298552557,
+          "mean_symmetry_defect": 0.2249183146897414,
+          "variance_margin": 10.011912627596223,
+          "variance_common": 8.602626424849587,
+          "variance_margin_over_D2": 0.04508843181080654,
+          "variance_common_over_D2": 0.03874174190069811,
+          "cdnv": 0.08383017371150464,
+          "error": 0.009345794392523364,
+          "balanced_error": 0.009252858984429886,
+          "empirical_ncm_error": 0.008071367884451997,
+          "mean_raw_norm": 7.8734741104375
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -8.18721087893691,
+                1.7097580765347342
+              ],
+              "covariance": [
+                [
+                  19.160937338006235,
+                  14.12457296052059
+                ],
+                [
+                  14.12457296052059,
+                  23.373768600407054
+                ]
+              ],
+              "variance_margin": 19.160937338006235,
+              "variance_common": 23.373768600407054,
+              "trace": 42.53470593841329,
+              "signed_mean_margin": 8.18721087893691,
+              "covariance_correlation": 0.6674251701872653,
+              "concentration": 0.6345582301947411,
+              "radius_q95_over_boundary_distance": 1.3872801928753442,
+              "radius_max_over_boundary_distance": 4.671806861276908,
+              "error": 0.02962962962962963
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                6.650418390179722,
+                1.0591210447267112
+              ],
+              "covariance": [
+                [
+                  7.32051803297055,
+                  -4.968889201775036
+                ],
+                [
+                  -4.968889201775036,
+                  4.061316989771649
+                ]
+              ],
+              "variance_margin": 7.32051803297055,
+              "variance_common": 4.061316989771649,
+              "trace": 11.381835022742198,
+              "signed_mean_margin": 6.650418390179722,
+              "covariance_correlation": -0.9112865521309406,
+              "concentration": 0.25734417916230407,
+              "radius_q95_over_boundary_distance": 0.9635922973789344,
+              "radius_max_over_boundary_distance": 1.8973495671559157,
+              "error": 0.030848329048843187
+            }
+          ],
+          "separation": 14.851887788254611,
+          "squared_separation": 220.57857087490646,
+          "margin_mean_gap": 14.837629269116631,
+          "common_mean_gap": -0.650637031808023,
+          "mean_symmetry_defect": 0.21322329838337378,
+          "variance_margin": 13.240727685488393,
+          "variance_common": 13.71754279508935,
+          "variance_margin_over_D2": 0.06002726209064713,
+          "variance_common_over_D2": 0.062188918627407296,
+          "cdnv": 0.12221618071805443,
+          "error": 0.030534351145038167,
+          "balanced_error": 0.03023897933923641,
+          "empirical_ncm_error": 0.026717557251908396,
+          "mean_raw_norm": 7.894866371545761
+        }
+      }
+    },
+    {
+      "method": "ce",
+      "seed": 4,
+      "epoch": 53,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -6.6917298960037925,
+                0.2700080311677603
+              ],
+              "covariance": [
+                [
+                  6.48693516516641,
+                  -0.366708988853887
+                ],
+                [
+                  -0.366708988853887,
+                  0.03766606791774104
+                ]
+              ],
+              "variance_margin": 6.48693516516641,
+              "variance_common": 0.03766606791774104,
+              "trace": 6.524601233084152,
+              "signed_mean_margin": 6.6917298960037925,
+              "covariance_correlation": -0.7418679929986601,
+              "concentration": 0.14570591018460607,
+              "radius_q95_over_boundary_distance": 0.7037200502938424,
+              "radius_max_over_boundary_distance": 1.332881538185314,
+              "error": 0.0
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                9.118419850593272,
+                0.16385277594074119
+              ],
+              "covariance": [
+                [
+                  10.472055580651533,
+                  -0.059790747096982434
+                ],
+                [
+                  -0.059790747096982434,
+                  0.007185642313803505
+                ]
+              ],
+              "variance_margin": 10.472055580651533,
+              "variance_common": 0.007185642313803505,
+              "trace": 10.479241222965337,
+              "signed_mean_margin": 9.118419850593272,
+              "covariance_correlation": -0.21796422276646465,
+              "concentration": 0.1260348553815132,
+              "radius_q95_over_boundary_distance": 0.6581089552236873,
+              "radius_max_over_boundary_distance": 0.9493336924999206,
+              "error": 0.0
+            }
+          ],
+          "separation": 15.810506125612662,
+          "squared_separation": 249.9721039480355,
+          "margin_mean_gap": 15.810149746597064,
+          "common_mean_gap": -0.1061552552270191,
+          "mean_symmetry_defect": 0.155919691061476,
+          "variance_margin": 8.479495372908971,
+          "variance_common": 0.02242585511577227,
+          "variance_margin_over_D2": 0.033921766625093885,
+          "variance_common_over_D2": 8.971343106522872e-05,
+          "cdnv": 0.034011480056159116,
+          "error": 0.0,
+          "balanced_error": 0.0,
+          "empirical_ncm_error": 0.0014868309260832626,
+          "mean_raw_norm": 8.49622671085783
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -6.33435984379124,
+                0.27357061355106305
+              ],
+              "covariance": [
+                [
+                  11.494807920226979,
+                  -0.48904267066400026
+                ],
+                [
+                  -0.48904267066400026,
+                  0.03729726730851239
+                ]
+              ],
+              "variance_margin": 11.494807920226979,
+              "variance_common": 0.03729726730851239,
+              "trace": 11.53210518753549,
+              "signed_mean_margin": 6.33435984379124,
+              "covariance_correlation": -0.7468912792666574,
+              "concentration": 0.28741083245561927,
+              "radius_q95_over_boundary_distance": 1.0282064262565414,
+              "radius_max_over_boundary_distance": 1.461590660924108,
+              "error": 0.05925925925925926
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                8.600807384820373,
+                0.16201331084399556
+              ],
+              "covariance": [
+                [
+                  14.37031524798191,
+                  -0.03514912691298918
+                ],
+                [
+                  -0.03514912691298918,
+                  0.007084691427612972
+                ]
+              ],
+              "variance_margin": 14.37031524798191,
+              "variance_common": 0.007084691427612972,
+              "trace": 14.377399939409523,
+              "signed_mean_margin": 8.600807384820373,
+              "covariance_correlation": -0.11015923831229973,
+              "concentration": 0.19435777126377163,
+              "radius_q95_over_boundary_distance": 0.8556459962278437,
+              "radius_max_over_boundary_distance": 1.7641514980744035,
+              "error": 0.02056555269922879
+            }
+          ],
+          "separation": 14.935583857967572,
+          "squared_separation": 223.07166517838152,
+          "margin_mean_gap": 14.935167228611611,
+          "common_mean_gap": -0.11155730270706748,
+          "mean_symmetry_defect": 0.15452526149662948,
+          "variance_margin": 12.932561584104445,
+          "variance_common": 0.02219097936806268,
+          "variance_margin_over_D2": 0.057974918391194105,
+          "variance_common_over_D2": 9.94791487763246e-05,
+          "cdnv": 0.05807439753997043,
+          "error": 0.030534351145038167,
+          "balanced_error": 0.039912405979244024,
+          "empirical_ncm_error": 0.03816793893129771,
+          "mean_raw_norm": 8.116262169886763
+        }
+      }
+    },
+    {
+      "method": "sln",
+      "seed": 4,
+      "epoch": 60,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -166.29394827273538,
+                0.30193702856993354
+              ],
+              "covariance": [
+                [
+                  3018.7007295407684,
+                  141.85466314974144
+                ],
+                [
+                  141.85466314974144,
+                  6.937851332786393
+                ]
+              ],
+              "variance_margin": 3018.7007295407684,
+              "variance_common": 6.937851332786393,
+              "trace": 3025.638580873555,
+              "signed_mean_margin": 166.29394827273538,
+              "covariance_correlation": 0.9802144315491512,
+              "concentration": 0.1094117992148106,
+              "radius_q95_over_boundary_distance": 0.6149924161629828,
+              "radius_max_over_boundary_distance": 2.028572183655245,
+              "error": 0.0008237232289950577
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                281.2741144836939,
+                6.709470845148326
+              ],
+              "covariance": [
+                [
+                  2684.9585169812212,
+                  20.357647409623496
+                ],
+                [
+                  20.357647409623496,
+                  1.7347955245201605
+                ]
+              ],
+              "variance_margin": 2684.9585169812212,
+              "variance_common": 1.7347955245201605,
+              "trace": 2686.6933125057412,
+              "signed_mean_margin": 281.2741144836939,
+              "covariance_correlation": 0.29828722343177166,
+              "concentration": 0.033959286904175705,
+              "radius_q95_over_boundary_distance": 0.39342067816558746,
+              "radius_max_over_boundary_distance": 1.535648623576495,
+              "error": 0.0011448196908986834
+            }
+          ],
+          "separation": 447.61392660322093,
+          "squared_separation": 200358.22728915364,
+          "margin_mean_gap": 447.5680627564293,
+          "common_mean_gap": 6.407533816578392,
+          "mean_symmetry_defect": 0.257350668309362,
+          "variance_margin": 2851.8296232609946,
+          "variance_common": 4.336323428653277,
+          "variance_margin_over_D2": 0.014233653700405732,
+          "variance_common_over_D2": 2.1642851842540845e-05,
+          "cdnv": 0.014255296552248276,
+          "error": 0.0010620220900594733,
+          "balanced_error": 0.0009842714599468706,
+          "empirical_ncm_error": 0.001274426508071368,
+          "mean_raw_norm": 251.96259379283424
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -152.45410633885965,
+                0.9130194617352366
+              ],
+              "covariance": [
+                [
+                  6702.723301185154,
+                  291.6422878489858
+                ],
+                [
+                  291.6422878489858,
+                  13.7955333537828
+                ]
+              ],
+              "variance_margin": 6702.723301185154,
+              "variance_common": 13.7955333537828,
+              "trace": 6716.518834538937,
+              "signed_mean_margin": 152.45410633885965,
+              "covariance_correlation": 0.9590816969209368,
+              "concentration": 0.2889788003612585,
+              "radius_q95_over_boundary_distance": 1.059946886339039,
+              "radius_max_over_boundary_distance": 2.099355800106752,
+              "error": 0.07407407407407407
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                265.6704061515831,
+                6.780385350404327
+              ],
+              "covariance": [
+                [
+                  6053.813091779302,
+                  -1.4404533523234337
+                ],
+                [
+                  -1.4404533523234337,
+                  1.7449636798956547
+                ]
+              ],
+              "variance_margin": 6053.813091779302,
+              "variance_common": 1.7449636798956547,
+              "trace": 6055.558055459198,
+              "signed_mean_margin": 265.6704061515831,
+              "covariance_correlation": -0.014014948253874381,
+              "concentration": 0.08579615254652961,
+              "radius_q95_over_boundary_distance": 0.6747913311305793,
+              "radius_max_over_boundary_distance": 1.5113815892307427,
+              "error": 0.012853470437017995
+            }
+          ],
+          "separation": 418.1656776061875,
+          "squared_separation": 174862.53392784193,
+          "margin_mean_gap": 418.1245124904427,
+          "common_mean_gap": 5.86736588866909,
+          "mean_symmetry_defect": 0.2713694604641395,
+          "variance_margin": 6378.268196482228,
+          "variance_common": 7.770248516839227,
+          "variance_margin_over_D2": 0.03647589940057862,
+          "variance_common_over_D2": 4.443632573713971e-05,
+          "cdnv": 0.03652033572631576,
+          "error": 0.02862595419847328,
+          "balanced_error": 0.04346377225554603,
+          "empirical_ncm_error": 0.03435114503816794,
+          "mean_raw_norm": 239.1716110442294
+        }
+      }
+    },
+    {
+      "method": "ln",
+      "seed": 4,
+      "epoch": 21,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -12.78973122067943,
+                1.1862105178592823
+              ],
+              "covariance": [
+                [
+                  45.57610397044965,
+                  7.271347563498263
+                ],
+                [
+                  7.271347563498263,
+                  1.2379216226933782
+                ]
+              ],
+              "variance_margin": 45.57610397044965,
+              "variance_common": 1.2379216226933782,
+              "trace": 46.81402559314303,
+              "signed_mean_margin": 12.78973122067943,
+              "covariance_correlation": 0.9680543281331587,
+              "concentration": 0.28618914203853724,
+              "radius_q95_over_boundary_distance": 1.0333061356845872,
+              "radius_max_over_boundary_distance": 1.9842883222527608,
+              "error": 0.01070840197693575
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                11.02701777853815,
+                0.1700043406911631
+              ],
+              "covariance": [
+                [
+                  6.175907704610229,
+                  -0.46700337410550635
+                ],
+                [
+                  -0.46700337410550635,
+                  0.19224121599215532
+                ]
+              ],
+              "variance_margin": 6.175907704610229,
+              "variance_common": 0.19224121599215532,
+              "trace": 6.368148920602384,
+              "signed_mean_margin": 11.02701777853815,
+              "covariance_correlation": -0.42859427675305195,
+              "concentration": 0.05237174702086429,
+              "radius_q95_over_boundary_distance": 0.4306165997108117,
+              "radius_max_over_boundary_distance": 2.517080653588673,
+              "error": 0.0011448196908986834
+            }
+          ],
+          "separation": 23.83841873711942,
+          "squared_separation": 568.2702078862462,
+          "margin_mean_gap": 23.81674899921758,
+          "common_mean_gap": -1.0162061771681192,
+          "mean_symmetry_defect": 0.09329762133782434,
+          "variance_margin": 25.87600583752994,
+          "variance_common": 0.7150814193427668,
+          "variance_margin_over_D2": 0.04553468663046591,
+          "variance_common_over_D2": 0.001258347542100797,
+          "cdnv": 0.04679303417256671,
+          "error": 0.003610875106202209,
+          "balanced_error": 0.005926610833917217,
+          "empirical_ncm_error": 0.005097706032285472,
+          "mean_raw_norm": 11.578578383571111
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -11.312485768879585,
+                1.3513549823873652
+              ],
+              "covariance": [
+                [
+                  61.428135083228646,
+                  8.951071501787426
+                ],
+                [
+                  8.951071501787426,
+                  1.4605779728123531
+                ]
+              ],
+              "variance_margin": 61.428135083228646,
+              "variance_common": 1.4605779728123531,
+              "trace": 62.888713056041,
+              "signed_mean_margin": 11.312485768879585,
+              "covariance_correlation": 0.94499386199679,
+              "concentration": 0.4914242864619031,
+              "radius_q95_over_boundary_distance": 1.381203833756276,
+              "radius_max_over_boundary_distance": 1.7519216220661045,
+              "error": 0.08148148148148149
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                10.680783551460953,
+                0.23432681701484367
+              ],
+              "covariance": [
+                [
+                  10.180531475967966,
+                  -1.1065187369007343
+                ],
+                [
+                  -1.1065187369007343,
+                  0.31418584980224784
+                ]
+              ],
+              "variance_margin": 10.180531475967966,
+              "variance_common": 0.31418584980224784,
+              "trace": 10.494717325770214,
+              "signed_mean_margin": 10.680783551460953,
+              "covariance_correlation": -0.6187001710054603,
+              "concentration": 0.09199506217022792,
+              "radius_q95_over_boundary_distance": 0.5275560925971131,
+              "radius_max_over_boundary_distance": 2.0270738955177077,
+              "error": 0.012853470437017995
+            }
+          ],
+          "separation": 22.02161772711687,
+          "squared_separation": 484.95164731926786,
+          "margin_mean_gap": 21.993269320340538,
+          "common_mean_gap": -1.1170281653725216,
+          "mean_symmetry_defect": 0.07750922722449029,
+          "variance_margin": 35.8043332795983,
+          "variance_common": 0.8873819113073005,
+          "variance_margin_over_D2": 0.07383072823346144,
+          "variance_common_over_D2": 0.0018298358531465978,
+          "cdnv": 0.07566056408660804,
+          "error": 0.030534351145038167,
+          "balanced_error": 0.04716747595924974,
+          "empirical_ncm_error": 0.030534351145038167,
+          "mean_raw_norm": 11.17472237274213
+        }
+      }
+    },
+    {
+      "method": "ln_refined",
+      "seed": 4,
+      "epoch": 8,
+      "geometry": {
+        "train": {
+          "n": 4708,
+          "class_counts": [
+            1214,
+            3494
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 1214,
+              "mean": [
+                -9.142619281271237,
+                6.760488058332267
+              ],
+              "covariance": [
+                [
+                  30.136949522099062,
+                  -3.7590183178717096
+                ],
+                [
+                  -3.7590183178717096,
+                  0.7333827544543614
+                ]
+              ],
+              "variance_margin": 30.136949522099062,
+              "variance_common": 0.7333827544543614,
+              "trace": 30.870332276553423,
+              "signed_mean_margin": 9.142619281271237,
+              "covariance_correlation": -0.7995754479935224,
+              "concentration": 0.36931762474845636,
+              "radius_q95_over_boundary_distance": 1.1401825576060796,
+              "radius_max_over_boundary_distance": 1.7141532679263223,
+              "error": 0.03871499176276771
+            },
+            {
+              "label": 1,
+              "n": 3494,
+              "mean": [
+                7.670832342509711,
+                1.0332907635456814
+              ],
+              "covariance": [
+                [
+                  3.1547153413042897,
+                  -2.3974275026161758
+                ],
+                [
+                  -2.3974275026161758,
+                  2.2548184334199317
+                ]
+              ],
+              "variance_margin": 3.1547153413042897,
+              "variance_common": 2.2548184334199317,
+              "trace": 5.409533774724221,
+              "signed_mean_margin": 7.670832342509711,
+              "covariance_correlation": -0.8988963272275743,
+              "concentration": 0.09193372456241156,
+              "radius_q95_over_boundary_distance": 0.5978509227121928,
+              "radius_max_over_boundary_distance": 2.240502050107171,
+              "error": 0.0034344590726960505
+            }
+          ],
+          "separation": 17.76212105461037,
+          "squared_separation": 315.492944358633,
+          "margin_mean_gap": 16.81345162378095,
+          "common_mean_gap": -5.727197294786585,
+          "mean_symmetry_defect": 0.44654174601260405,
+          "variance_margin": 16.645832431701677,
+          "variance_common": 1.4941005939371466,
+          "variance_margin_over_D2": 0.05276134610725151,
+          "variance_common_over_D2": 0.004735765476386517,
+          "cdnv": 0.05749711158363803,
+          "error": 0.012531860662701785,
+          "balanced_error": 0.02107472541773188,
+          "empirical_ncm_error": 0.012956669498725574,
+          "mean_raw_norm": 8.98207624172677
+        },
+        "val": {
+          "n": 524,
+          "class_counts": [
+            135,
+            389
+          ],
+          "classes": [
+            {
+              "label": 0,
+              "n": 135,
+              "mean": [
+                -9.191518233105864,
+                6.765870633353112
+              ],
+              "covariance": [
+                [
+                  39.820742735427935,
+                  -5.290866346466323
+                ],
+                [
+                  -5.290866346466323,
+                  0.9485520213539295
+                ]
+              ],
+              "variance_margin": 39.820742735427935,
+              "variance_common": 0.9485520213539295,
+              "trace": 40.76929475678186,
+              "signed_mean_margin": 9.191518233105864,
+              "covariance_correlation": -0.8608778541338861,
+              "concentration": 0.48256819245695054,
+              "radius_q95_over_boundary_distance": 1.2516890236120857,
+              "radius_max_over_boundary_distance": 2.037386258923196,
+              "error": 0.08148148148148149
+            },
+            {
+              "label": 1,
+              "n": 389,
+              "mean": [
+                7.47573683896792,
+                1.1481127086132847
+              ],
+              "covariance": [
+                [
+                  3.9263328440974963,
+                  -2.7639693220782577
+                ],
+                [
+                  -2.7639693220782577,
+                  2.3639928174722447
+                ]
+              ],
+              "variance_margin": 3.9263328440974963,
+              "variance_common": 2.3639928174722447,
+              "trace": 6.2903256615697405,
+              "signed_mean_margin": 7.47573683896792,
+              "covariance_correlation": -0.9072282926291619,
+              "concentration": 0.11255508502353953,
+              "radius_q95_over_boundary_distance": 0.7046437438215305,
+              "radius_max_over_boundary_distance": 1.8496516755976997,
+              "error": 0.007712082262210797
+            }
+          ],
+          "separation": 17.58853591799347,
+          "squared_separation": 309.35659573854645,
+          "margin_mean_gap": 16.667255072073786,
+          "common_mean_gap": -5.617757924739827,
+          "mean_symmetry_defect": 0.4604045276999904,
+          "variance_margin": 21.873537789762715,
+          "variance_common": 1.6562724194130871,
+          "variance_margin_over_D2": 0.07070655059913186,
+          "variance_common_over_D2": 0.005353926317487959,
+          "cdnv": 0.07606047691661982,
+          "error": 0.026717557251908396,
+          "balanced_error": 0.04459678187184614,
+          "empirical_ncm_error": 0.026717557251908396,
+          "mean_raw_norm": 8.955496241427229
+        }
+      }
+    }
+  ],
+  "summary": [
+    {
+      "method": "ce",
+      "geometry": {
+        "train": {
+          "cdnv": {
+            "mean": 0.028055438038399605,
+            "sd": 0.011443124348679834
+          },
+          "separation": {
+            "mean": 17.022323639896573,
+            "sd": 4.815350565529594
+          },
+          "variance_margin": {
+            "mean": 7.093901961172621,
+            "sd": 1.2354953466046057
+          },
+          "variance_common": {
+            "mean": 0.0959569093932297,
+            "sd": 0.14918352222217623
+          },
+          "error": {
+            "mean": 0.004630416312659304,
+            "sd": 0.008284316911274346
+          }
+        },
+        "val": {
+          "cdnv": {
+            "mean": 0.05168182847952045,
+            "sd": 0.004929217677015947
+          },
+          "separation": {
+            "mean": 16.003619237393455,
+            "sd": 4.19247400426614
+          },
+          "variance_margin": {
+            "mean": 13.387284494999582,
+            "sd": 5.898328968658877
+          },
+          "variance_common": {
+            "mean": 0.20370768086735352,
+            "sd": 0.36479114860173767
+          },
+          "error": {
+            "mean": 0.029389312977099236,
+            "sd": 0.003193358879901053
+          }
+        }
+      }
+    },
+    {
+      "method": "sln",
+      "geometry": {
+        "train": {
+          "cdnv": {
+            "mean": 0.017394972221189783,
+            "sd": 0.007533797488599718
+          },
+          "separation": {
+            "mean": 260.290766484667,
+            "sd": 160.05315521388673
+          },
+          "variance_margin": {
+            "mean": 1154.0100687444306,
+            "sd": 1109.8493178274184
+          },
+          "variance_common": {
+            "mean": 1.9085105244695293,
+            "sd": 1.5564690196963276
+          },
+          "error": {
+            "mean": 0.0029736618521665247,
+            "sd": 0.0025266306825340525
+          }
+        },
+        "val": {
+          "cdnv": {
+            "mean": 0.0328261142158799,
+            "sd": 0.0035450047876802743
+          },
+          "separation": {
+            "mean": 246.18868896466967,
+            "sd": 148.688283531945
+          },
+          "variance_margin": {
+            "mean": 2565.100678056112,
+            "sd": 2703.4652997820867
+          },
+          "variance_common": {
+            "mean": 3.2608412033241145,
+            "sd": 2.7326081139474407
+          },
+          "error": {
+            "mean": 0.024045801526717557,
+            "sd": 0.0034667752146154483
+          }
+        }
+      }
+    },
+    {
+      "method": "ln",
+      "geometry": {
+        "train": {
+          "cdnv": {
+            "mean": 0.040887577915815966,
+            "sd": 0.006282974224189589
+          },
+          "separation": {
+            "mean": 19.145035822275094,
+            "sd": 3.737062622989736
+          },
+          "variance_margin": {
+            "mean": 14.075024373519037,
+            "sd": 7.312388234572041
+          },
+          "variance_common": {
+            "mean": 1.8426206948494017,
+            "sd": 2.2221702151518934
+          },
+          "error": {
+            "mean": 0.006924384027187766,
+            "sd": 0.006737942215747683
+          }
+        },
+        "val": {
+          "cdnv": {
+            "mean": 0.061289225047151785,
+            "sd": 0.00868869964038721
+          },
+          "separation": {
+            "mean": 18.259460406995146,
+            "sd": 3.448723901902644
+          },
+          "variance_margin": {
+            "mean": 19.448721184052722,
+            "sd": 10.06689445792895
+          },
+          "variance_common": {
+            "mean": 2.153513503348113,
+            "sd": 2.502702181146268
+          },
+          "error": {
+            "mean": 0.029389312977099236,
+            "sd": 0.008910395061014315
+          }
+        }
+      }
+    },
+    {
+      "method": "ln_refined",
+      "geometry": {
+        "train": {
+          "cdnv": {
+            "mean": 0.0546750855167744,
+            "sd": 0.019161636374104046
+          },
+          "separation": {
+            "mean": 16.321759340482316,
+            "sd": 2.493286699982424
+          },
+          "variance_margin": {
+            "mean": 11.3959873759358,
+            "sd": 3.223343438404502
+          },
+          "variance_common": {
+            "mean": 2.7083087233968373,
+            "sd": 3.299939876370888
+          },
+          "error": {
+            "mean": 0.007221750212404418,
+            "sd": 0.0036512560402869763
+          }
+        },
+        "val": {
+          "cdnv": {
+            "mean": 0.07893613513087806,
+            "sd": 0.027256523493770144
+          },
+          "separation": {
+            "mean": 15.801834728352778,
+            "sd": 2.3676829545463347
+          },
+          "variance_margin": {
+            "mean": 15.397052656271757,
+            "sd": 4.025195006323883
+          },
+          "variance_common": {
+            "mean": 3.816586472118884,
+            "sd": 5.540526227027618
+          },
+          "error": {
+            "mean": 0.02862595419847328,
+            "sd": 0.00381679389312977
+          }
+        }
+      }
+    }
+  ]
+}
