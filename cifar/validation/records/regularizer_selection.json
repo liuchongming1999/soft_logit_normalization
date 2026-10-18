@@ -1,0 +1,907 @@
+{
+  "all_validation_candidates": {
+    "ls_ce": [
+      {
+        "mean_best_val": 0.67188,
+        "setting_id": 0
+      },
+      {
+        "mean_best_val": 0.6846800000000001,
+        "setting_id": 1
+      },
+      {
+        "mean_best_val": 0.66324,
+        "setting_id": 2
+      },
+      {
+        "mean_best_val": 0.67052,
+        "setting_id": 3
+      },
+      {
+        "mean_best_val": 0.68292,
+        "setting_id": 4
+      },
+      {
+        "mean_best_val": 0.66484,
+        "setting_id": 5
+      },
+      {
+        "mean_best_val": 0.66732,
+        "setting_id": 6
+      },
+      {
+        "mean_best_val": 0.68184,
+        "setting_id": 7
+      },
+      {
+        "mean_best_val": 0.6674,
+        "setting_id": 8
+      }
+    ],
+    "ls_sln": [
+      {
+        "mean_best_val": 0.68608,
+        "setting_id": 0
+      },
+      {
+        "mean_best_val": 0.69072,
+        "setting_id": 1
+      },
+      {
+        "mean_best_val": 0.65604,
+        "setting_id": 2
+      },
+      {
+        "mean_best_val": 0.6868,
+        "setting_id": 3
+      },
+      {
+        "mean_best_val": 0.6882,
+        "setting_id": 4
+      },
+      {
+        "mean_best_val": 0.65912,
+        "setting_id": 5
+      },
+      {
+        "mean_best_val": 0.68708,
+        "setting_id": 6
+      },
+      {
+        "mean_best_val": 0.68236,
+        "setting_id": 7
+      },
+      {
+        "mean_best_val": 0.66052,
+        "setting_id": 8
+      }
+    ],
+    "mixup_ce": [
+      {
+        "mean_best_val": 0.67552,
+        "setting_id": 0
+      },
+      {
+        "mean_best_val": 0.69504,
+        "setting_id": 1
+      },
+      {
+        "mean_best_val": 0.67104,
+        "setting_id": 2
+      },
+      {
+        "mean_best_val": 0.66892,
+        "setting_id": 3
+      },
+      {
+        "mean_best_val": 0.6920000000000001,
+        "setting_id": 4
+      },
+      {
+        "mean_best_val": 0.67588,
+        "setting_id": 5
+      },
+      {
+        "mean_best_val": 0.64916,
+        "setting_id": 6
+      },
+      {
+        "mean_best_val": 0.67176,
+        "setting_id": 7
+      },
+      {
+        "mean_best_val": 0.66512,
+        "setting_id": 8
+      }
+    ],
+    "mixup_sln": [
+      {
+        "mean_best_val": 0.69628,
+        "setting_id": 0
+      },
+      {
+        "mean_best_val": 0.69836,
+        "setting_id": 1
+      },
+      {
+        "mean_best_val": 0.67316,
+        "setting_id": 2
+      },
+      {
+        "mean_best_val": 0.6918799999999999,
+        "setting_id": 3
+      },
+      {
+        "mean_best_val": 0.69492,
+        "setting_id": 4
+      },
+      {
+        "mean_best_val": 0.6742,
+        "setting_id": 5
+      },
+      {
+        "mean_best_val": 0.68032,
+        "setting_id": 6
+      },
+      {
+        "mean_best_val": 0.67892,
+        "setting_id": 7
+      },
+      {
+        "mean_best_val": 0.66676,
+        "setting_id": 8
+      }
+    ],
+    "sam_ce": [
+      {
+        "mean_best_val": 0.68224,
+        "setting_id": 0
+      },
+      {
+        "mean_best_val": 0.6896399999999999,
+        "setting_id": 1
+      },
+      {
+        "mean_best_val": 0.6646,
+        "setting_id": 2
+      },
+      {
+        "mean_best_val": 0.67632,
+        "setting_id": 3
+      },
+      {
+        "mean_best_val": 0.69616,
+        "setting_id": 4
+      },
+      {
+        "mean_best_val": 0.6646799999999999,
+        "setting_id": 5
+      },
+      {
+        "mean_best_val": 0.66556,
+        "setting_id": 6
+      },
+      {
+        "mean_best_val": 0.6966,
+        "setting_id": 7
+      },
+      {
+        "mean_best_val": 0.66596,
+        "setting_id": 8
+      }
+    ],
+    "sam_sln": [
+      {
+        "mean_best_val": 0.69652,
+        "setting_id": 0
+      },
+      {
+        "mean_best_val": 0.69676,
+        "setting_id": 1
+      },
+      {
+        "mean_best_val": 0.6636,
+        "setting_id": 2
+      },
+      {
+        "mean_best_val": 0.699,
+        "setting_id": 3
+      },
+      {
+        "mean_best_val": 0.69728,
+        "setting_id": 4
+      },
+      {
+        "mean_best_val": 0.66904,
+        "setting_id": 5
+      },
+      {
+        "mean_best_val": 0.69408,
+        "setting_id": 6
+      },
+      {
+        "mean_best_val": 0.70192,
+        "setting_id": 7
+      },
+      {
+        "mean_best_val": 0.6714,
+        "setting_id": 8
+      }
+    ]
+  },
+  "locked_at": "2026-10-18 15:21:12 +0800",
+  "selection": {
+    "ls_ce": {
+      "jobs": [
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "ls_ce_h01_s0",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_ce_h01_s0",
+            "sam_rho": 0.0,
+            "seed": 0,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_ce_h01_s0"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "ls_ce_h01_s1",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_ce_h01_s1",
+            "sam_rho": 0.0,
+            "seed": 1,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_ce_h01_s1"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "ls_ce_h01_s2",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_ce_h01_s2",
+            "sam_rho": 0.0,
+            "seed": 2,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_ce_h01_s2"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "ls_ce_h01_s3",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_ce_h01_s3",
+            "sam_rho": 0.0,
+            "seed": 3,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_ce_h01_s3"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "ls_ce_h01_s4",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_ce_h01_s4",
+            "sam_rho": 0.0,
+            "seed": 4,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_ce_h01_s4"
+        }
+      ],
+      "mean_val": 0.6846800000000001,
+      "sd_val": 0.004139082023830893,
+      "setting_id": 1
+    },
+    "ls_sln": {
+      "jobs": [
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "ls_sln_h01_s0",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_sln_h01_s0",
+            "sam_rho": 0.0,
+            "seed": 0,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_sln_h01_s0"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "ls_sln_h01_s1",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_sln_h01_s1",
+            "sam_rho": 0.0,
+            "seed": 1,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_sln_h01_s1"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "ls_sln_h01_s2",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_sln_h01_s2",
+            "sam_rho": 0.0,
+            "seed": 2,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_sln_h01_s2"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "ls_sln_h01_s3",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_sln_h01_s3",
+            "sam_rho": 0.0,
+            "seed": 3,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_sln_h01_s3"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "ls_sln_h01_s4",
+            "lr": 0.05,
+            "ls_eps": 0.05,
+            "method": "ls_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_sln_h01_s4",
+            "sam_rho": 0.0,
+            "seed": 4,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "ls_sln_h01_s4"
+        }
+      ],
+      "mean_val": 0.69072,
+      "sd_val": 0.007736407434979127,
+      "setting_id": 1
+    },
+    "mixup_ce": {
+      "jobs": [
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "mixup_ce_h01_s0",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_ce",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_ce_h01_s0",
+            "sam_rho": 0.0,
+            "seed": 0,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_ce_h01_s0"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "mixup_ce_h01_s1",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_ce",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_ce_h01_s1",
+            "sam_rho": 0.0,
+            "seed": 1,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_ce_h01_s1"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "mixup_ce_h01_s2",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_ce",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_ce_h01_s2",
+            "sam_rho": 0.0,
+            "seed": 2,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_ce_h01_s2"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "mixup_ce_h01_s3",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_ce",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_ce_h01_s3",
+            "sam_rho": 0.0,
+            "seed": 3,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_ce_h01_s3"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "mixup_ce_h01_s4",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_ce",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_ce_h01_s4",
+            "sam_rho": 0.0,
+            "seed": 4,
+            "setting_id": 1,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_ce_h01_s4"
+        }
+      ],
+      "mean_val": 0.69504,
+      "sd_val": 0.004506439836500665,
+      "setting_id": 1
+    },
+    "mixup_sln": {
+      "jobs": [
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "mixup_sln_h01_s0",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_sln",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_sln_h01_s0",
+            "sam_rho": 0.0,
+            "seed": 0,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_sln_h01_s0"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "mixup_sln_h01_s1",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_sln",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_sln_h01_s1",
+            "sam_rho": 0.0,
+            "seed": 1,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_sln_h01_s1"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "mixup_sln_h01_s2",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_sln",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_sln_h01_s2",
+            "sam_rho": 0.0,
+            "seed": 2,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_sln_h01_s2"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "mixup_sln_h01_s3",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_sln",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_sln_h01_s3",
+            "sam_rho": 0.0,
+            "seed": 3,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_sln_h01_s3"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "mixup_sln_h01_s4",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "mixup_sln",
+            "mixup_alpha": 0.2,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_sln_h01_s4",
+            "sam_rho": 0.0,
+            "seed": 4,
+            "setting_id": 1,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "mixup_sln_h01_s4"
+        }
+      ],
+      "mean_val": 0.69836,
+      "sd_val": 0.004585629727747336,
+      "setting_id": 1
+    },
+    "sam_ce": {
+      "jobs": [
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "sam_ce_h07_s0",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_ce_h07_s0",
+            "sam_rho": 0.1,
+            "seed": 0,
+            "setting_id": 7,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_ce_h07_s0"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "sam_ce_h07_s1",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_ce_h07_s1",
+            "sam_rho": 0.1,
+            "seed": 1,
+            "setting_id": 7,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_ce_h07_s1"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "sam_ce_h07_s2",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_ce_h07_s2",
+            "sam_rho": 0.1,
+            "seed": 2,
+            "setting_id": 7,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_ce_h07_s2"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "sam_ce_h07_s3",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_ce_h07_s3",
+            "sam_rho": 0.1,
+            "seed": 3,
+            "setting_id": 7,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_ce_h07_s3"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.0,
+            "job_id": "sam_ce_h07_s4",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_ce",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_ce_h07_s4",
+            "sam_rho": 0.1,
+            "seed": 4,
+            "setting_id": 7,
+            "tau": 1.0,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_ce_h07_s4"
+        }
+      ],
+      "mean_val": 0.6966,
+      "sd_val": 0.0017378147196982832,
+      "setting_id": 7
+    },
+    "sam_sln": {
+      "jobs": [
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "sam_sln_h07_s0",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_sln_h07_s0",
+            "sam_rho": 0.1,
+            "seed": 0,
+            "setting_id": 7,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_sln_h07_s0"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "sam_sln_h07_s1",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_sln_h07_s1",
+            "sam_rho": 0.1,
+            "seed": 1,
+            "setting_id": 7,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_sln_h07_s1"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "sam_sln_h07_s2",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_sln_h07_s2",
+            "sam_rho": 0.1,
+            "seed": 2,
+            "setting_id": 7,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_sln_h07_s2"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "sam_sln_h07_s3",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_sln_h07_s3",
+            "sam_rho": 0.1,
+            "seed": 3,
+            "setting_id": 7,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_sln_h07_s3"
+        },
+        {
+          "config": {
+            "batch_size": 128,
+            "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+            "epochs": 160,
+            "gamma": 0.7,
+            "job_id": "sam_sln_h07_s4",
+            "lr": 0.05,
+            "ls_eps": 0.0,
+            "method": "sam_sln",
+            "mixup_alpha": 0.0,
+            "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_sln_h07_s4",
+            "sam_rho": 0.1,
+            "seed": 4,
+            "setting_id": 7,
+            "tau": 0.08,
+            "wd": 0.001,
+            "workers": 4
+          },
+          "id": "sam_sln_h07_s4"
+        }
+      ],
+      "mean_val": 0.70192,
+      "sd_val": 0.0039309032040995414,
+      "setting_id": 7
+    }
+  }
+}

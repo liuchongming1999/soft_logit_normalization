@@ -1,7 +1,7 @@
 # CIFAR training and reproducibility
 
 `train_besttest.py` is the audited training implementation for the current
-CIFAR-100 manuscript comparisons in Tables 2, 6 and 7. `reproduce.py` creates
+CIFAR-100 manuscript comparisons in Tables 2, 3 and 9. `reproduce.py` creates
 the frozen grids, schedules GPU jobs, resumes completed runs, and aggregates
 their best-test values. `train.py` remains a generic single-run entry point
 for the original CIFAR-10 settings.
@@ -182,3 +182,7 @@ This CPU check evaluates the SLN endpoints and implementation parity,
 L-Softmax's original angular formula and finite-difference gradients,
 parallel/antiparallel/zero-feature edge cases, normalized-head logits,
 and the SAM perturbation and restoration step.
+
+## Validation-selected comparison
+
+The current Table3 also includes the validation-selected results for all fifteen methods. See [validation/README.md](validation/README.md) for the675-run archive, frozen decisions, original trainers and portable training configuration wrapper. The original multi-depth validation appendix tables have been removed from the article; their research records remain retained.

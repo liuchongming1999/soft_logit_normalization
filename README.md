@@ -51,6 +51,8 @@ python medical/verify_records.py
 
 See [`medical/README.md`](medical/README.md) for official data preparation,
 training/selection commands, environment versions and record provenance.
+The complete CIFAR-100 validation-selected comparison,675 training histories and selected records are in [`cifar/validation/`](cifar/validation/). Rebuild both Table3 columns with `python cifar/validation/verify_records.py`.
+
 ImageNet/GLUE code and results below remain historical experiments from earlier
 manuscript versions. The current journal article uses CIFAR and MedMNIST.
 

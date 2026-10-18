@@ -25,9 +25,10 @@ python medical/plot_trajectories.py
 125 unique frozen test-prediction files,24 paired comparisons and20 independent
 PneumoniaMNIST diagnostic runs. It uses the pinned official MedMNIST evaluator
 functions and independently computes task metrics. `medical/generated/` contains
-Table4 values and LaTeX cells, selected parameters (Table14), paired intervals
-(Table15), pneumonia sensitivity/specificity/confusion counts (Table16), macro-F1
-and balanced accuracy (Table17), and checkpoint-matched geometry (Table18).
+Table4 values and LaTeX cells, selected parameters (Table12), paired intervals
+(Table13), pneumonia sensitivity/specificity/confusion counts (Table14), macro-F1
+and balanced accuracy (Table15), and checkpoint-matched geometry (Table16).
+Generated filenames retain their original table-number identifiers for archive stability; the current manuscript numbering follows the mapping above.
 `plot_trajectories.py` recreates Figs12-13 from all101 saved epochs and all five
 seeds. Each independent diagnostic checkpoint's train/validation raw logits are
 included for direct CDNV recalculation.

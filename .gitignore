@@ -46,3 +46,7 @@ theory/population_flow/figure_provenance.json
 !medical/records/diagnostic_checkpoints/*.npz
 medical/figures/
 medical/generated/
+
+# Frozen CIFAR validation decisions, never downloaded images or model weights.
+!cifar/validation/records/predictions/*.npz
+cifar/validation/generated/

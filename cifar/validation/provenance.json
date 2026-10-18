@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-18",
+  "source_roots": [
+    "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018",
+    "/data/lcm/rebuttal/cifar100_depth_margin_20260927"
+  ],
+  "training_runs": 675,
+  "regularizer_runs": 270,
+  "standalone_runs": 405,
+  "prediction_records": 30,
+  "prediction_contents": "official test labels, original argmax decisions and ordered indices; original score file hashes retained",
+  "raw_images_included": false,
+  "model_weights_included": false,
+  "historical_manuscript_tables": "original Tables11/12 removed from manuscript; source records retained"
+}

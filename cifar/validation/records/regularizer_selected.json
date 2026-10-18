@@ -1,0 +1,492 @@
+{
+  "completed_at": "2026-10-18 15:21:42 +0800",
+  "protocol": "45000_train_5000_validation_10000_test_after_selection",
+  "results": {
+    "ls_ce": {
+      "config": {
+        "batch_size": 128,
+        "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+        "epochs": 160,
+        "gamma": 0.0,
+        "job_id": "ls_ce_h01_s0",
+        "lr": 0.05,
+        "ls_eps": 0.05,
+        "method": "ls_ce",
+        "mixup_alpha": 0.0,
+        "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_ce_h01_s0",
+        "sam_rho": 0.0,
+        "seed": 0,
+        "setting_id": 1,
+        "tau": 1.0,
+        "wd": 0.001,
+        "workers": 4
+      },
+      "per_seed": [
+        {
+          "best_epoch": 129,
+          "checkpoint_sha256": "3265fc5dfdfcaf211f1e31cafd5d84905d9708973d9141aad799b91892c47ab9",
+          "method": "ls_ce",
+          "seed": 0,
+          "setting_id": 1,
+          "test_acc": 0.6764,
+          "val_acc": 0.68,
+          "prediction_file": "records/predictions/ls_ce_h01_s0.npz",
+          "original_score_file_sha256": "53cc4bed341670f3ecc2fad56d55369144fac5ac5c76a13d03432f121869a96e"
+        },
+        {
+          "best_epoch": 154,
+          "checkpoint_sha256": "b77e645ad92405d8c9f57ae2fecd8208135b40f5b45f5bf17693e071709e35bb",
+          "method": "ls_ce",
+          "seed": 1,
+          "setting_id": 1,
+          "test_acc": 0.6705,
+          "val_acc": 0.6818,
+          "prediction_file": "records/predictions/ls_ce_h01_s1.npz",
+          "original_score_file_sha256": "d89128ecc79435451ca592a639ca77c979da96a6ac66fce04f6f63dfd326d5a3"
+        },
+        {
+          "best_epoch": 125,
+          "checkpoint_sha256": "068a394c849092bd8a7bb5b8c52fd2ee2fe0dbfbd025aff65c21a230fce2f1bb",
+          "method": "ls_ce",
+          "seed": 2,
+          "setting_id": 1,
+          "test_acc": 0.6766,
+          "val_acc": 0.6874,
+          "prediction_file": "records/predictions/ls_ce_h01_s2.npz",
+          "original_score_file_sha256": "4791bb07efeacd7ae6c9b91b457e02c71b8720238ef766ab72dce3bcd220538b"
+        },
+        {
+          "best_epoch": 122,
+          "checkpoint_sha256": "cc9d1195bc152f0cfe9216008347b4683e1be8111e3f54300106a06966c4b54e",
+          "method": "ls_ce",
+          "seed": 3,
+          "setting_id": 1,
+          "test_acc": 0.6789,
+          "val_acc": 0.6902,
+          "prediction_file": "records/predictions/ls_ce_h01_s3.npz",
+          "original_score_file_sha256": "bdc94f348ae3b31aa65b2f4ecfb99e9b8a5b5d4facd4146bd466f9332ba532b2"
+        },
+        {
+          "best_epoch": 137,
+          "checkpoint_sha256": "bb6ea93867efff59de7bc7b7862f482bfce99e43217ac07ddb1899bef4780d49",
+          "method": "ls_ce",
+          "seed": 4,
+          "setting_id": 1,
+          "test_acc": 0.6739,
+          "val_acc": 0.684,
+          "prediction_file": "records/predictions/ls_ce_h01_s4.npz",
+          "original_score_file_sha256": "0dc8848fbd4442a31d8aaf7c1c3b2466df34ae46ab5d06c62719b49be13375cb"
+        }
+      ],
+      "test_mean": 0.67526,
+      "test_sd": 0.003195778465413379,
+      "validation_mean": 0.6846800000000001,
+      "validation_sd": 0.004139082023830893
+    },
+    "ls_sln": {
+      "config": {
+        "batch_size": 128,
+        "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+        "epochs": 160,
+        "gamma": 0.7,
+        "job_id": "ls_sln_h01_s0",
+        "lr": 0.05,
+        "ls_eps": 0.05,
+        "method": "ls_sln",
+        "mixup_alpha": 0.0,
+        "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/ls_sln_h01_s0",
+        "sam_rho": 0.0,
+        "seed": 0,
+        "setting_id": 1,
+        "tau": 0.08,
+        "wd": 0.001,
+        "workers": 4
+      },
+      "per_seed": [
+        {
+          "best_epoch": 144,
+          "checkpoint_sha256": "d8ecaa5f8d36f37bf73c55ecfb620bc5ed94f986df46912563768321da5a64ad",
+          "method": "ls_sln",
+          "seed": 0,
+          "setting_id": 1,
+          "test_acc": 0.6784,
+          "val_acc": 0.6932,
+          "prediction_file": "records/predictions/ls_sln_h01_s0.npz",
+          "original_score_file_sha256": "4b410e06830733a8feb46f8dfdc044a3286df82f77c3ddc133d37beec9d0d0df"
+        },
+        {
+          "best_epoch": 129,
+          "checkpoint_sha256": "69f7d6117e02ad3a4753c8a2d6cd622285055976e62f7e46659ae677b6ebcd61",
+          "method": "ls_sln",
+          "seed": 1,
+          "setting_id": 1,
+          "test_acc": 0.6827,
+          "val_acc": 0.6856,
+          "prediction_file": "records/predictions/ls_sln_h01_s1.npz",
+          "original_score_file_sha256": "b4806bbe459865ff47575eaadb253f6adfe97a4e4abffc211b26a2f107bdcd3a"
+        },
+        {
+          "best_epoch": 131,
+          "checkpoint_sha256": "97a16c28d189a682bd3d2ae4eccec7513be110e9e4f739a925cc1ab17893b3f6",
+          "method": "ls_sln",
+          "seed": 2,
+          "setting_id": 1,
+          "test_acc": 0.6864,
+          "val_acc": 0.7032,
+          "prediction_file": "records/predictions/ls_sln_h01_s2.npz",
+          "original_score_file_sha256": "7c0a96a33ae63cf43d115d3acb6310a26e7399cec9e9f4e550f4972024efbd1f"
+        },
+        {
+          "best_epoch": 126,
+          "checkpoint_sha256": "97a97135f7b479a269481bfe7c2a5559ef894a45055e97d7001ebcb936b7c7cd",
+          "method": "ls_sln",
+          "seed": 3,
+          "setting_id": 1,
+          "test_acc": 0.6889,
+          "val_acc": 0.6846,
+          "prediction_file": "records/predictions/ls_sln_h01_s3.npz",
+          "original_score_file_sha256": "4b4c26133a7c74ad2fce55a286c08277a4b5f703241472e31f4e7400c3857cac"
+        },
+        {
+          "best_epoch": 136,
+          "checkpoint_sha256": "e94e90d9976312a88243cbfcc5735279b2cef57709a257e2d918182e47dfb8d0",
+          "method": "ls_sln",
+          "seed": 4,
+          "setting_id": 1,
+          "test_acc": 0.6891,
+          "val_acc": 0.687,
+          "prediction_file": "records/predictions/ls_sln_h01_s4.npz",
+          "original_score_file_sha256": "6ec6c1c26288cc8e9e91fd094d2807997b4c3f5204c3984bcbb22b0f6be45205"
+        }
+      ],
+      "test_mean": 0.6851,
+      "test_sd": 0.004549175749517712,
+      "validation_mean": 0.69072,
+      "validation_sd": 0.007736407434979127
+    },
+    "mixup_ce": {
+      "config": {
+        "batch_size": 128,
+        "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+        "epochs": 160,
+        "gamma": 0.0,
+        "job_id": "mixup_ce_h01_s0",
+        "lr": 0.05,
+        "ls_eps": 0.0,
+        "method": "mixup_ce",
+        "mixup_alpha": 0.2,
+        "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_ce_h01_s0",
+        "sam_rho": 0.0,
+        "seed": 0,
+        "setting_id": 1,
+        "tau": 1.0,
+        "wd": 0.001,
+        "workers": 4
+      },
+      "per_seed": [
+        {
+          "best_epoch": 151,
+          "checkpoint_sha256": "9ff28c2a12fa4d1f40e3ac7735fce479f9878fcc80d726904e1ad0af687c598e",
+          "method": "mixup_ce",
+          "seed": 0,
+          "setting_id": 1,
+          "test_acc": 0.6894,
+          "val_acc": 0.6932,
+          "prediction_file": "records/predictions/mixup_ce_h01_s0.npz",
+          "original_score_file_sha256": "a0fbf4fc2ffe79a8fd84a558ead3ee7ff3d3fb690fe2630acfefb2aa8ce3c7e2"
+        },
+        {
+          "best_epoch": 153,
+          "checkpoint_sha256": "699d68cb218719067c41b359b4bc7084984d4ff3d4bcf56d03370f5a3028bf11",
+          "method": "mixup_ce",
+          "seed": 1,
+          "setting_id": 1,
+          "test_acc": 0.6881,
+          "val_acc": 0.6962,
+          "prediction_file": "records/predictions/mixup_ce_h01_s1.npz",
+          "original_score_file_sha256": "102c18dc7075a2fed3704e717fc4ad849f3676fd67f64d9e06111660e685e3eb"
+        },
+        {
+          "best_epoch": 137,
+          "checkpoint_sha256": "af78b0c37b7bb62efcdedf562104785ab60dad72afdcc8e1f7831e96f213fa73",
+          "method": "mixup_ce",
+          "seed": 2,
+          "setting_id": 1,
+          "test_acc": 0.6914,
+          "val_acc": 0.6918,
+          "prediction_file": "records/predictions/mixup_ce_h01_s2.npz",
+          "original_score_file_sha256": "279b044fa977bebd1494e7247db475acea689e4a6de5f1bb1320ed24ee038e39"
+        },
+        {
+          "best_epoch": 138,
+          "checkpoint_sha256": "3d82f023b98bc33ba685d6bf61c5c23f11c893160a540b7997cb919ec4f71f8b",
+          "method": "mixup_ce",
+          "seed": 3,
+          "setting_id": 1,
+          "test_acc": 0.6934,
+          "val_acc": 0.7024,
+          "prediction_file": "records/predictions/mixup_ce_h01_s3.npz",
+          "original_score_file_sha256": "2f7ef746021668be4b70ffcce22f94e8446d9d72e3589a8335d5e484810f7162"
+        },
+        {
+          "best_epoch": 138,
+          "checkpoint_sha256": "2083059935028eab20604910a06a129f327762b3ad78b36fc61fd298125850a0",
+          "method": "mixup_ce",
+          "seed": 4,
+          "setting_id": 1,
+          "test_acc": 0.6903,
+          "val_acc": 0.6916,
+          "prediction_file": "records/predictions/mixup_ce_h01_s4.npz",
+          "original_score_file_sha256": "1ba822ba91c5218584abe1c61ea1db935c0a36bf2a722e46f9616e7e61e80a29"
+        }
+      ],
+      "test_mean": 0.69052,
+      "test_sd": 0.002014199592890428,
+      "validation_mean": 0.69504,
+      "validation_sd": 0.004506439836500665
+    },
+    "mixup_sln": {
+      "config": {
+        "batch_size": 128,
+        "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+        "epochs": 160,
+        "gamma": 0.7,
+        "job_id": "mixup_sln_h01_s0",
+        "lr": 0.05,
+        "ls_eps": 0.0,
+        "method": "mixup_sln",
+        "mixup_alpha": 0.2,
+        "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/mixup_sln_h01_s0",
+        "sam_rho": 0.0,
+        "seed": 0,
+        "setting_id": 1,
+        "tau": 0.08,
+        "wd": 0.001,
+        "workers": 4
+      },
+      "per_seed": [
+        {
+          "best_epoch": 146,
+          "checkpoint_sha256": "3f58fbc16eba5660354474a7977e4b456186e3b06b063e399ee30335ac887cc6",
+          "method": "mixup_sln",
+          "seed": 0,
+          "setting_id": 1,
+          "test_acc": 0.6921,
+          "val_acc": 0.7016,
+          "prediction_file": "records/predictions/mixup_sln_h01_s0.npz",
+          "original_score_file_sha256": "faeb2599ffab0dc8b97ad149f1f24c0f7da3efcf73bf3e87641f260aacc44f8e"
+        },
+        {
+          "best_epoch": 139,
+          "checkpoint_sha256": "8b62758931a9d302cd91640e2b0bd03f905c684d129aab0b26b01f6b7fc0a7fd",
+          "method": "mixup_sln",
+          "seed": 1,
+          "setting_id": 1,
+          "test_acc": 0.6902,
+          "val_acc": 0.6978,
+          "prediction_file": "records/predictions/mixup_sln_h01_s1.npz",
+          "original_score_file_sha256": "2431de5ce6eae99e7a785f8d3ed20121d2456981e5c53824bf18aa44bc09ca9c"
+        },
+        {
+          "best_epoch": 145,
+          "checkpoint_sha256": "de37b11520e77249487ddfb2d6ab7c71b27497c916d29b0149c9c7fa8ab9891f",
+          "method": "mixup_sln",
+          "seed": 2,
+          "setting_id": 1,
+          "test_acc": 0.6835,
+          "val_acc": 0.6906,
+          "prediction_file": "records/predictions/mixup_sln_h01_s2.npz",
+          "original_score_file_sha256": "0802f3b1b526c0861999bdb1ff3f221ad3dcc946074795c1098867d199afd11c"
+        },
+        {
+          "best_epoch": 131,
+          "checkpoint_sha256": "8f2f2ca99dfe9be40ad805437bf90c4be89ebd5e0281a25aaf8d8b6627626fb6",
+          "method": "mixup_sln",
+          "seed": 3,
+          "setting_id": 1,
+          "test_acc": 0.6901,
+          "val_acc": 0.7006,
+          "prediction_file": "records/predictions/mixup_sln_h01_s3.npz",
+          "original_score_file_sha256": "18a296e5676d4ff5f6d9044c60a146cca2dbfd61c09ce79fdf4dda7ab3fb7aa2"
+        },
+        {
+          "best_epoch": 159,
+          "checkpoint_sha256": "66e126acc76551108fb721f7be9d1bc383219185509102990a43913adabed64d",
+          "method": "mixup_sln",
+          "seed": 4,
+          "setting_id": 1,
+          "test_acc": 0.6898,
+          "val_acc": 0.7012,
+          "prediction_file": "records/predictions/mixup_sln_h01_s4.npz",
+          "original_score_file_sha256": "c2a017a6ac61a87621f4da3403086e14bcef9a14930d04b001772a7331f00661"
+        }
+      ],
+      "test_mean": 0.68914,
+      "test_sd": 0.003280701144572622,
+      "validation_mean": 0.69836,
+      "validation_sd": 0.004585629727747336
+    },
+    "sam_ce": {
+      "config": {
+        "batch_size": 128,
+        "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+        "epochs": 160,
+        "gamma": 0.0,
+        "job_id": "sam_ce_h07_s0",
+        "lr": 0.05,
+        "ls_eps": 0.0,
+        "method": "sam_ce",
+        "mixup_alpha": 0.0,
+        "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_ce_h07_s0",
+        "sam_rho": 0.1,
+        "seed": 0,
+        "setting_id": 7,
+        "tau": 1.0,
+        "wd": 0.001,
+        "workers": 4
+      },
+      "per_seed": [
+        {
+          "best_epoch": 142,
+          "checkpoint_sha256": "7acea65713236ffe48a949259dd7d5388c22a527010edcb3df0e610c14ec1d14",
+          "method": "sam_ce",
+          "seed": 0,
+          "setting_id": 7,
+          "test_acc": 0.6946,
+          "val_acc": 0.6938,
+          "prediction_file": "records/predictions/sam_ce_h07_s0.npz",
+          "original_score_file_sha256": "b901df2a06b747d60ba71e07cb32a7e018834ba754d753ac559fd9b24139fc79"
+        },
+        {
+          "best_epoch": 124,
+          "checkpoint_sha256": "397738e9c1b56d6b5a28757fdd79bbb58322f5d53736628cefa2689eb57df9f9",
+          "method": "sam_ce",
+          "seed": 1,
+          "setting_id": 7,
+          "test_acc": 0.6912,
+          "val_acc": 0.6976,
+          "prediction_file": "records/predictions/sam_ce_h07_s1.npz",
+          "original_score_file_sha256": "5ac3d022ae1c237bf7052782141a6b811b9346c1eb4605fbe8a4886f031cc529"
+        },
+        {
+          "best_epoch": 124,
+          "checkpoint_sha256": "c407af82756cd60cca9ac1fe2ac624be6cd4307d9b684061e2cb09425a1f95cd",
+          "method": "sam_ce",
+          "seed": 2,
+          "setting_id": 7,
+          "test_acc": 0.6892,
+          "val_acc": 0.6978,
+          "prediction_file": "records/predictions/sam_ce_h07_s2.npz",
+          "original_score_file_sha256": "edf06cf81fbdd1d30b08ec6ec52ace4c753ada526e44744ec5dcc15dcb293193"
+        },
+        {
+          "best_epoch": 138,
+          "checkpoint_sha256": "4b82b650a442a88a90f26e101c604c43d015f99606f6a548ca4a6d073f5f2639",
+          "method": "sam_ce",
+          "seed": 3,
+          "setting_id": 7,
+          "test_acc": 0.6989,
+          "val_acc": 0.696,
+          "prediction_file": "records/predictions/sam_ce_h07_s3.npz",
+          "original_score_file_sha256": "5751f78a81603993ee60e7e3b0598bb81234cc1238d634b4e15fcda0247ed4fa"
+        },
+        {
+          "best_epoch": 141,
+          "checkpoint_sha256": "ef63263156b9b7d96d3853e7ce3d68fc710b36a667b629582a241be543d3e90e",
+          "method": "sam_ce",
+          "seed": 4,
+          "setting_id": 7,
+          "test_acc": 0.6963,
+          "val_acc": 0.6978,
+          "prediction_file": "records/predictions/sam_ce_h07_s4.npz",
+          "original_score_file_sha256": "afc6c2a44d7153cae977116289246336b1c115b43786ff28ea9c65254372b8a2"
+        }
+      ],
+      "test_mean": 0.69404,
+      "test_sd": 0.00389011567951389,
+      "validation_mean": 0.6966,
+      "validation_sd": 0.0017378147196982832
+    },
+    "sam_sln": {
+      "config": {
+        "batch_size": 128,
+        "data_root": "/home/lcm/NeurIPS 2026-Chongming Liu/Code/Soft_logit_normalization/CIFAR10/data",
+        "epochs": 160,
+        "gamma": 0.7,
+        "job_id": "sam_sln_h07_s0",
+        "lr": 0.05,
+        "ls_eps": 0.0,
+        "method": "sam_sln",
+        "mixup_alpha": 0.0,
+        "out_dir": "/data/lcm/rebuttal/jorsc_r02_regularizers_validation_20261018/runs/sam_sln_h07_s0",
+        "sam_rho": 0.1,
+        "seed": 0,
+        "setting_id": 7,
+        "tau": 0.08,
+        "wd": 0.001,
+        "workers": 4
+      },
+      "per_seed": [
+        {
+          "best_epoch": 137,
+          "checkpoint_sha256": "89e561a1e4643bddb5bfb4968a1341dabd093139145b7f91fe322476faa05f66",
+          "method": "sam_sln",
+          "seed": 0,
+          "setting_id": 7,
+          "test_acc": 0.6962,
+          "val_acc": 0.696,
+          "prediction_file": "records/predictions/sam_sln_h07_s0.npz",
+          "original_score_file_sha256": "0db04e6b819a283385b0e7186f7e61bc4144cc50bff4477f59a3b69ef2cc6a0d"
+        },
+        {
+          "best_epoch": 142,
+          "checkpoint_sha256": "676608426ff953a82b5468f57f2cced0ac96be84baba2dcdb3ff54566f64688b",
+          "method": "sam_sln",
+          "seed": 1,
+          "setting_id": 7,
+          "test_acc": 0.7,
+          "val_acc": 0.7006,
+          "prediction_file": "records/predictions/sam_sln_h07_s1.npz",
+          "original_score_file_sha256": "4e3b145861f77b629923a520bd860e8e8e99fc93918f453131520ebd94261f34"
+        },
+        {
+          "best_epoch": 158,
+          "checkpoint_sha256": "ef067c017e2a3752025f503ba90e573b4e8f3a5d1777092ec22c547bf74fec07",
+          "method": "sam_sln",
+          "seed": 2,
+          "setting_id": 7,
+          "test_acc": 0.6949,
+          "val_acc": 0.7022,
+          "prediction_file": "records/predictions/sam_sln_h07_s2.npz",
+          "original_score_file_sha256": "5b9d929cc05f2851ad5de272aadc4f5bca2a1e8f79777a491766849905fb54c6"
+        },
+        {
+          "best_epoch": 145,
+          "checkpoint_sha256": "a360fcb2b140295a1677d94675ec6440d8c102385ca31dc491371be65708eb0f",
+          "method": "sam_sln",
+          "seed": 3,
+          "setting_id": 7,
+          "test_acc": 0.6953,
+          "val_acc": 0.706,
+          "prediction_file": "records/predictions/sam_sln_h07_s3.npz",
+          "original_score_file_sha256": "5dc08f8e36521cad39160e84f0546a08d649fb51480a4be88167234fb3438d96"
+        },
+        {
+          "best_epoch": 148,
+          "checkpoint_sha256": "475101be90fe3bd041cc2168e90a1567ad6e24654f58cd7c28cbf433619734d0",
+          "method": "sam_sln",
+          "seed": 4,
+          "setting_id": 7,
+          "test_acc": 0.6976,
+          "val_acc": 0.7048,
+          "prediction_file": "records/predictions/sam_sln_h07_s4.npz",
+          "original_score_file_sha256": "40fed4b82951fd3d86716ea2f0cde8de7bd3bfcfb26f526322d0b3925581d3f4"
+        }
+      ],
+      "test_mean": 0.6968,
+      "test_sd": 0.0020676073128135164,
+      "validation_mean": 0.70192,
+      "validation_sd": 0.0039309032040995414
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 `cifar100_besttest.json` contains the 216 completed configuration rows and
 24 selected method/depth rows used by the current manuscript's Tables 2,
-6 and 7. Each configuration has seeds 0-4. Accuracy is stored as a fraction;
+3 and 9. Each configuration has seeds 0-4. Accuracy is stored as a fraction;
 `sd` is the sample standard deviation of the five seed-wise best-test values.
 
 The experiments completed on 2026-10-07. The audited training histories,

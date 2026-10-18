@@ -1,7 +1,8 @@
 {
+  "date": "2026-10-18",
   "files": {
     "MedMNIST_experiments_LICENSE": "196f8c8626129addd1a8a9670ee2b15002b662ee0b06ffa3616866960e480062",
-    "README.md": "a7fcb04d305c1ad024f4aa68ab67a725dcc87b0ee92c8dea9684852b19a907aa",
+    "README.md": "4ca77dd1dd971c46cdf97a860b25c6b711023622aa2c8c1f3776eba8c19b9802",
     "environment.json": "cd09b2f4f5ffb7b8286ae4d95656ce78cc4e2b11cb79e1360145e93280266e6a",
     "historical_sources/train_default.py": "c2e14bfcaee1ae0add525a8a8ccdd57dcc8b2d8db923ff47ae5a07d7b97819a3",
     "historical_sources/train_loss_controls.py": "557e4eb1c2c1bc1f8dd5050110d82b674c1bf346a28b84d35fd7bc31884e1545",
@@ -360,6 +361,5 @@
     "vendor/medmnist/info.py": "d85e77f308dcfad2000b610448cefbae7fae69d8f2a7ac15a3f1686fc289c8d2",
     "vendor/sln_losses.py": "6925ea83ec8dda1ea4428d4d1ecaba372c35e5e9736fd0fdea71d7a0e5f48e51",
     "verify_records.py": "961fc45b7784a585e4aa514cd67f1a23b7c0ef9c653108672e10326ddf1c69f6"
-  },
-  "scope": "frozen JORSC medical code and outputs; excludes original images and trained weights"
+  }
 }
