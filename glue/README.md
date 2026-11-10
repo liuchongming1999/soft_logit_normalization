@@ -26,19 +26,14 @@ Tasks: `cola, sst2, mrpc, qqp, mnli, qnli, rte, stsb, wnli`. Any
 `AutoModelForSequenceClassification` checkpoint works (e.g.
 `bert-base-uncased`, `bert-large-uncased`, `microsoft/deberta-v3-base`).
 
-The paper reports the best over learning rates {2e-5, 3e-5, 4e-5, 5e-5}, 3
-epochs, selected on the dev set.
+The doctoral thesis reports development-set results for BERT after a search over
+learning rates {2e-5, 3e-5, 4e-5, 5e-5} and three training epochs.
 
-## Expected results (best development set)
+## Results
 
-| Model | Loss | Avg (8 tasks) |
-|---|---|---|
-| BERT-BASE | CE | 82.6 |
-| | LN | 82.7 |
-| | SLN | **83.8** |
-| BERT-LARGE | CE | 84.0 |
-| | LN | 84.2 |
-| | SLN | **85.0** |
+The GLUE results reported in the doctoral thesis and the saved checkpoint
+metrics used to calculate the eight-score means are in
+[`supplementary/thesis/`](../supplementary/thesis/README.md).
 
 ## Files
 

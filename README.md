@@ -53,8 +53,9 @@ See [`medical/README.md`](medical/README.md) for official data preparation,
 training/selection commands, environment versions and record provenance.
 The complete CIFAR-100 validation-selected comparison,675 training histories and selected records are in [`cifar/validation/`](cifar/validation/). Rebuild both Table3 columns with `python cifar/validation/verify_records.py`.
 
-ImageNet/GLUE code and results below remain historical experiments from earlier
-manuscript versions. The current journal article uses CIFAR and MedMNIST.
+Additional ImageNet and GLUE experiments reported in the doctoral thesis are
+collected in [`supplementary/thesis/`](supplementary/thesis/README.md), with
+saved metrics and a script to recompute the reported tables.
 
 ## Installation
 
@@ -111,9 +112,8 @@ initialization scales, and optimization/training recipes, approximately iid
 initial logit coordinates with comparable second moments give
 $\tau\propto k^{-\gamma/2}$ as an initialization-scale reference. Its constant
 depends on the setting. The CIFAR experiments use $\tau=0.2$ for CIFAR-10 and
-$\tau=0.08$ for CIFAR-100. ImageNet-1K and BERT use the practical SLN starting
-pair $(0.7,0.2)$ under their own recipes; ImageNet LN uses $\tau=0.04$.
-The original CIFAR-10 temperature measurements are archived in
+$\tau=0.08$ for CIFAR-100. The original CIFAR-10 temperature measurements
+are archived in
 [`cifar/results/cifar10_temperature_ablation.json`](cifar/results/cifar10_temperature_ablation.json).
 
 ---
@@ -126,7 +126,8 @@ toy_example/    # 2D trainable-feature toy experiment + figures/gifs
 cifar/          # CIFAR training, audited best-test grids, baselines and results
 theory/         # multiclass formulas, population-flow validation and binary orbits
 imagenet/       # ImageNet-1K training (timm-based, ResNet / ViT)
-glue/           # GLUE fine-tuning (BERT / DeBERTa, CE / LN / SLN)
+glue/           # additional GLUE fine-tuning (BERT / DeBERTa, CE / LN / SLN)
+supplementary/thesis/  # additional ImageNet and GLUE results
 assets/         # figures used in this README
 ```
 
@@ -219,43 +220,11 @@ SAM + SLN reaches 70.53±0.16% and Mixup + SLN reaches 70.44±0.09% in these
 configurations. The fixed-optimizer normalized-head comparison is also
 included in [`cifar/results/`](cifar/results/).
 
-### ImageNet-1K (ResNet, single run)
+### Additional experiments
 
-| Model | #Param | Loss | Top-1 | Top-5 |
-|---|---|---|---|---|
-| ResNet-50 | 26M | CE | 76.8 | 93.0 |
-| | | LN | 78.1 | 93.8 |
-| | | **SLN** | **79.2** | **94.6** |
-| ResNet-101 | 45M | CE | 78.6 | 93.9 |
-| | | LN | 79.4 | 93.0 |
-| | | **SLN** | **80.5** | **95.3** |
-| ResNet-152 | 60M | CE | 78.9 | 94.1 |
-| | | LN | 79.9 | 93.2 |
-| | | **SLN** | **81.0** | **95.5** |
-
-In these single-run validation comparisons, SLN records the highest top-1 and
-top-5 accuracies at each reported depth. ResNet-50+SLN reaches 79.2% top-1,
-compared with 78.9% for ResNet-152+CE in these runs. The training entry point is
-provided in [`imagenet/`](imagenet/).
-
-<p align="center">
-  <img src="assets/imagenet_result.png" width="90%">
-</p>
-
-### GLUE (BERT, best development set)
-
-| Model | Loss | MNLI (m/mm) | QQP | QNLI | SST-2 | CoLA | MRPC | RTE | Avg |
-|---|---|---|---|---|---|---|---|---|---|
-| BERT-BASE | CE | 84.5/83.5 | 88.1 | 90.9 | 93.2 | 61.0 | 90.9 | 68.6 | 82.6 |
-| | LN | 85.0/84.3 | 88.4 | 91.6 | 92.8 | 61.3 | 89.3 | 68.8 | 82.7 |
-| | **SLN** | 85.0/84.9 | 88.5 | 91.7 | 93.5 | 63.9 | 91.4 | 71.7 | **83.8** |
-| BERT-LARGE | CE | 86.2/85.5 | 88.6 | 92.4 | 93.7 | 62.3 | 91.2 | 72.3 | 84.0 |
-| | LN | 86.5/86.1 | 88.8 | 92.6 | 93.2 | 62.7 | 90.2 | 73.9 | 84.2 |
-| | **SLN** | 86.8/86.6 | 88.9 | 92.7 | 94.0 | 64.7 | 91.5 | 74.7 | **85.0** |
-
-Under the stated learning-rate search, BERT-BASE+SLN has an average selected
-development score of 83.8, approaching BERT-LARGE+CE at 84.0, using 110M rather
-than 340M parameters. The fine-tuning entry point is in [`glue/`](glue/).
+ImageNet and GLUE results reported in the doctoral thesis, together with their
+evaluation protocols and saved metrics, are in
+[`supplementary/thesis/`](supplementary/thesis/README.md).
 
 ### Representation geometry (CIFAR-10, ResNet-20, epoch 160, 10 seeds)
 

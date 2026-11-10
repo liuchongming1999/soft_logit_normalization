@@ -1,0 +1,69 @@
+{
+  "dataset": "ImageNet-1K validation",
+  "seed": 42,
+  "runs": [
+    {
+      "model": "ResNet-50",
+      "loss": "CE",
+      "gamma": 0,
+      "temperature": 1,
+      "history": "imagenet/resnet50_ce.csv"
+    },
+    {
+      "model": "ResNet-50",
+      "loss": "LN",
+      "gamma": 1.0,
+      "temperature": 0.04,
+      "history": "imagenet/resnet50_ln.csv"
+    },
+    {
+      "model": "ResNet-50",
+      "loss": "SLN",
+      "gamma": 0.7,
+      "temperature": 0.2,
+      "history": "imagenet/resnet50_sln.csv"
+    },
+    {
+      "model": "ResNet-101",
+      "loss": "CE",
+      "gamma": 0,
+      "temperature": 1,
+      "history": "imagenet/resnet101_ce.csv"
+    },
+    {
+      "model": "ResNet-101",
+      "loss": "LN",
+      "gamma": 1.0,
+      "temperature": 0.2,
+      "history": "imagenet/resnet101_ln.csv"
+    },
+    {
+      "model": "ResNet-101",
+      "loss": "SLN",
+      "gamma": 0.7,
+      "temperature": 0.2,
+      "history": "imagenet/resnet101_sln.csv"
+    },
+    {
+      "model": "ResNet-152",
+      "loss": "CE",
+      "gamma": 0,
+      "temperature": 1,
+      "history": "imagenet/resnet152_ce.csv"
+    },
+    {
+      "model": "ResNet-152",
+      "loss": "LN",
+      "gamma": 1.0,
+      "temperature": 0.2,
+      "history": "imagenet/resnet152_ln.csv"
+    },
+    {
+      "model": "ResNet-152",
+      "loss": "SLN",
+      "gamma": 0.7,
+      "temperature": 0.2,
+      "history": "imagenet/resnet152_sln.csv"
+    }
+  ]
+}

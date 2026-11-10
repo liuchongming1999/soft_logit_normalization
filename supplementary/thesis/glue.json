@@ -1,0 +1,215 @@
+{
+  "dataset": "GLUE development",
+  "runs": [
+    {
+      "model": "BERT-BASE",
+      "loss": "CE",
+      "tasks": {
+        "MNLI": {
+          "best_step": 21600,
+          "accuracy": 0.8448451507742462,
+          "mismatched_accuracy": 0.8383848657445078
+        },
+        "QQP": {
+          "best_step": 31500,
+          "f1": 0.8815222042993054
+        },
+        "QNLI": {
+          "best_step": 6600,
+          "accuracy": 0.9092240117130308
+        },
+        "SST-2": {
+          "best_step": 5000,
+          "accuracy": 0.9323394495412844
+        },
+        "CoLA": {
+          "best_step": 500,
+          "matthews_correlation": 0.609805026225341
+        },
+        "MRPC": {
+          "best_step": 150,
+          "f1": 0.9020979020979021
+        },
+        "RTE": {
+          "best_step": 200,
+          "accuracy": 0.675
+        }
+      }
+    },
+    {
+      "model": "BERT-BASE",
+      "loss": "LN",
+      "tasks": {
+        "MNLI": {
+          "best_step": 22560,
+          "accuracy": 0.8505501222493888,
+          "mismatched_accuracy": 0.84326688364524
+        },
+        "QQP": {
+          "best_step": 21600,
+          "f1": 0.8836551429229301
+        },
+        "QNLI": {
+          "best_step": 4540,
+          "accuracy": 0.9181918008784773
+        },
+        "SST-2": {
+          "best_step": 5260,
+          "accuracy": 0.9277522935779816
+        },
+        "CoLA": {
+          "best_step": 640,
+          "matthews_correlation": 0.613310753976922
+        },
+        "MRPC": {
+          "best_step": 200,
+          "f1": 0.882943143812709
+        },
+        "RTE": {
+          "best_step": 200,
+          "accuracy": 0.68777
+        }
+      }
+    },
+    {
+      "model": "BERT-BASE",
+      "loss": "SLN",
+      "tasks": {
+        "MNLI": {
+          "best_step": 23800,
+          "accuracy": 0.8473920130399348,
+          "mismatched_accuracy": 0.8487591537835639
+        },
+        "QQP": {
+          "best_step": 33800,
+          "f1": 0.8849054107686202
+        },
+        "QNLI": {
+          "best_step": 6800,
+          "accuracy": 0.917276720351391
+        },
+        "SST-2": {
+          "best_step": 5000,
+          "accuracy": 0.9346330275229358
+        },
+        "CoLA": {
+          "best_step": 500,
+          "matthews_correlation": 0.639509361194059
+        },
+        "MRPC": {
+          "best_step": 300,
+          "f1": 0.9139966273187183
+        },
+        "RTE": {
+          "best_step": 180,
+          "accuracy": 0.718664
+        }
+      }
+    },
+    {
+      "model": "BERT-LARGE",
+      "loss": "CE",
+      "tasks": {
+        "MNLI": {
+          "best_step": 24800,
+          "accuracy": 0.8625713121434393,
+          "mismatched_accuracy": 0.8557770545158666
+        },
+        "QQP": {
+          "best_step": 34000,
+          "f1": 0.8863794416663907
+        },
+        "QNLI": {
+          "best_step": 5000,
+          "accuracy": 0.9240483162518301
+        },
+        "SST-2": {
+          "best_step": 3600,
+          "accuracy": 0.9346330275229358
+        },
+        "CoLA": {
+          "best_step": 600,
+          "matthews_correlation": 0.6234832802875881
+        },
+        "MRPC": {
+          "best_step": 200,
+          "f1": 0.9125874125874126
+        },
+        "RTE": {
+          "best_step": 200,
+          "accuracy": 0.6535714285714286
+        }
+      }
+    },
+    {
+      "model": "BERT-LARGE",
+      "loss": "LN",
+      "tasks": {
+        "MNLI": {
+          "best_step": 24540,
+          "accuracy": 0.8654237978810106,
+          "mismatched_accuracy": 0.8612693246541904
+        },
+        "QQP": {
+          "best_step": 22540,
+          "f1": 0.8884014796870396
+        },
+        "QNLI": {
+          "best_step": 3320,
+          "accuracy": 0.9256954612005857
+        },
+        "SST-2": {
+          "best_step": 2660,
+          "accuracy": 0.9277522935779816
+        },
+        "CoLA": {
+          "best_step": 640,
+          "matthews_correlation": 0.627
+        },
+        "MRPC": {
+          "best_step": 320,
+          "f1": 0.9016949152542373
+        },
+        "RTE": {
+          "best_step": 180,
+          "accuracy": 0.7392857142857143
+        }
+      }
+    },
+    {
+      "model": "BERT-LARGE",
+      "loss": "SLN",
+      "tasks": {
+        "MNLI": {
+          "best_step": 24300,
+          "accuracy": 0.8676650366748166,
+          "mismatched_accuracy": 0.863100081366965
+        },
+        "QQP": {
+          "best_step": 28400,
+          "f1": 0.8886124025931504
+        },
+        "QNLI": {
+          "best_step": 6200,
+          "accuracy": 0.9264275256222547
+        },
+        "SST-2": {
+          "best_step": 2400,
+          "accuracy": 0.9403669724770642
+        },
+        "CoLA": {
+          "best_step": 600,
+          "matthews_correlation": 0.6459318209635204
+        },
+        "MRPC": {
+          "best_step": 310,
+          "f1": 0.9090909090909091
+        },
+        "RTE": {
+          "best_step": 190,
+          "accuracy": 0.7428571428571429
+        }
+      }
+    }
+  ]
+}
